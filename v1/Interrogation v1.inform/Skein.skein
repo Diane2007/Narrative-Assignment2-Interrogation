@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+
+<Skein rootNode="node-1007">
+    <generator>Inform Mac Client (Inform version 1.82/6.41/10.1.2)</generator>
+    <item nodeId="node-1007">
+        <command xml:space="preserve">Interrogation v1</command>
+        <result xml:space="preserve">
+
+
+
+Lady Knight
+An Interactive Fiction by Diane Wang
+Release 1 / Serial number 231018 / Inform 7 v10.1.2 / D
+
+The Game Center
+Rows of crappy chairs with no back support. Shitty in general, but it's your favorite shitty place.
+
+You've been staring at your laptop screen for hours, trying to make a game. Your painful lower back hates you, and so does Unity.
+
+The smart watch on your wrist buzzes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1446"></child>
+            <child nodeId="node-1443"></child>
+        </children>
+    </item>
+    <item nodeId="node-1443">
+        <command xml:space="preserve">x watch</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1444"></child>
+        </children>
+    </item>
+    <item nodeId="node-1444">
+        <command xml:space="preserve">inventory</command>
+        <result xml:space="preserve">You are carrying nothing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1445"></child>
+        </children>
+    </item>
+    <item nodeId="node-1445">
+        <command xml:space="preserve">clothing</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1446">
+        <command xml:space="preserve">x self</command>
+        <result xml:space="preserve">You are wearing a watch.
+
+As good-looking as ever.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+</Skein>
