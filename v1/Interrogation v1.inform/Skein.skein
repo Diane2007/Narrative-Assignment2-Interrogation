@@ -8,7 +8,7 @@
 
 
 
-Lady Knight
+Helen of Saegaria
 An Interactive Fiction by Diane Wang
 Release 1 / Serial number 231025 / Inform 7 v10.1.2 / D
 
@@ -19,14 +19,23 @@ It's a good thing you still have a place to return to after a day of dull work t
 
 Playing that game has been your routine, and you don't plan to break it tonight. 
 
+You can see a fire extinguisher here.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1117"></child>
+        <children><child nodeId="node-1508"></child>
+            <child nodeId="node-1117"></child>
             <child nodeId="node-1110"></child>
             <child nodeId="node-1405"></child>
             <child nodeId="node-1111"></child>
             <child nodeId="node-1346"></child>
+            <child nodeId="node-1485"></child>
+            <child nodeId="node-1445"></child>
             <child nodeId="node-1355"></child>
+            <child nodeId="node-1526"></child>
+            <child nodeId="node-1515"></child>
+            <child nodeId="node-1469"></child>
+            <child nodeId="node-1468"></child>
             <child nodeId="node-1116"></child>
             <child nodeId="node-1102"></child>
             <child nodeId="node-1099"></child>
@@ -69,6 +78,250 @@ As good-looking as ever.
     <item nodeId="node-1116">
         <command xml:space="preserve">x game</command>
         <result xml:space="preserve">Praised as Game of the Year. AAA production, real cool stuff with a bulky white dude with brown hair as the protagonist. Your goal is to take the capital city of Saegaria and snatch the princess from the castle. The final battle with princess' personal knight is considered the toughest boss fight by almost all gamers on the internet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1468">
+        <command xml:space="preserve">x fire extinguisher</command>
+        <result xml:space="preserve">You see nothing special about the fire extinguisher.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1469">
+        <command xml:space="preserve">x extinguisher</command>
+        <result xml:space="preserve">You bought it not just so your renter's insurance could be cheaper, but this would serve as a good weapon as well if somebody decided to break in. This is New York City after all.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1470"></child>
+        </children>
+    </item>
+    <item nodeId="node-1470">
+        <command xml:space="preserve">launch game</command>
+        <result xml:space="preserve">You launch the game.
+
+But before you get to the point of continuing your most recent campaign, something in your computer flashes, blinding you with bright golden light. Then you realize you're not alone anymore. A woman crashes upon you.
+
+And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in full Medival armor when she lands on your head.
+
+You are about to scream in pain. You are about to fight or flight because this is New York City, and having a stranger appearing in your place out of a sudden is a bad sign.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1471"></child>
+        </children>
+    </item>
+    <item nodeId="node-1471">
+        <command xml:space="preserve">fight her</command>
+        <result xml:space="preserve">I'm not sure what 'her' refers to.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1472"></child>
+        </children>
+    </item>
+    <item nodeId="node-1472">
+        <command xml:space="preserve">fight woma</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1473"></child>
+        </children>
+    </item>
+    <item nodeId="node-1473">
+        <command xml:space="preserve">fight woman</command>
+        <result xml:space="preserve">Violence isn't the answer to this one.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1474"></child>
+        </children>
+    </item>
+    <item nodeId="node-1474">
+        <command xml:space="preserve">fight helen</command>
+        <result xml:space="preserve">Violence isn't the answer to this one.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1515">
+        <command xml:space="preserve">track responses</command>
+        <result xml:space="preserve">Now tracking responses. Type "track off" to disable.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1516"></child>
+        </children>
+    </item>
+    <item nodeId="node-1516">
+        <command xml:space="preserve">launch game</command>
+        <result xml:space="preserve">You launch the game.
+
+But before you get to the point of continuing your most recent campaign, something in your computer flashes, blinding you with bright golden light. Then you realize you're not alone anymore. A woman crashes upon you.
+
+And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in full Medival armor when she lands on your head.
+
+You are about to scream in pain. You are about to fight or flight because this is New York City, and having a stranger appearing in your place out of a sudden is a bad sign.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1595"></child>
+            <child nodeId="node-1591"></child>
+            <child nodeId="node-1517"></child>
+        </children>
+    </item>
+    <item nodeId="node-1517">
+        <command xml:space="preserve">fight her</command>
+        <result xml:space="preserve">[I'm not sure what 'her' refers to. - type "response 1" for details]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1518"></child>
+        </children>
+    </item>
+    <item nodeId="node-1518">
+        <command xml:space="preserve">response 1</command>
+        <result xml:space="preserve">parser error internal rule response (J)
+
+Currently:
+"I'm not sure what ['][pronoun i6 dictionary word]['] refers to."
+
+To change, copy and pase the following line into your source:
+The parser error internal rule response (J) is "New response text."
+
+* Note: if this response was defined in your own source text, of course, it's easier to change it by searching for the text in your project and updating the original.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1519"></child>
+        </children>
+    </item>
+    <item nodeId="node-1519">
+        <command xml:space="preserve">fight woman</command>
+        <result xml:space="preserve">[Violence isn't the answer to this one. - type "response 1" for details]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1520"></child>
+        </children>
+    </item>
+    <item nodeId="node-1520">
+        <command xml:space="preserve">response 1</command>
+        <result xml:space="preserve">block attacking rule response (A)
+
+Currently:
+"Violence [aren't] the answer to this one."
+
+To change, copy and pase the following line into your source:
+The block attacking rule response (A) is "New response text."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1591">
+        <command xml:space="preserve">ask about sword</command>
+        <result xml:space="preserve">[(addressing Helen) - type "response 1" for details]
+[There is no reply. - response 2]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1592"></child>
+        </children>
+    </item>
+    <item nodeId="node-1592">
+        <command xml:space="preserve">response 2</command>
+        <result xml:space="preserve">block asking rule response (A)
+
+Currently:
+"[There] [are] no reply."
+
+To change, copy and pase the following line into your source:
+The block asking rule response (A) is "New response text."
+
+* Note: if this response was defined in your own source text, of course, it's easier to change it by searching for the text in your project and updating the original.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1595">
+        <command xml:space="preserve">ask about armor</command>
+        <result xml:space="preserve">[(addressing Helen) - type "response 1" for details]
+[There is no reply. - response 2]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1596"></child>
+        </children>
+    </item>
+    <item nodeId="node-1596">
+        <command xml:space="preserve">ask about identity</command>
+        <result xml:space="preserve">"Who are you? Why are you in my room?" You grumble.
+
+"Oh sweet goddess, where are my manners?" the woman bows again. "Helen of Saegaria, champion and personal knight to Her Royal Highness, Princess Josephine. It is a pleasure to make you acquaintance."
+
+What in the-- You blink, and blink again. The princess' knight, your future final boss, is a woman.
+
+But how did she get here?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1526">
+        <command xml:space="preserve">track response</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1527"></child>
+        </children>
+    </item>
+    <item nodeId="node-1527">
+        <command xml:space="preserve">track responses</command>
+        <result xml:space="preserve">Now tracking responses. Type "track off" to disable.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1528"></child>
+        </children>
+    </item>
+    <item nodeId="node-1528">
+        <command xml:space="preserve">launch game</command>
+        <result xml:space="preserve">You launch the game.
+
+But before you get to the point of continuing your most recent campaign, something in your computer flashes, blinding you with bright golden light. Then you realize you're not alone anymore. A woman crashes upon you.
+
+And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in full Medival armor when she lands on your head.
+
+You are about to scream in pain. You are about to fight or flight because this is New York City, and having a stranger appearing in your place out of a sudden is a bad sign.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1529"></child>
+        </children>
+    </item>
+    <item nodeId="node-1529">
+        <command xml:space="preserve">fight her</command>
+        <result xml:space="preserve">[I'm not sure what 'her' refers to. - type "response 1" for details]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1530"></child>
+        </children>
+    </item>
+    <item nodeId="node-1530">
+        <command xml:space="preserve">response 1</command>
+        <result xml:space="preserve">parser error internal rule response (J)
+
+Currently:
+"I'm not sure what ['][pronoun i6 dictionary word]['] refers to."
+
+To change, copy and pase the following line into your source:
+The parser error internal rule response (J) is "New response text."
+
+* Note: if this response was defined in your own source text, of course, it's easier to change it by searching for the text in your project and updating the original.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -262,6 +515,304 @@ That was a rhetorical question.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-1445">
+        <command xml:space="preserve">test fighting</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] launch game
+You launch the game.
+
+But before you get to the point of continuing your most recent campaign, something in your computer flashes, blinding you with bright golden light. Then you realize you're not alone anymore. A woman crashes upon you.
+
+And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in full Medival armor when she lands on your head.
+
+You are about to scream in pain. You are about to fight or flight because this is New York City, and having a stranger appearing in your place out of a sudden is a bad sign.
+
+&gt;[2] fight
+"What in the fuck is going on?! Why the fuck are you in my room?!" you curse and kick into the woman's abdomen.
+
+But that proves to be a horrible idea because of the way she is covered by heavy armor from head to toe. Not only your head hurts, but your foot hurts, too.
+
+For someone covered in so much weight, the woman is still faster than you, and she easily tackles you to the ground. You think you're getting killed, but is there something in the room that is also made of metal? Maybe you can fight her with it?
+
+&gt;[3] fight her with pc
+(Helen with the PC)
+You aren't going to punch some armor with your bare hands, are you? There is nothing in your inventory!
+
+&gt;[4] take fire extinguisher
+Taken.
+
+&gt;[5] fight her with fire extinguisher
+(Helen with the fire extinguisher)
+You slam the fire extinguisher into her metal chest plate, knocking her back a few steps. But just as the armor lady picks herself up, you notice the giant sword she carries, all curses are swallowed back down.
+
+"I mean no harm, and hell, look at me! How in the heaven's name could I even harm you?" you gesticulate at your whole body, which is as skinny and frail as any other accountant's on Wall Street.
+
+"All right. I may not attack an enemy who yields." the armor lady says with a frown. Her armor still immaculate without any scratches.
+
+&gt;[6] ask about sword
+(addressing Helen)
+There is no reply.
+
+&gt;[7] ask about armor
+There is no reply.
+
+&gt;[8] ask about identity
+"Who are you? Why are you in my room?" You grumble.
+
+"Oh sweet goddess, where are my manners?" the woman bows again. "Helen of Saegaria, champion and personal knight to Her Royal Highness, Princess Josephine. It is a pleasure to make you acquaintance."
+
+What in the-- You blink, and blink again. The princess' knight, your future final boss, is a woman.
+
+But how did she get here?
+
+&gt;[9] ask helen about why she is here
+To be continued.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] launch game
+[2] fight
+[3] fight her with pc
+[4] take fire extinguisher
+[5] fight her with fire extinguisher
+[6] ask about sword
+[7] ask about armor
+[8] ask about identity
+[9] ask helen about why she is here
+</commentary>
+        <children><child nodeId="node-1559"></child>
+            <child nodeId="node-1497"></child>
+            <child nodeId="node-1454"></child>
+        </children>
+    </item>
+    <item nodeId="node-1454">
+        <command xml:space="preserve">fight her with fire extinguisher</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1455"></child>
+        </children>
+    </item>
+    <item nodeId="node-1455">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Apartment
+A shitty studio apartment, but it's a cozy kind of shitty--tiny but full of warmth, old but full of character. You like it because it's your apartment. 
+
+You have a gamer PC in front of you. Playing Assault on Saegaria has been your routine, and you don't plan to break it tonight.
+
+You can see a fire extinguisher here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1497">
+        <command xml:space="preserve">fight helen</command>
+        <result xml:space="preserve">Violence isn't the answer to this one.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1559">
+        <command xml:space="preserve">ask her about armor</command>
+        <result xml:space="preserve">(Helen about that)
+There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1560"></child>
+        </children>
+    </item>
+    <item nodeId="node-1560">
+        <command xml:space="preserve">track responses</command>
+        <result xml:space="preserve">Now tracking responses. Type "track off" to disable.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1561"></child>
+        </children>
+    </item>
+    <item nodeId="node-1561">
+        <command xml:space="preserve">ask her about armor</command>
+        <result xml:space="preserve">(Helen about [that - type "response 1" for details])
+[There is no reply. - response 2]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1562"></child>
+        </children>
+    </item>
+    <item nodeId="node-1562">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">[Are you sure you want to restart?  - type "response 1" for details]</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1563"></child>
+        </children>
+    </item>
+    <item nodeId="node-1563">
+        <command xml:space="preserve">yes</command>
+        <result xml:space="preserve">
+
+
+
+Helen of Saegaria
+An Interactive Fiction by Diane Wang
+Release 1 / Serial number 231025 / Inform 7 v10.1.2 / D
+
+Apartment
+A shitty studio apartment, but it's a cozy kind of shitty--tiny but full of warmth, old but full of character. You like it because it's your apartment. 
+
+It's a good thing you still have a place to return to after a day of dull work typing in numbers in an excel sheet. You're glad that you took accounting in college, because though it sucks, it now provides a roof over your head, food to fill your belly, and most importantly, a beefy laptop that allows you to play the latest game, Assault on Saegaria.
+
+Playing that game has been your routine, and you don't plan to break it tonight. 
+
+You can see a fire extinguisher here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1564"></child>
+        </children>
+    </item>
+    <item nodeId="node-1564">
+        <command xml:space="preserve">track responses</command>
+        <result xml:space="preserve">Now tracking responses. Type "track off" to disable.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1565"></child>
+        </children>
+    </item>
+    <item nodeId="node-1565">
+        <command xml:space="preserve">test screaming</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] launch game
+You launch the game.
+
+But before you get to the point of continuing your most recent campaign, something in your computer flashes, blinding you with bright golden light. Then you realize you're not alone anymore. A woman crashes upon you.
+
+And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in full Medival armor when she lands on your head.
+
+You are about to scream in pain. You are about to fight or flight because this is New York City, and having a stranger appearing in your place out of a sudden is a bad sign.
+
+&gt;[2] scream
+You scream because your head hurts like hell. Because Why the heck is this person in your room?
+
+"My sincerest apologies, my lady," the woman quickly picks her up and bows her head. "Are you injured?"
+[3] yes
+"Just gimme a sec. My head just... ugh, hurts really bad," you groan. "And mind you, I am a man.
+
+Helen frowns, sizing you up, "A man? Huh." If she's trying to stay polite you don't know, but the questioning in her look is pretty obvious to you.
+
+What the heck does that mean? You are about to protest, but the moment you notice the giant sword she carries, all curses are swallowed back down. Hell, you'd pretty much like your head to stay on your shoulders.
+
+&gt;[4] x sword
+The sword, though perfectly sheathed into the golden, well, sheath, proudly displays a family crest that you are too familiar with. The crest of House Saegaria, the very royal family in Assault on Saegaria that you are trying to defeat.
+
+&gt;[5] x armor
+Somehow, you think you've seen this armor before. 
+
+Shiny, silver, with the shinest possible metal--the kind of expensive stuff that no one should be able to afford--modern cosplayers and real medieval soldiers alike.
+
+You can't help but wonder about this woman's identity. But unless her dad is Elon Musk and bought her this ridiculous set of armor, you can't think of another explanation.
+
+&gt;[6] think about sword
+Is it even legal to carry a sword around in New York?
+
+&gt;[7] think about armor
+Back in the old days, only nobles could afford such an expensive set of armors. But nobles wouldn't let their daughters fight at all... And if somebody went all the way to purchase such a flashy set of armors just for cosplay, that is seriously impressive. Maybe you should ask Helen about the armors.
+
+&gt;[8] ask about sword
+[(addressing Helen) - type "response 1" for details]
+"Why are you even carrying a sword?" you ask, still fearing for your head.
+
+Helen gives you the look like you're stupid, "Because I am a knight, and I am not taking off the sword my lady bestowed me when I was knighted."
+
+Maybe this woman is an actress because that is so method.
+
+&gt;[9] ask about armor
+"Did you just get out of a cosplay event? That is some impressive armor. Did you get them from Etsy?" you tell her. If there is one in town right now, you definitely are going.
+
+"Pardon me, but I do not understand what a "cosplay" is, nor do I know about "Ezzie". Is that perhaps the title of a lord? These armors belong to the royal family of Saegaria and the Order of the Knights of Sun."
+
+She's either too into the whole game, or she is nuts.
+
+&gt;[10] wonder about identity
+Simply wondering about this woman's identity is no use. Maybe just ask her.
+
+&gt;[11] ask about identity
+"Who are you? Why are you in my room?" You grumble.
+
+"Oh sweet goddess, where are my manners?" the woman bows again. "Helen of Saegaria, champion and personal knight to Her Royal Highness, Princess Josephine. It is a pleasure to make you acquaintance."
+
+What in the-- You blink, and blink again. The princess' knight, your future final boss, is a woman.
+
+But how did she get here?
+
+&gt;[12] ask helen about why she is here
+To be continued.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] launch game
+[2] scream
+[3] yes
+[4] x sword
+[5] x armor
+[6] think about sword
+[7] think about armor
+[8] ask about sword
+[9] ask about armor
+[10] wonder about identity
+[11] ask about identity
+[12] ask helen about why she is here
+</commentary>
+        <children></children>
+    </item>
+    <item nodeId="node-1485">
+        <command xml:space="preserve">test fightin</command>
+        <result xml:space="preserve">&gt;--&gt; The following tests are available:
+'test screaming'
+'test fighting'
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1486"></child>
+        </children>
+    </item>
+    <item nodeId="node-1486">
+        <command xml:space="preserve">test fighting</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] launch game
+You launch the game.
+
+But before you get to the point of continuing your most recent campaign, something in your computer flashes, blinding you with bright golden light. Then you realize you're not alone anymore. A woman crashes upon you.
+
+And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in full Medival armor when she lands on your head.
+
+You are about to scream in pain. You are about to fight or flight because this is New York City, and having a stranger appearing in your place out of a sudden is a bad sign.
+
+&gt;[2] fight her
+I'm not sure what 'her' refers to.
+
+&gt;[3] fight her with pc
+I'm not sure what 'her' refers to.
+
+&gt;[4] fight her with sword
+I'm not sure what 'her' refers to.
+
+&gt;[5] fight her with fire extinguisher
+I'm not sure what 'her' refers to.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] launch game
+[2] fight her
+[3] fight her with pc
+[4] fight her with sword
+[5] fight her with fire extinguisher
+</commentary>
+        <children></children>
+    </item>
     <item nodeId="node-1346">
         <command xml:space="preserve">talk to helen</command>
         <result xml:space="preserve">You can't see any such thing.
@@ -441,11 +992,14 @@ But before you get to the point of continuing your most recent campaign, somethi
 
 And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in full Medival armor when she lands on your head.
 
-You are about to scream in pain. You are about to curse because what in the holy macaroni is going on?
+You are about to scream in pain. You are about to fight or flight because this is New York City, and having a stranger appearing in your place out of a sudden is a bad sign.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1118"></child>
+        <children><child nodeId="node-1583"></child>
+            <child nodeId="node-1532"></child>
+            <child nodeId="node-1462"></child>
+            <child nodeId="node-1118"></child>
             <child nodeId="node-1373"></child>
             <child nodeId="node-1120"></child>
         </children>
@@ -465,7 +1019,29 @@ You are about to scream in pain. You are about to curse because what in the holy
 </result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1374"></child>
+            <child nodeId="node-1580"></child>
         </children>
+    </item>
+    <item nodeId="node-1580">
+        <command xml:space="preserve">yes</command>
+        <result xml:space="preserve">"Just gimme a sec. My head just... ugh, hurts really bad," you groan. "And mind you, I am a man.
+
+Helen frowns, sizing you up, "A man? Huh." If she's trying to stay polite you don't know, but the questioning in her look is pretty obvious to you.
+
+What the heck does that mean? You are about to protest, but the moment you notice the giant sword she carries, all curses are swallowed back down. Hell, you'd pretty much like your head to stay on your shoulders.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1581"></child>
+        </children>
+    </item>
+    <item nodeId="node-1581">
+        <command xml:space="preserve">ask about sword</command>
+        <result xml:space="preserve">(addressing Helen)
+There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1374">
         <command xml:space="preserve">no</command>
@@ -494,6 +1070,221 @@ What the heck does that mean? You are about to protest, but the moment you notic
 A shitty studio apartment, but it's a cozy kind of shitty--tiny but full of warmth, old but full of character. You like it because it's your apartment. 
 
 You have a gamer PC in front of you. Playing Assault on Saegaria has been your routine, and you don't plan to break it tonight.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1462">
+        <command xml:space="preserve">fight woman</command>
+        <result xml:space="preserve">Violence isn't the answer to this one.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1463"></child>
+            <child nodeId="node-1466"></child>
+        </children>
+    </item>
+    <item nodeId="node-1466">
+        <command xml:space="preserve">x fire extinguisher</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1467"></child>
+        </children>
+    </item>
+    <item nodeId="node-1467">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Apartment
+A shitty studio apartment, but it's a cozy kind of shitty--tiny but full of warmth, old but full of character. You like it because it's your apartment. 
+
+You have a gamer PC in front of you. Playing Assault on Saegaria has been your routine, and you don't plan to break it tonight.
+
+You can see a fire extinguisher here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1463">
+        <command xml:space="preserve">fight helen</command>
+        <result xml:space="preserve">Violence isn't the answer to this one.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1532">
+        <command xml:space="preserve">fight</command>
+        <result xml:space="preserve">"What in the fuck is going on?! Why the fuck are you in my room?!" you curse and kick into the woman's abdomen.
+
+But that proves to be a horrible idea because of the way she is covered by heavy armor from head to toe. Not only your head hurts, but your foot hurts, too.
+
+For someone covered in so much weight, the woman is still faster than you, and she easily tackles you to the ground. You think you're getting killed, but is there something in the room that is also made of metal? Maybe you can fight her with it?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1533"></child>
+        </children>
+    </item>
+    <item nodeId="node-1533">
+        <command xml:space="preserve">fight her</command>
+        <result xml:space="preserve">(Helen)
+Try "fight" or "fight someone with something" instead.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1534"></child>
+        </children>
+    </item>
+    <item nodeId="node-1534">
+        <command xml:space="preserve">fight armor lady with gun</command>
+        <result xml:space="preserve">You aren't going to punch some armor with your bare hands, are you?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1535"></child>
+        </children>
+    </item>
+    <item nodeId="node-1535">
+        <command xml:space="preserve">take fire extinguisher</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1536"></child>
+        </children>
+    </item>
+    <item nodeId="node-1536">
+        <command xml:space="preserve">fight her with gun</command>
+        <result xml:space="preserve">(Helen with the gun)
+Shooting someone without a gun permit will get you into big trouble.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1537"></child>
+        </children>
+    </item>
+    <item nodeId="node-1537">
+        <command xml:space="preserve">fight her with fire extinguisher</command>
+        <result xml:space="preserve">(Helen with the fire extinguisher)
+You fight the mysterious armor lady with the fire extinguisher, and manage to knock her back a few steps.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1583">
+        <command xml:space="preserve">ask about sword</command>
+        <result xml:space="preserve">(addressing Helen)
+There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1584"></child>
+        </children>
+    </item>
+    <item nodeId="node-1584">
+        <command xml:space="preserve">x sword</command>
+        <result xml:space="preserve">The sword, though perfectly sheathed into the golden, well, sheath, proudly displays a family crest that you are too familiar with. The crest of House Saegaria, the very royal family in Assault on Saegaria that you are trying to defeat.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1585"></child>
+        </children>
+    </item>
+    <item nodeId="node-1585">
+        <command xml:space="preserve">ask about sword</command>
+        <result xml:space="preserve">"Why are you even carrying a sword?" you ask, still fearing for your head.
+
+Helen gives you the look like you're stupid, "Because I am a knight, and I am not taking off the sword my lady bestowed me when I was knighted."
+
+Maybe this woman is an actress because that is so method.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1586"></child>
+        </children>
+    </item>
+    <item nodeId="node-1586">
+        <command xml:space="preserve">track responses</command>
+        <result xml:space="preserve">Now tracking responses. Type "track off" to disable.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1587"></child>
+        </children>
+    </item>
+    <item nodeId="node-1587">
+        <command xml:space="preserve">ask about armor</command>
+        <result xml:space="preserve">[There is no reply. - type "response 1" for details]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1588"></child>
+        </children>
+    </item>
+    <item nodeId="node-1588">
+        <command xml:space="preserve">response 1</command>
+        <result xml:space="preserve">block asking rule response (A)
+
+Currently:
+"[There] [are] no reply."
+
+To change, copy and pase the following line into your source:
+The block asking rule response (A) is "New response text."
+
+* Note: if this response was defined in your own source text, of course, it's easier to change it by searching for the text in your project and updating the original.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1508">
+        <command xml:space="preserve">check fighting</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1509"></child>
+        </children>
+    </item>
+    <item nodeId="node-1509">
+        <command xml:space="preserve">test fighting</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] launch game
+You launch the game.
+
+But before you get to the point of continuing your most recent campaign, something in your computer flashes, blinding you with bright golden light. Then you realize you're not alone anymore. A woman crashes upon you.
+
+And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in full Medival armor when she lands on your head.
+
+You are about to scream in pain. You are about to fight or flight because this is New York City, and having a stranger appearing in your place out of a sudden is a bad sign.
+
+&gt;[2] fight woman
+Violence isn't the answer to this one.
+
+&gt;[3] fight her with pc
+(Helen with the PC)
+You aren't going to punch some armor with your bare hands, are you?
+
+&gt;[4] fight her with fire extinguisher
+(Helen with the fire extinguisher)
+You aren't going to punch some armor with your bare hands, are you?
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] launch game
+[2] fight woman
+[3] fight her with pc
+[4] fight her with fire extinguisher
+</commentary>
+        <children><child nodeId="node-1514"></child>
+        </children>
+    </item>
+    <item nodeId="node-1514">
+        <command xml:space="preserve">fight</command>
+        <result xml:space="preserve">"What in the fuck is going on?! Why the fuck are you in my room?!" you curse and kick into the woman's abdomen.
+
+But that proves to be a horrible idea because of the way she is covered by heavy armor from head to toe. Not only your head hurts, but your foot hurts, too.
+
+For someone covered in so much weight, the woman is still faster than you, and she easily tackles you to the ground. You think you're getting killed, but is there something in the room that is also made of metal? Maybe you can fight her with it?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

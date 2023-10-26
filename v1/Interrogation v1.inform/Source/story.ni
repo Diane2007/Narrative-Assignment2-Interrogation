@@ -1,4 +1,4 @@
-The story title is "Lady Knight".
+The story title is "Helen of Saegaria".
 The story author is "Diane Wang".
 The release number is 1.
 The story creation year is 2023.
@@ -7,6 +7,7 @@ Release along with a website.
 
 Include Conversation Framework by Eric Eve.
 Include Epistemology by Eric Eve.
+Include Response Assistant by Aaron Reed.
 
 [More "Global" Variables]
 gameLaunched is a truth state that varies. gameLaunched is false.
@@ -28,7 +29,7 @@ The Apartment is a room. The description of the Apartment is "A shitty studio ap
 The Hidden Room is a room. The description of the Hidden Room is "Why are you seeing this? Diane made a boo-boo."
 
 [NPC]
-Helen is an undescribed woman in the Hidden Room, carrying a sword and an armor. Understand "woman" as Helen.
+Helen is an undescribed woman in the Hidden Room, carrying a sword and an armor. Understand "woman", "her", "armor lady" as Helen.
 A person can be annoyed or calm. Helen is calm.
 
 [VERB: launch]
@@ -70,9 +71,13 @@ Instead of taking the PC:
 	stop the action.
 
 [OBJECT: FIRE EXTINGUISHER]
-A fire-extinguisher is an object in the Apartment. The description of the fire extinguisher is "You bought it not just so your renter's insurance could be cheaper, but this would serve as a good weapon as well if somebody decided to break in. This is New York City after all."
-Understand "extinguisher" as fire-extinguisher.
+A fire-extinguisher is an object in the Apartment. The description of the fire-extinguisher is "You bought it not just so your renter's insurance could be cheaper, but this would serve as a good weapon as well if somebody decided to break in. This is New York City after all."
+Understand "fire extinguisher", "extinguisher" as fire-extinguisher.
 The printed name of fire-extinguisher is "fire extinguisher".
+
+[OBJECT: GUN]
+[TODO: set up a place to store the gun and make sure player cna find it]
+A gun is an undescribed object in the Apartment. The description of the gun is "You're thinking about getting rid of the gun because you don't have a permit, and that is a problem in New York City."
 
 Section 2 - Who is Helen?
 
@@ -85,9 +90,9 @@ Check screaming: [if we haven't properly introduced Helen yet]
 	if helenIntroduced is false:
 		say "You scream because your head hurts like hell. Because Why the heck is this person in your room?[paragraph break]'My sincerest apologies, my lady,' the woman quickly picks her up and bows her head. 'Are you injured?'";
 		if the player consents:
-			say "'Just gimme a sec. My head just... ugh, hurts really bad,' you groan. 'And mind you, I am a man.[paragraph break]Helen frowns, sizing you up, 'A man? Huh.' If she's trying to stay polite you don't know, but the questioning in her look is pretty obvious to you.[paragraph break]What the heck does that mean? You are about to protest, but the moment you notices the giant sword she carries, all curses are swallowed back down. Hell, you'd pretty much like your head to stay on your shoulders.";
+			say "'Just gimme a sec. My head just... ugh, hurts really bad,' you groan. 'And mind you, I am a man.[paragraph break]Helen frowns, sizing you up, 'A man? Huh.' If she's trying to stay polite you don't know, but the questioning in her look is pretty obvious to you.[paragraph break]What the heck does that mean? You are about to protest, but the moment you notice the giant sword she carries, all curses are swallowed back down. Hell, you'd pretty much like your head to stay on your shoulders.";
 		else:[if the player does not consent]
-			say "'Of course I'm fine! I'm a real man!' you groan despite how much your head groans.[paragraph break]Helen frowns, sizing you up, 'A man? Huh.' If she's trying to stay polite you don't know, but the questioning in her look is pretty obvious to you.[paragraph break]What the heck does that mean? You are about to protest, but the moment you notices the giant sword she carries, all curses are swallowed back down. Hell, you'd pretty much like your head to stay on your shoulders.";
+			say "'Of course I'm fine! I'm a real man!' you groan despite how much your head groans.[paragraph break]Helen frowns, sizing you up, 'A man? Huh.' If she's trying to stay polite you don't know, but the questioning in her look is pretty obvious to you.[paragraph break]What the heck does that mean? You are about to protest, but the moment you notice the giant sword she carries, all curses are swallowed back down. Hell, you'd pretty much like your head to stay on your shoulders.";
 	else:[if helenIntroduced is true]
 		say "You scream and scream and scream until your next door neighbor (the ass who has loud sex and wakes you up every night) slams on your shared wall. 'Shut the fuck up!' your neighbor bangs on the wall.";
 
@@ -112,7 +117,7 @@ Understand "think about [text]" as pondering.
 Report pondering:
 	say "[no thoughts]".
 To say no thoughts:
-	say "You have no thoughts on that thing right now."
+	say "Maybe examine that thing first, and you'll get an idea?"
 
 
 [OBJECT: sword]
@@ -138,6 +143,7 @@ After quizzing Helen about the armor:
 	else:
 		say "'Did the princess give you those armors, too?' you ask.[paragraph break]Helen's eyes widen, 'That is Her Royal Highness for you. You shall not address my lady's name.'";
 
+
 [SUBJECTS]
 Identity is a subject. The thought is "Simply wondering about this woman's identity is no use. Maybe just ask her."
 Understand "herself", "her" as identity.
@@ -151,18 +157,41 @@ After quizzing Helen about why-she-is-here:
 	say "To be continued.";	
 	
 
-[-------- CURSE ROUTE --------]
-Cursing is an action applying to nothing. Understand "curse" as cursing.
-
-[hasCursed is a truth state that varies. hasCursed is false.]
-
-Check cursing:
+[-------- FIGHT ROUTE --------]
+Understand the command "fighting" as something new.
+Fighting is an action applying to nothing. Understand "fight" as fighting.
+Fighting it with is an action applying to two visible things.
+Understand "fight [someone] with [something]" as fighting it with. 
+Check fighting:
 	if helenIntroduced is false:
-		say "'What in the fuck is going on?! Why the fuck are you in my room?!' you curse and kick.";
-		
+		say "'What in the fuck is going on?! Why the fuck are you in my room?!' you curse and kick into the woman's abdomen.[paragraph break]But that proves to be a horrible idea because of the way she is covered by heavy armor from head to toe. Not only your head hurts, but your foot hurts, too.[paragraph break]For someone covered in so much weight, the woman is still faster than you, and she easily tackles you to the ground. You think you're getting killed, but is there something in the room that is also made of metal? Maybe you can fight her with it?";
+	else:
+		say "Helen is literally carrying a sword. And why are you trying to fight her now?";
 	
+Check fighting someone with something:
+	if the player carries nothing:
+		say "You aren't going to punch some armor with your bare hands, are you? There is nothing in your inventory!";
+	else if the noun is Helen:
+		if the second noun is the fire-extinguisher:
+			if the player is not carrying the fire-extinguisher:
+				say "You aren't carrying the fire extinguisher!";
+			else:
+				say "You slam the fire extinguisher into her metal chest plate, knocking her back a few steps. But just as the armor lady picks herself up, you notice the giant sword she carries, all curses are swallowed back down.[paragraph break]'I mean no harm, and hell, look at me! How in the heaven's name could I even harm you?' you gesticulate at your whole body, which is as skinny and frail as any other accountant's on Wall Street.[paragraph break]'All right. I may not attack an enemy who yields.' the armor lady says with a frown. Her armor still immaculate without any scratches.";
+		else if the second noun is the gun:
+			say "Shooting someone without a gun permit will get you into big trouble.";
+		else if the second noun is the sword:
+			say "You fail to steal her sword.";
+		else:
+			say "You can't possibly fight with that.";
+
+[Customize the error message: violence is the solution here]
+The block attacking rule response (A) is "Try 'fight' or 'fight someone with something' instead."
+[Customize the error message: player uses the pronoun "her" but inform gets confused]
+The parser error internal rule response (J) is "Try to be more specific. Maybe you're trying to fight the armor lady?"
+
 
 Part 2 - Testing (NOT FOR RELEASE)
 
 [Testing]
-Test me with "launch game / scream / yes / x sword / x armor / think about sword / think about armor / ask about sword / ask about armor / wonder about identity / ask about identity".
+Test screaming with "launch game / scream / yes / x sword / x armor / think about sword / think about armor / ask about sword / ask about armor / wonder about identity / ask about identity / ask Helen about why she is here".
+Test fighting with "launch game / fight/ fight her with PC / take fire extinguisher / fight her with fire extinguisher / ask about sword / ask about armor / ask about identity / ask Helen about why she is here".
