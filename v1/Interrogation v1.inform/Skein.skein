@@ -27,6 +27,7 @@ You can see a fire extinguisher here.
             <child nodeId="node-1117"></child>
             <child nodeId="node-1110"></child>
             <child nodeId="node-1405"></child>
+            <child nodeId="node-1602"></child>
             <child nodeId="node-1111"></child>
             <child nodeId="node-1346"></child>
             <child nodeId="node-1485"></child>
@@ -896,6 +897,37 @@ You have a gamer PC in front of you. Playing Assault on Saegaria has been your r
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-1602">
+        <command xml:space="preserve">take armor</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1603"></child>
+        </children>
+    </item>
+    <item nodeId="node-1603">
+        <command xml:space="preserve">launch game</command>
+        <result xml:space="preserve">You launch the game.
+
+But before you get to the point of continuing your most recent campaign, something in your computer flashes, blinding you with bright golden light. Then you realize you're not alone anymore. A woman crashes upon you.
+
+And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in full Medival armor when she lands on your head.
+
+You are about to scream in pain. You are about to fight or flight because this is New York City, and having a stranger appearing in your place out of a sudden is a bad sign.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1604"></child>
+        </children>
+    </item>
+    <item nodeId="node-1604">
+        <command xml:space="preserve">take armor</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-1405">
         <command xml:space="preserve">ponder about sword</command>
         <result xml:space="preserve">That's not a verb I recognise.
@@ -1001,12 +1033,80 @@ You are about to scream in pain. You are about to fight or flight because this i
             <child nodeId="node-1462"></child>
             <child nodeId="node-1118"></child>
             <child nodeId="node-1373"></child>
+            <child nodeId="node-1598"></child>
             <child nodeId="node-1120"></child>
         </children>
     </item>
     <item nodeId="node-1120">
         <command xml:space="preserve">talk to helen</command>
         <result xml:space="preserve">You say hello to Helen.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1598">
+        <command xml:space="preserve">take armor</command>
+        <result xml:space="preserve">You are too scared of the lady to steal things from her.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1599"></child>
+            <child nodeId="node-1607"></child>
+        </children>
+    </item>
+    <item nodeId="node-1607">
+        <command xml:space="preserve">x armor</command>
+        <result xml:space="preserve">Somehow, you think you've seen this armor before. 
+
+Shiny, silver, with the shinest possible metal--the kind of expensive stuff that no one should be able to afford--modern cosplayers and real medieval soldiers alike.
+
+You can't help but wonder about this woman's identity. But unless her dad is Elon Musk and bought her this ridiculous set of armor, you can't think of another explanation.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1608"></child>
+        </children>
+    </item>
+    <item nodeId="node-1608">
+        <command xml:space="preserve">ask about sword</command>
+        <result xml:space="preserve">(addressing Helen)
+There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1610"></child>
+        </children>
+    </item>
+    <item nodeId="node-1610">
+        <command xml:space="preserve">x helen</command>
+        <result xml:space="preserve">You see nothing special about Helen.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1599">
+        <command xml:space="preserve">take sword</command>
+        <result xml:space="preserve">You are too scared of the lady to steal things from her.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1600"></child>
+        </children>
+    </item>
+    <item nodeId="node-1600">
+        <command xml:space="preserve">ask about sword</command>
+        <result xml:space="preserve">(addressing Helen)
+There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1601"></child>
+        </children>
+    </item>
+    <item nodeId="node-1601">
+        <command xml:space="preserve">ask her about sword</command>
+        <result xml:space="preserve">(Helen about that)
+There is no reply.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1174,11 +1274,12 @@ You fight the mysterious armor lady with the fire extinguisher, and manage to kn
     <item nodeId="node-1583">
         <command xml:space="preserve">ask about sword</command>
         <result xml:space="preserve">(addressing Helen)
-There is no reply.
+Since you know nothing about medieval stuff and have absolutely no clue what to ask about, maybe examine that thing first just to avoid sounding like an idiot?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1584"></child>
+        <children><child nodeId="node-1617"></child>
+            <child nodeId="node-1584"></child>
         </children>
     </item>
     <item nodeId="node-1584">
@@ -1232,6 +1333,55 @@ To change, copy and pase the following line into your source:
 The block asking rule response (A) is "New response text."
 
 * Note: if this response was defined in your own source text, of course, it's easier to change it by searching for the text in your project and updating the original.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1617">
+        <command xml:space="preserve">scream</command>
+        <result xml:space="preserve">You scream because your head hurts like hell. Because Why the heck is this person in your room?
+
+"My sincerest apologies, my lady," the woman quickly picks her up and bows her head. "Are you injured?"
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1618"></child>
+        </children>
+    </item>
+    <item nodeId="node-1618">
+        <command xml:space="preserve">no</command>
+        <result xml:space="preserve">"Of course I'm fine! I'm a real man!" you groan despite how much your head groans.
+
+Helen frowns, sizing you up, "A man? Huh." If she's trying to stay polite you don't know, but the questioning in her look is pretty obvious to you.
+
+What the heck does that mean? You are about to protest, but the moment you notice the giant sword she carries, all curses are swallowed back down. Hell, you'd pretty much like your head to stay on your shoulders.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1619"></child>
+        </children>
+    </item>
+    <item nodeId="node-1619">
+        <command xml:space="preserve">ask about wrod</command>
+        <result xml:space="preserve">Since you know nothing about medieval stuff and have absolutely no clue what to ask about, maybe examine that thing first just to avoid sounding like an idiot?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1620"></child>
+        </children>
+    </item>
+    <item nodeId="node-1620">
+        <command xml:space="preserve">ask about sword</command>
+        <result xml:space="preserve">Since you know nothing about medieval stuff and have absolutely no clue what to ask about, maybe examine that thing first just to avoid sounding like an idiot?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1621"></child>
+        </children>
+    </item>
+    <item nodeId="node-1621">
+        <command xml:space="preserve">ask her about sword</command>
+        <result xml:space="preserve">(Helen about that)
+Since you know nothing about medieval stuff and have absolutely no clue what to ask about, maybe examine that thing first just to avoid sounding like an idiot?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

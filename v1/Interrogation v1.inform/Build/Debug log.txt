@@ -1,5 +1,5 @@
 Debugging log of inform7
-inform7 was called as: /Applications/Inform.app/Contents/MacOS/ni -internal /Applications/Inform.app/Contents/Resources/Internal -external /Users/ruochongwang/Library/Inform -project /Users/ruochongwang/Desktop/MFA/Fall2023/Narrative Studio/Projects/Assignment 2 Interrogation/Assignment2Repository/v1/Interrogation v1.inform -format=ulx
+inform7 was called as: /Applications/Inform.app/Contents/MacOS/ni -internal /Applications/Inform.app/Contents/Resources/Internal -external /Users/ruochongwang/Library/Inform -project /Users/ruochongwang/Desktop/MFA/Fall2023/Narrative Studio/Projects/Assignment 2 Interrogation/Assignment2Repository/v1/Interrogation v1.inform -format=ulx -release
 Reading further switches from file: <no file>
 Completed expert settings file
 Using Inform kit 'BasicInformKit' (priority 0).
@@ -7,7 +7,7 @@ Using Inform kit 'EnglishLanguageKit' (priority 1).
 Using Inform kit 'WorldModelKit' (priority 2).
 Using Inform kit 'CommandParserKit' (priority 3).
 756 Preform nonterminals read from /Applications/Inform.app/Contents/Resources/Internal/Languages/English/Syntax.preform
-I've now read your source text, which is 2271 words long.
+I've now read your source text, which is 2387 words long.
 Included: core, naming, instance counting, interactive fiction, spatial model, backdrops, bibliographic data, chronology, devices, mapping, persons, player, regions, scenes, scoring, timed rules, times of day, actions, going, command, showme, multimedia, figures, sounds, glulx external files
 Excluded: 
 I've also read Basic Inform by Graham Nelson, which is 7691 words long.
@@ -46,14 +46,14 @@ Loading kinds definitions from /Applications/Inform.app/Contents/Resources/Inter
 Phase III ... Pre-pass through major nodes
 -----------------------------------------------------
 
-.... MajorNodes__pre_pass() took 22cs
+.... MajorNodes__pre_pass() took 21cs
 
 
 -----------------------------------------------------
 Phase IV ... First pass through major nodes
 -----------------------------------------------------
 
-.... MajorNodes__pass_1() took 16cs
+.... MajorNodes__pass_1() took 15cs
 
 
 -----------------------------------------------------
@@ -92,7 +92,7 @@ Phase IX ... Augment model world
 Phase X ... Phrases and rules
 -----------------------------------------------------
 
-.... ImperativeDefinitions__assess_all() took 10cs
+.... ImperativeDefinitions__assess_all() took 8cs
 
 
 -----------------------------------------------------
@@ -121,9 +121,9 @@ Phase XII ... Generating inter (2)
 Phase XIII ... Generating inter (3)
 -----------------------------------------------------
 
-.... Sequence__undertake_queued_tasks() took 210cs
+.... Sequence__undertake_queued_tasks() took 190cs
 .... Sequence__undertake_queued_tasks() took 1cs
-.... RTPhrasebook__compile_entries() took 11cs
+.... RTPhrasebook__compile_entries() took 10cs
 
 
 -----------------------------------------------------
@@ -144,7 +144,7 @@ Phase XIV ... Generating inter (4)
 Phase XV ... Generating inter (5)
 -----------------------------------------------------
 
-.... Sequence__undertake_queued_tasks() took 2cs
+.... Sequence__undertake_queued_tasks() took 3cs
 Providing for a total heap of 8192, given requirement of 8192
 .... Sequence__lint_inter() took 4cs
 
@@ -159,7 +159,7 @@ Phase XVI ... Bibliographic work
 Phase XVII ... Complete
 -----------------------------------------------------
 
-Compile CPU time: 300 centiseconds
+Compile CPU time: 277 centiseconds
 
 
 ==== Phase XVII.1 ... step 1/15: read <- *memory ====
@@ -204,12 +204,12 @@ Compile CPU time: 300 centiseconds
 
 ==== Phase XVII.11 ... step 11/15: eliminate-redundant-labels ====
 
-1893 redundant label(s) removed
+1873 redundant label(s) removed
 
 
 ==== Phase XVII.12 ... step 12/15: eliminate-redundant-operations ====
 
-539 redundant operation(s) removed
+537 redundant operation(s) removed
 
 
 ==== Phase XVII.13 ... step 13/15: optionally-generate text ->  ====
@@ -930,8 +930,8 @@ HTML tag stack:
     2. html (opened at line 236 of '/Users/tobynelson/Code/Inform Core/inweb/foundation-module/Chapter 5/HTML.w')
 
 
-Back end elapsed time: 211cs
-Total of 126 files written as streams.
+Back end elapsed time: 206cs
+Total of 122 files written as streams.
 Vacant escapes: %: ..CDE.GH..K.M.O.QR.TU...YZab..e..h.jklm.o.qr......yz0123456789
 Vacant escapes: $: .....F...J..........UVW.....................s.u..x.........789
 

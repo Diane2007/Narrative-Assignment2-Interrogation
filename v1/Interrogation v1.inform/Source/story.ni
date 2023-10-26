@@ -29,8 +29,18 @@ The Apartment is a room. The description of the Apartment is "A shitty studio ap
 The Hidden Room is a room. The description of the Hidden Room is "Why are you seeing this? Diane made a boo-boo."
 
 [NPC]
-Helen is an undescribed woman in the Hidden Room, carrying a sword and an armor. Understand "woman", "her", "armor lady" as Helen.
+Helen is an undescribed woman in the Hidden Room.
+The description of Helen is "She is wearing some really fancy armor and sword."
+
+Understand "woman", "her", "armor lady" as Helen.
 A person can be annoyed or calm. Helen is calm.
+
+[just to prevent players from taking the sword and armor]
+Instead of taking the sword:
+	say "You are too scared of the lady to steal things from her.";
+	stop the action.
+Instead of taking the armor:
+	say "You are too scared of the lady to steal things from her.";
 
 [VERB: launch]
 Launching is an action applying to one visible thing. Understand "play [something]", "start [something]" as launching.
@@ -120,43 +130,6 @@ To say no thoughts:
 	say "Maybe examine that thing first, and you'll get an idea?"
 
 
-[OBJECT: sword]
-The description of the sword is "The sword, though perfectly sheathed into the golden, well, sheath, proudly displays a family crest that you are too familiar with. The crest of House Saegaria, the very royal family in Assault on Saegaria that you are trying to defeat."
-
-The thought of the sword is "Is it even legal to carry a sword around in New York?"
-
-After quizzing Helen about the sword:
-	if helenIntroduced is false:
-		say "'Why are you even carrying a sword?' you ask, still fearing for your head.[paragraph break]Helen gives you the look like you're stupid, 'Because I am a knight, and I am not taking off the sword my lady bestowed me when I was knighted.'[if helenIntroduced is false][line break]Maybe this woman is an actress because that is so [italic type]method[roman type].";
-	else:
-		say "'That is some fancy sword,' you say. 'May I try?'[paragraph break]Helen sizes you up again and shakes her head, 'I am afraid if I allowed you to try, you'd tear your arm and injure your shoulders. This is very heavy.'";
-
-
-[OBJECT: armor]
-The description of the armor is "Somehow, you think you've seen this armor before. [paragraph break]Shiny, silver, with the shinest possible metal--the kind of [italic type]expensive[roman type] stuff that no one should be able to afford--modern cosplayers and real medieval soldiers alike.[paragraph break]You can't help but wonder about this woman's identity. But unless her dad is Elon Musk and bought her this ridiculous set of armor, you can't think of another explanation."
-
-The thought of the armor is "Back in the old days, only nobles could afford such an expensive set of armors. But nobles wouldn't let their daughters fight at all... [if helenIntroduced is false]And if somebody went all the way to purchase such a flashy set of armors just for [italic type]cosplay[roman type], that is seriously impressive. [end if]Maybe you should ask Helen about the armors."
-
-After quizzing Helen about the armor:
-	if helenIntroduced is false:
-		say "'Did you just get out of a cosplay event? That is some impressive armor. Did you get them from Etsy?' you tell her. If there is one in town right now, you definitely are going.[paragraph break]'Pardon me, but I do not understand what a 'cosplay' is, nor do I know about 'Ezzie'. Is that perhaps the title of a lord? These armors belong to the royal family of Saegaria and the Order of the Knights of Sun.'[paragraph break]She's either too into the whole game, or she is nuts.";
-	else:
-		say "'Did the princess give you those armors, too?' you ask.[paragraph break]Helen's eyes widen, 'That is Her Royal Highness for you. You shall not address my lady's name.'";
-
-
-[SUBJECTS]
-Identity is a subject. The thought is "Simply wondering about this woman's identity is no use. Maybe just ask her."
-Understand "herself", "her" as identity.
-After quizzing Helen about identity:
-	say "'Who are you? Why are you in my room?' You grumble.[paragraph break]'Oh sweet goddess, where are my manners?' the woman bows again. 'Helen of Saegaria, champion and personal knight to Her Royal Highness, Princess Josephine. It is a pleasure to make you acquaintance.'[paragraph break]What in the-- You blink, and blink again. The princess['] knight, your future final boss, is a woman.[paragraph break]But how did she get here?";
-	now helenIntroduced is true;
-
-Why-she-is-here is a subject. The thought is "You think you're going mad, and perhaps it is better to ask Helen."
-Understand "why she is here", "why is she here" as why-she-is-here.
-After quizzing Helen about why-she-is-here:
-	say "To be continued.";	
-	
-
 [-------- FIGHT ROUTE --------]
 Understand the command "fighting" as something new.
 Fighting is an action applying to nothing. Understand "fight" as fighting.
@@ -188,6 +161,51 @@ Check fighting someone with something:
 The block attacking rule response (A) is "Try 'fight' or 'fight someone with something' instead."
 [Customize the error message: player uses the pronoun "her" but inform gets confused]
 The parser error internal rule response (J) is "Try to be more specific. Maybe you're trying to fight the armor lady?"
+
+[-------- bring two routes together --------]
+
+[OBJECT: sword]
+The sword is a device. Helen holds the sword.
+The description of the sword is "The sword, though perfectly sheathed into the golden, well, sheath, proudly displays a family crest that you are too familiar with. The crest of House Saegaria, the very royal family in Assault on Saegaria that you are trying to defeat."
+
+The thought of the sword is "Is it even legal to carry a sword around in New York?"
+
+After quizzing Helen about the sword:
+	if helenIntroduced is false:
+		say "'Why are you even carrying a sword?' you ask, still fearing for your head.[paragraph break]Helen gives you the look like you're stupid, 'Because I am a knight, and I am not taking off the sword my lady bestowed me when I was knighted.'[if helenIntroduced is false][line break]Maybe this woman is an actress because that is so [italic type]method[roman type].";
+	else:
+		say "'That is some fancy sword,' you say. 'May I try?'[paragraph break]Helen sizes you up again and shakes her head, 'I am afraid if I allowed you to try, you'd tear your arm and injure your shoulders. This is very heavy.'";
+
+
+[OBJECT: armor]
+The armor is a kind of thing. The armor is always wearable. Helen wears the armor.
+The description of the armor is "Somehow, you think you've seen this armor before. [paragraph break]Shiny, silver, with the shinest possible metal--the kind of [italic type]expensive[roman type] stuff that no one should be able to afford--modern cosplayers and real medieval soldiers alike.[paragraph break]You can't help but wonder about this woman's identity. But unless her dad is Elon Musk and bought her this ridiculous set of armor, you can't think of another explanation."
+
+The thought of the armor is "Back in the old days, only nobles could afford such an expensive set of armors. But nobles wouldn't let their daughters fight at all... [if helenIntroduced is false]And if somebody went all the way to purchase such a flashy set of armors just for [italic type]cosplay[roman type], that is seriously impressive. [end if]Maybe you should ask Helen about the armors."
+
+After quizzing Helen about the armor:
+	if helenIntroduced is false:
+		say "'Did you just get out of a cosplay event? That is some impressive armor. Did you get them from Etsy?' you tell her. If there is one in town right now, you definitely are going.[paragraph break]'Pardon me, but I do not understand what a 'cosplay' is, nor do I know about 'Ezzie'. Is that perhaps the title of a lord? These armors belong to the royal family of Saegaria and the Order of the Knights of Sun.'[paragraph break]She's either too into the whole game, or she is nuts.";
+	else:
+		say "'Did the princess give you those armors, too?' you ask.[paragraph break]Helen's eyes widen, 'That is Her Royal Highness for you. You shall not address my lady's name.'";
+
+[Couldn't figure out why player cannot ask about sword/armor before examining them]
+[so make the bug a feature then]
+The block asking rule response (A) is "Since you know nothing about medieval stuff and have absolutely no clue what to ask about, maybe examine that thing first just to avoid sounding like an idiot? And be specific about who you are addressing to?"
+
+[SUBJECTS]
+Identity is a subject. The thought is "Simply wondering about this woman's identity is no use. Maybe just ask her."
+Understand "herself", "her" as identity.
+After quizzing Helen about identity:
+	say "'Who are you? Why are you in my room?' You grumble.[paragraph break]'Oh sweet goddess, where are my manners?' the woman bows again. 'Helen of Saegaria, champion and personal knight to Her Royal Highness, Princess Josephine. It is a pleasure to make you acquaintance.'[paragraph break]What in the-- You blink, and blink again. The princess['] knight, your future final boss, is a woman.[paragraph break]But how did she get here?";
+	now helenIntroduced is true;
+
+Why-she-is-here is a subject. The thought is "You think you're going mad, and perhaps it is better to ask Helen."
+Understand "why she is here", "why is she here" as why-she-is-here.
+After quizzing Helen about why-she-is-here:
+	say "To be continued.";	
+	
+
 
 
 Part 2 - Testing (NOT FOR RELEASE)
