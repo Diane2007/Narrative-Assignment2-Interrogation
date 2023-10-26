@@ -23,7 +23,7 @@ Section 1 - Set up
 [The Location: Apartment]
 The Apartment is a room. The description of the Apartment is "A shitty studio apartment, but it's a cozy kind of shitty--tiny but full of warmth, old but full of character. You like it because it's [italic type]your apartment[roman type].
 [paragraph break][if unvisited]It's a good thing you still have a place to return to after a day of dull work typing in numbers in an excel sheet. You're glad that you took accounting in college, because though it sucks, it now provides a roof over your head, food to fill your belly, and most importantly, a [italic type]beefy laptop[roman type] that allows you to play the latest game, [italic type]Assault on Saegaria[roman type].[paragraph break]Playing that game has been your routine, and you don't plan to break it tonight.
-[otherwise]You have a gamer PC in front of you. Playing Assault on Saegaria has been your routine, and you don't plan to break it tonight."
+[otherwise]You have a gamer PC in front of you. Playing Assault on Saegaria has been your routine, and you don't plan to break it tonight.[end if][paragraph break][if gameLaunched is true]The game is running.[otherwise]You haven't launched the game yet.[end if]"
 
 [The room we hide Helen in: Hidden Room]
 The Hidden Room is a room. The description of the Hidden Room is "Why are you seeing this? Diane made a boo-boo."
@@ -32,7 +32,7 @@ The Hidden Room is a room. The description of the Hidden Room is "Why are you se
 Helen is an undescribed woman in the Hidden Room.
 The description of Helen is "She is wearing some really fancy armor and sword."
 
-Understand "woman", "her", "armor lady" as Helen.
+Understand "woman", "her", "armor lady", "lady" as Helen.
 A person can be annoyed or calm. Helen is calm.
 
 [just to prevent players from taking the sword and armor]
@@ -51,7 +51,7 @@ Check launching:
 	otherwise if noun is a person:
 		say "We are in a civilized society (though chopping people down is commonplace in video games), so maybe try not to launch somebody like a rocket.";
 	otherwise if noun is game and gameLaunched is false:
-		say "You launch the game.[paragraph break]But before you get to the point of continuing your most recent campaign, something in your computer flashes, blinding you with bright golden light. Then you realize you're not alone anymore. A woman crashes upon you.[paragraph break]And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in [italic type]full Medival armor[roman type] when she lands on your head.[paragraph break]You are about to scream in pain. You are about to fight or flight because this is New York City, and having a stranger appearing in your place out of a sudden is a bad sign.";
+		say "You launch the game.[paragraph break]But before you get to the point of continuing your most recent campaign, something in your computer flashes, blinding you with bright golden light. Then you realize you're not alone anymore. A woman crashes upon you.[paragraph break]And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in [italic type]full medival armor[roman type] when she lands on your head.[paragraph break]You are about to scream in pain. You are about to fight or flight because this is New York City, and having a stranger appearing in your place out of a sudden is a bad sign.";
 		now gameLaunched is true;
 		Move Helen to the Apartment;
 	otherwise if noun is game and gameLaunched is true:
@@ -137,7 +137,7 @@ Fighting it with is an action applying to two visible things.
 Understand "fight [someone] with [something]" as fighting it with. 
 Check fighting:
 	if helenIntroduced is false:
-		say "'What in the fuck is going on?! Why the fuck are you in my room?!' you curse and kick into the woman's abdomen.[paragraph break]But that proves to be a horrible idea because of the way she is covered by heavy armor from head to toe. Not only your head hurts, but your foot hurts, too.[paragraph break]For someone covered in so much weight, the woman is still faster than you, and she easily tackles you to the ground. You think you're getting killed, but is there something in the room that is also made of metal? Maybe you can fight her with it?";
+		say "'What in the world is going on?! Why the fuck are you in my room?!' you curse and kick into the woman's abdomen.[paragraph break]But that proves to be a horrible idea because of the way she is covered by heavy armor from head to toe. Not only your head hurts, but your foot hurts, too.[paragraph break]For someone covered in so much weight, the woman is still faster than you, and she easily tackles you to the ground. You think you're getting killed, but is there something in the room that is also made of metal? Maybe you can fight her with it?";
 	else:
 		say "Helen is literally carrying a sword. And why are you trying to fight her now?";
 	
@@ -165,14 +165,14 @@ The parser error internal rule response (J) is "Try to be more specific. Maybe y
 [-------- bring two routes together --------]
 
 [OBJECT: sword]
-The sword is a device. Helen holds the sword.
+The sword is an object. Helen holds the sword.
 The description of the sword is "The sword, though perfectly sheathed into the golden, well, sheath, proudly displays a family crest that you are too familiar with. The crest of House Saegaria, the very royal family in Assault on Saegaria that you are trying to defeat."
 
 The thought of the sword is "Is it even legal to carry a sword around in New York?"
 
 After quizzing Helen about the sword:
 	if helenIntroduced is false:
-		say "'Why are you even carrying a sword?' you ask, still fearing for your head.[paragraph break]Helen gives you the look like you're stupid, 'Because I am a knight, and I am not taking off the sword my lady bestowed me when I was knighted.'[if helenIntroduced is false][line break]Maybe this woman is an actress because that is so [italic type]method[roman type].";
+		say "'Why are you even carrying a sword?' you ask, still fearing for your head.[paragraph break]The armor lady gives you the look like you're stupid, 'Because I am a knight, and I am not taking off the sword my lady bestowed me when I was knighted.'[if helenIntroduced is false][line break]Maybe this woman is an actress because that is so [italic type]method[roman type].";
 	else:
 		say "'That is some fancy sword,' you say. 'May I try?'[paragraph break]Helen sizes you up again and shakes her head, 'I am afraid if I allowed you to try, you'd tear your arm and injure your shoulders. This is very heavy.'";
 
@@ -185,9 +185,9 @@ The thought of the armor is "Back in the old days, only nobles could afford such
 
 After quizzing Helen about the armor:
 	if helenIntroduced is false:
-		say "'Did you just get out of a cosplay event? That is some impressive armor. Did you get them from Etsy?' you tell her. If there is one in town right now, you definitely are going.[paragraph break]'Pardon me, but I do not understand what a 'cosplay' is, nor do I know about 'Ezzie'. Is that perhaps the title of a lord? These armors belong to the royal family of Saegaria and the Order of the Knights of Sun.'[paragraph break]She's either too into the whole game, or she is nuts.";
+		say "'Did you just get out of a cosplay event? That is some impressive armor. Did you get them from Etsy?' you tell her. If there is one in town right now, you definitely are going.[paragraph break]'Pardon me, but I do not understand what a 'cosplay' is, nor do I know about 'Ezzie'. Is that perhaps the title of a lord? These armors belong to the royal family of Saegaria and the Order of the Knights of Sun.'[paragraph break]She's either too into the whole cosplay thing, or she is totally nuts.";
 	else:
-		say "'Did the princess give you those armors, too?' you ask.[paragraph break]Helen's eyes widen, 'That is Her Royal Highness for you. You shall not address my lady's name.'";
+		say "'Did the princess give you those armors, too?' you ask.[paragraph break]Helen's eyes widen, 'That is Her Royal Highness for you. You shall not address my lady by her name.'";
 
 [Couldn't figure out why player cannot ask about sword/armor before examining them]
 [so make the bug a feature then]
