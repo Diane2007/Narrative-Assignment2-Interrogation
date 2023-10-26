@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 
-<Skein rootNode="node-1007">
+<Skein rootNode="node-1098">
     <generator>Inform Mac Client (Inform version 1.82/6.41/10.1.2)</generator>
-    <item nodeId="node-1007">
+    <item nodeId="node-1098">
         <command xml:space="preserve">Interrogation v1</command>
         <result xml:space="preserve">
 
@@ -10,23 +10,244 @@
 
 Lady Knight
 An Interactive Fiction by Diane Wang
-Release 1 / Serial number 231018 / Inform 7 v10.1.2 / D
+Release 1 / Serial number 231025 / Inform 7 v10.1.2 / D
 
-The Game Center
-Rows of crappy chairs with no back support. Shitty in general, but it's your favorite shitty place.
+Apartment
+A shitty studio apartment, but it's a cozy kind of shitty--tiny but full of warmth, old but full of character. You like it because it's your apartment. 
 
-You've been staring at your laptop screen for hours, trying to make a game. Your painful lower back hates you, and so does Unity.
+It's a good thing you still have a place to return to after a day of dull work typing in numbers in an excel sheet. You're glad that you took accounting in college, because though it sucks, it now provides a roof over your head, food to fill your belly, and most importantly, a beefy laptop that allows you to play the latest game, Assault on Saegaria.
 
-The smart watch on your wrist buzzes.
+Playing that game has been your routine, and you don't plan to break it tonight. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1446"></child>
-            <child nodeId="node-1443"></child>
+        <children><child nodeId="node-1117"></child>
+            <child nodeId="node-1110"></child>
+            <child nodeId="node-1405"></child>
+            <child nodeId="node-1111"></child>
+            <child nodeId="node-1346"></child>
+            <child nodeId="node-1355"></child>
+            <child nodeId="node-1116"></child>
+            <child nodeId="node-1102"></child>
+            <child nodeId="node-1099"></child>
         </children>
     </item>
-    <item nodeId="node-1443">
+    <item nodeId="node-1099">
         <command xml:space="preserve">x watch</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1100"></child>
+        </children>
+    </item>
+    <item nodeId="node-1100">
+        <command xml:space="preserve">inventory</command>
+        <result xml:space="preserve">You are carrying nothing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1101"></child>
+        </children>
+    </item>
+    <item nodeId="node-1101">
+        <command xml:space="preserve">clothing</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1102">
+        <command xml:space="preserve">x self</command>
+        <result xml:space="preserve">You are wearing a watch.
+
+As good-looking as ever.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1116">
+        <command xml:space="preserve">x game</command>
+        <result xml:space="preserve">Praised as Game of the Year. AAA production, real cool stuff with a bulky white dude with brown hair as the protagonist. Your goal is to take the capital city of Saegaria and snatch the princess from the castle. The final battle with princess' personal knight is considered the toughest boss fight by almost all gamers on the internet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1355">
+        <command xml:space="preserve">test me</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] launch game
+You launch the game.
+
+But before you get to the point of continuing your most recent campaign, something in your computer flashes, blinding you with bright golden light. Then you realize you're not alone anymore. A woman crashes upon you.
+
+And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in full Medival armor when she lands on your head.
+
+You are about to scream in pain. You are about to curse because what in the holy macaroni is going on?
+
+&gt;[2] scream
+You scream because your head hurts like hell. Because Why the heck is this person in your room?
+
+"My sincerest apologies, my lady," the woman quickly picks her up and bows her head. "Are you injured?"
+[3] yes
+"Just gimme a sec. My head just... ugh, hurts really bad," you groan. "And mind you, I am a man.
+
+Helen frowns, sizing you up, "A man? Huh." If she's trying to stay polite you don't know, but the questioning in her look is pretty obvious to you.
+
+What the heck does that mean? You are about to protest, but the moment you notices the giant sword she carries, all curses are swallowed back down. Hell, you'd pretty much like your head to stay on your shoulders.
+
+&gt;[4] x sword
+The sword, though perfectly sheathed into the golden, well, sheath, proudly displays a family crest that you are too familiar with. The crest of House Saegaria, the very royal family in Assault on Saegaria that you are trying to defeat.
+
+&gt;[5] x armor
+Somehow, you think you've seen this armor before. 
+
+Shiny, silver, with the shinest possible metal--the kind of expensive stuff that no one should be able to afford--modern cosplayers and real medieval soldiers alike.
+
+You can't help but wonder about this woman's identity. But unless her dad is Elon Musk and bought her this ridiculous set of armor, you can't think of another explanation.
+
+&gt;[6] think about sword
+Is it even legal to carry a sword around in New York?
+
+&gt;[7] think about armor
+Back in the old days, only nobles could afford such an expensive set of armors. But nobles wouldn't let their daughters fight at all... And if somebody went all the way to purchase such a flashy set of armors just for cosplay, that is seriously impressive. Maybe you should ask Helen about the armors.
+
+&gt;[8] ask about sword
+(addressing Helen)
+"Why are you even carrying a sword?" you ask, still fearing for your head.
+
+Helen gives you the look like you're stupid, "Because I am a knight, and I am not taking off the sword my lady bestowed me when I was knighted."
+
+
+Maybe this woman is an actress because that is so method.
+
+&gt;[9] ask about armor
+"Did you just get out of a cosplay event? That is some impressive armor. Did you get them from Etsy?" you tell her. If there is one in town right now, you definitely are going.
+
+"Pardon me, but I do not understand what a "cosplay" is, nor do I know about "Ezzie". Is that perhaps the title of a lord? These armors belong to the royal family of Saegaria and the Order of the Knights of Sun."
+
+She's either too into the whole game, or she is nuts.
+
+&gt;[10] wonder about identity
+Simply wondering about this woman's identity is no use. Maybe just ask her.
+
+&gt;[11] ask about identity
+"Who are you? Why are you in my room?" You grumble.
+
+"Oh sweet goddess, where are my manners?" the woman bows again. "Helen of Saegaria, champion and personal knight to Her Royal Highness, Princess Josephine. It is a pleasure to make you acquaintance."
+
+What in the-- You blink, and blink again. The princess' knight, your future final boss, is a woman.
+
+But how did she get here?
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] launch game
+[2] scream
+[3] yes
+[4] x sword
+[5] x armor
+[6] think about sword
+[7] think about armor
+[8] ask about sword
+[9] ask about armor
+[10] wonder about identity
+[11] ask about identity
+</commentary>
+        <children><child nodeId="node-1443"></child>
+            <child nodeId="node-1420"></child>
+            <child nodeId="node-1371"></child>
+            <child nodeId="node-1384"></child>
+            <child nodeId="node-1391"></child>
+        </children>
+    </item>
+    <item nodeId="node-1391">
+        <command xml:space="preserve">x sword</command>
+        <result xml:space="preserve">sword description.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1392"></child>
+        </children>
+    </item>
+    <item nodeId="node-1392">
+        <command xml:space="preserve">x armor</command>
+        <result xml:space="preserve">armor description.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1384">
+        <command xml:space="preserve">x armor</command>
+        <result xml:space="preserve">Somehow, you think you've seen this armor before. 
+
+Shiny, silver, with the shinest possible metal--the kind of expensive stuff that no one should be able to afford--modern cosplayers and real medieval soldiers alike.
+
+You can't help but wonder about this woman's identity. But unless her dad is Elon Musk and bought her this ridiculous set of armor, you can't think of another explanation.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1428"></child>
+            <child nodeId="node-1385"></child>
+        </children>
+    </item>
+    <item nodeId="node-1385">
+        <command xml:space="preserve">x helen</command>
+        <result xml:space="preserve">You see nothing special about Helen.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1386"></child>
+        </children>
+    </item>
+    <item nodeId="node-1386">
+        <command xml:space="preserve">x sword</command>
+        <result xml:space="preserve">You see nothing special about the sword.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1428">
+        <command xml:space="preserve">wonder about amor</command>
+        <result xml:space="preserve">That noun did not make sense in this context.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1429"></child>
+        </children>
+    </item>
+    <item nodeId="node-1429">
+        <command xml:space="preserve">wonder about armor</command>
+        <result xml:space="preserve">Back in the old days, only nobles could afford such an expensive set of armors. But nobles wouldn't let their daughters fight at all... Maybe you should ask Helen about the armors.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1430"></child>
+        </children>
+    </item>
+    <item nodeId="node-1430">
+        <command xml:space="preserve">ask about armor</command>
+        <result xml:space="preserve">just about the princess
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1371">
+        <command xml:space="preserve">no</command>
+        <result xml:space="preserve">(addressing Helen)
+That was a rhetorical question.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1420">
+        <command xml:space="preserve">ask woman about identity</command>
+        <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1443">
+        <command xml:space="preserve">ask why she is here</command>
         <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
@@ -35,26 +256,244 @@ The smart watch on your wrist buzzes.
         </children>
     </item>
     <item nodeId="node-1444">
-        <command xml:space="preserve">inventory</command>
-        <result xml:space="preserve">You are carrying nothing.
+        <command xml:space="preserve">ask Helen about why she is here</command>
+        <result xml:space="preserve">To be continued.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1445"></child>
+    </item>
+    <item nodeId="node-1346">
+        <command xml:space="preserve">talk to helen</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1347"></child>
         </children>
     </item>
-    <item nodeId="node-1445">
-        <command xml:space="preserve">clothing</command>
+    <item nodeId="node-1347">
+        <command xml:space="preserve">launch game</command>
+        <result xml:space="preserve">You launch the game.
+
+But before you get to the point of continuing your most recent campaign, something in your computer flashes, blinding you with bright golden light. Then you realize you're not alone anymore. A woman crashes upon you.
+
+And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in full Medival armor when she lands on your head.
+
+You are about to scream in pain. You are about to curse because what in the holy macaroni is going on?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1348"></child>
+        </children>
+    </item>
+    <item nodeId="node-1348">
+        <command xml:space="preserve">talk to helen</command>
+        <result xml:space="preserve">You say hello to Helen.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1111">
+        <command xml:space="preserve">talk to Helen</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1112"></child>
+        </children>
+    </item>
+    <item nodeId="node-1112">
+        <command xml:space="preserve">launch game</command>
+        <result xml:space="preserve">You launch the game.
+
+But before you get to the point of continuing your most recent campaign, something in your computer flashes, blinding you with bright golden light. Then you realize you're not alone anymore. A woman crashes upon you.
+
+And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in full Medival armor when she lands on your head.
+
+You are about to scream in pain. You are about to curse because what in the holy macaroni is going on?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1113"></child>
+        </children>
+    </item>
+    <item nodeId="node-1113">
+        <command xml:space="preserve">talk to helen</command>
+        <result xml:space="preserve">You say hello to Helen.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1114"></child>
+        </children>
+    </item>
+    <item nodeId="node-1114">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Apartment
+A shitty studio apartment, but it's a cozy kind of shitty--tiny but full of warmth, old but full of character. You like it because it's your apartment. 
+
+You have a gamer PC in front of you. Playing Assault on Saegaria has been your routine, and you don't plan to break it tonight.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1115"></child>
+        </children>
+    </item>
+    <item nodeId="node-1115">
+        <command xml:space="preserve">x game</command>
+        <result xml:space="preserve">Praised as Game of the Year. AAA production, real cool stuff with a bulky white dude with brown hair as the protagonist.Your goal is to take the capital city of Saegaria and snatch the princess from the castle. The final battle with princess" personal knight is considered the toughest boss fight by almost all gamers on the internet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1405">
+        <command xml:space="preserve">ponder about sword</command>
         <result xml:space="preserve">That's not a verb I recognise.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1406"></child>
+        </children>
     </item>
-    <item nodeId="node-1446">
-        <command xml:space="preserve">x self</command>
-        <result xml:space="preserve">You are wearing a watch.
+    <item nodeId="node-1406">
+        <command xml:space="preserve">think about sword</command>
+        <result xml:space="preserve">You have no thoughts on that subject right now.
 
-As good-looking as ever.
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1407"></child>
+        </children>
+    </item>
+    <item nodeId="node-1407">
+        <command xml:space="preserve">test me</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] launch game
+You launch the game.
+
+But before you get to the point of continuing your most recent campaign, something in your computer flashes, blinding you with bright golden light. Then you realize you're not alone anymore. A woman crashes upon you.
+
+And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in full Medival armor when she lands on your head.
+
+You are about to scream in pain. You are about to curse because what in the holy macaroni is going on?
+
+&gt;[2] scream
+You scream because your head hurts like hell. Because Why the heck is this person in your room?
+
+"My sincerest apologies, my lady," the woman quickly picks her up and bows her head. "Are you injured?"
+[3] yes
+"Just gimme a sec. My head just... ugh, hurts really bad," you groan. "And mind you, I am a man.
+
+Helen frowns, sizing you up, "A man? Huh." If she's trying to stay polite you don't know, but the questioning in her look is pretty obvious to you.
+
+What the heck does that mean? You are about to protest, but the moment you notices the giant sword she carries, all curses are swallowed back down. Hell, you'd pretty much like your head to stay on your shoulders.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] launch game
+[2] scream
+[3] yes
+</commentary>
+        <children><child nodeId="node-1411"></child>
+        </children>
+    </item>
+    <item nodeId="node-1411">
+        <command xml:space="preserve">think about sowrd</command>
+        <result xml:space="preserve">You have no thoughts on that subject right now.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1412"></child>
+        </children>
+    </item>
+    <item nodeId="node-1412">
+        <command xml:space="preserve">x sword</command>
+        <result xml:space="preserve">The sword, though perfectly sheathed into the golden, well, sheath, proudly displays a family crest that you are too familiar with. The crest of House Saegaria, the very royal family in Assault on Saegaria that you are trying to defeat.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1413"></child>
+        </children>
+    </item>
+    <item nodeId="node-1413">
+        <command xml:space="preserve">think about sword</command>
+        <result xml:space="preserve">
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1110">
+        <command xml:space="preserve">play game</command>
+        <result xml:space="preserve">You launch the game.
+
+But before you get to the point of continuing your most recent campaign, something in your computer flashes, blinding you with bright golden light. Then you realize you're not alone anymore. A woman crashes upon you.
+
+And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in full Medival armor.
+
+You are about to scream in pain. You are about to curse because what in the holy macaroni is going on?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1117">
+        <command xml:space="preserve">launch game</command>
+        <result xml:space="preserve">You launch the game.
+
+But before you get to the point of continuing your most recent campaign, something in your computer flashes, blinding you with bright golden light. Then you realize you're not alone anymore. A woman crashes upon you.
+
+And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in full Medival armor when she lands on your head.
+
+You are about to scream in pain. You are about to curse because what in the holy macaroni is going on?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1118"></child>
+            <child nodeId="node-1373"></child>
+            <child nodeId="node-1120"></child>
+        </children>
+    </item>
+    <item nodeId="node-1120">
+        <command xml:space="preserve">talk to helen</command>
+        <result xml:space="preserve">You say hello to Helen.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1373">
+        <command xml:space="preserve">scream</command>
+        <result xml:space="preserve">You scream because your head hurts like hell. Because Why the heck is this person in your room?
+
+"My sincerest apologies, my lady," the woman quickly picks her up and bows her head. "Are you injured?"
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1374"></child>
+        </children>
+    </item>
+    <item nodeId="node-1374">
+        <command xml:space="preserve">no</command>
+        <result xml:space="preserve">"Of course I'm fine! I'm a real man!" you groan despite how much your head groans.
+
+Helen frowns, sizing you up, "A man? Huh." If she's trying to stay polite you don't know, but the questioning in her look is pretty obvious to you.
+
+What the heck does that mean? You are about to protest, but the moment you notices the giant sword she carries, all curses are swallowed back down. Hell, you'd pretty much like your head to stay on your shoulders.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1375"></child>
+        </children>
+    </item>
+    <item nodeId="node-1375">
+        <command xml:space="preserve">scream</command>
+        <result xml:space="preserve">You scream because your head hurts like hell. Because Why the heck is this person in your room?
+
+"My sincerest apologies, my lady," the woman quickly picks her up and bows her head. "Are you injured?"
+</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1118">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Apartment
+A shitty studio apartment, but it's a cozy kind of shitty--tiny but full of warmth, old but full of character. You like it because it's your apartment. 
+
+You have a gamer PC in front of you. Playing Assault on Saegaria has been your routine, and you don't plan to break it tonight.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

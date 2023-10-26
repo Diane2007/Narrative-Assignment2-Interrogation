@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 
-<Skein rootNode="node-1042">
+<Skein rootNode="node-1043">
     <generator>Inform Mac Client (Inform version 1.82/6.41/10.1.2)</generator>
-    <item nodeId="node-1042">
+    <item nodeId="node-1043">
         <command xml:space="preserve">DialoguePractice</command>
         <result xml:space="preserve">
 
@@ -19,34 +19,34 @@ It's a good thing you still have a place to return to after a day of dull work t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1060"></child>
+        <children><child nodeId="node-1063"></child>
+            <child nodeId="node-1062"></child>
+            <child nodeId="node-1061"></child>
             <child nodeId="node-1059"></child>
             <child nodeId="node-1058"></child>
-            <child nodeId="node-1056"></child>
-            <child nodeId="node-1055"></child>
-            <child nodeId="node-1047"></child>
+            <child nodeId="node-1050"></child>
+            <child nodeId="node-1049"></child>
             <child nodeId="node-1046"></child>
-            <child nodeId="node-1045"></child>
-            <child nodeId="node-1043"></child>
+            <child nodeId="node-1044"></child>
         </children>
     </item>
-    <item nodeId="node-1043">
+    <item nodeId="node-1044">
         <command xml:space="preserve">x pc</command>
         <result xml:space="preserve">Expensive machine. It's sole purpose recently is only for the game, Assault on Saegaria.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1044"></child>
+        <children><child nodeId="node-1045"></child>
         </children>
     </item>
-    <item nodeId="node-1044">
+    <item nodeId="node-1045">
         <command xml:space="preserve">take pc</command>
         <result xml:space="preserve">Pardon me, but why are you trying to fit a computer that weighs at least 30 lbs into your pocket?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1045">
+    <item nodeId="node-1046">
         <command xml:space="preserve">test game</command>
         <result xml:space="preserve">(Testing.)
 
@@ -68,26 +68,26 @@ Praised as Game of the Year. AAA production, real cool stuff with a bulky white 
 [3] x assault
 [4] x assault on saegaria.
 </commentary>
-        <children><child nodeId="node-1074"></child>
+        <children><child nodeId="node-1047"></child>
         </children>
     </item>
-    <item nodeId="node-1074">
+    <item nodeId="node-1047">
         <command xml:space="preserve">launch game</command>
         <result xml:space="preserve">You launch the game.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1075"></child>
+        <children><child nodeId="node-1048"></child>
         </children>
     </item>
-    <item nodeId="node-1075">
+    <item nodeId="node-1048">
         <command xml:space="preserve">launch game</command>
         <result xml:space="preserve">The game is already launched.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1046">
+    <item nodeId="node-1049">
         <command xml:space="preserve">test characters</command>
         <result xml:space="preserve">(Testing.)
 
@@ -99,36 +99,9 @@ You say hello to Helen.
 </commentary>
         <children></children>
     </item>
-    <item nodeId="node-1047">
+    <item nodeId="node-1050">
         <command xml:space="preserve">say accusation to helen</command>
         <result xml:space="preserve">You can't see any such thing.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1048"></child>
-        </children>
-    </item>
-    <item nodeId="node-1048">
-        <command xml:space="preserve">deliver accusation to helen</command>
-        <result xml:space="preserve">That's not a verb I recognise.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1049"></child>
-        </children>
-    </item>
-    <item nodeId="node-1049">
-        <command xml:space="preserve">talk abou accusation to Helen</command>
-        <result xml:space="preserve">I didn't understand that sentence.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1050"></child>
-        </children>
-    </item>
-    <item nodeId="node-1050">
-        <command xml:space="preserve">talk about accusation</command>
-        <result xml:space="preserve">That noun did not make sense in this context.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -136,7 +109,7 @@ You say hello to Helen.
         </children>
     </item>
     <item nodeId="node-1051">
-        <command xml:space="preserve">preview accusation</command>
+        <command xml:space="preserve">deliver accusation to helen</command>
         <result xml:space="preserve">That's not a verb I recognise.
 
 &gt;</result>
@@ -145,8 +118,8 @@ You say hello to Helen.
         </children>
     </item>
     <item nodeId="node-1052">
-        <command xml:space="preserve">preview</command>
-        <result xml:space="preserve">That's not a verb I recognise.
+        <command xml:space="preserve">talk abou accusation to Helen</command>
+        <result xml:space="preserve">I didn't understand that sentence.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -154,10 +127,8 @@ You say hello to Helen.
         </children>
     </item>
     <item nodeId="node-1053">
-        <command xml:space="preserve">i</command>
-        <result xml:space="preserve">You are carrying nothing.
-
-[You can see topics for speaking to others by typing T or TOPICS].
+        <command xml:space="preserve">talk about accusation</command>
+        <result xml:space="preserve">That noun did not make sense in this context.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -165,6 +136,35 @@ You say hello to Helen.
         </children>
     </item>
     <item nodeId="node-1054">
+        <command xml:space="preserve">preview accusation</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1055"></child>
+        </children>
+    </item>
+    <item nodeId="node-1055">
+        <command xml:space="preserve">preview</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1056"></child>
+        </children>
+    </item>
+    <item nodeId="node-1056">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying nothing.
+
+[You can see topics for speaking to others by typing T or TOPICS].
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1057"></child>
+        </children>
+    </item>
+    <item nodeId="node-1057">
         <command xml:space="preserve">t</command>
         <result xml:space="preserve">Things to say to Helen
     You can't think of anything at this time.
@@ -174,7 +174,7 @@ You can see just the topics for one person at a time by TALKing TO that person.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1055">
+    <item nodeId="node-1058">
         <command xml:space="preserve">look</command>
         <result xml:space="preserve">Apartment
 A shitty studio apartment, but it's a cozy kind of shitty--tiny but full of warmth, old but full of character. You like it because it's your apartment. 
@@ -184,46 +184,46 @@ You have a laptop in front of you, displaying the latest version of the game, As
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1056">
+    <item nodeId="node-1059">
         <command xml:space="preserve">launch saegariagame</command>
         <result xml:space="preserve">You launch the game.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1057"></child>
+        <children><child nodeId="node-1060"></child>
         </children>
     </item>
-    <item nodeId="node-1057">
+    <item nodeId="node-1060">
         <command xml:space="preserve">launch SaegariaGame</command>
         <result xml:space="preserve">I only understood you as far as wanting to launch.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1058">
+    <item nodeId="node-1061">
         <command xml:space="preserve">launch SaegariaGame</command>
         <result xml:space="preserve">I only understood you as far as wanting to launch.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1059">
+    <item nodeId="node-1062">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">You are carrying nothing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1060">
+    <item nodeId="node-1063">
         <command xml:space="preserve">accuse helen</command>
         <result xml:space="preserve">That's not a verb I recognise.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1061"></child>
+        <children><child nodeId="node-1064"></child>
         </children>
     </item>
-    <item nodeId="node-1061">
+    <item nodeId="node-1064">
         <command xml:space="preserve">weak!</command>
         <result xml:space="preserve">That's not a verb I recognise.
 

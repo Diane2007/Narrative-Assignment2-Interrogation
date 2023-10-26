@@ -6,7 +6,15 @@ Include Epistemology by Eric Eve.
 [Variables]
 gameLaunched is a truth state that varies. gameLaunched is false.
 
-[Verbs]
+[The Location: Apartment]
+The Apartment is a room. The description of the Apartment is "A shitty studio apartment, but it's a cozy kind of shitty--tiny but full of warmth, old but full of character. You like it because it's [italic type]your apartment[roman type].
+[paragraph break][if unvisited]It's a good thing you still have a place to return to after a day of dull work typing in numbers in an excel sheet. You're glad that you took accounting in college, because though it sucks, it now provides a roof over your head, food to fill your belly, and most importantly, a [italic type]beefy laptop[roman type] that allows you to play the latest game, [italic type]Assault on Saegaria[roman type].
+[otherwise]You have a gamer PC in front of you. Playing Assault on Saegaria has been your routine, and you don't plan to break it tonight."
+
+
+
+
+Part 1 - Intro to Lady Knight
 Launching is an action applying to one visible thing. Understand "play [something]", "start [something]" as launching.
 Understand "launch [something]" as launching.
 Check launching:
@@ -15,17 +23,15 @@ Check launching:
 	otherwise if noun is a person:
 		say "We are in a civilized society (though chopping people down is commonplace in video games), so maybe try not to launch somebody like a rocket.";
 	otherwise if noun is game and gameLaunched is false:
-		say "You launch the game.";
+		say "You launch the game.[paragraph break]
+But before you get to the point of continuing your most recent campaign, something in your computer flashes, blinding you with bright golden light. Then you realize you're not alone anymore. A woman crashes upon you.[paragraph]
+And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in [italic type]full Medival armor[roman type].[paragraph]
+You are about to scream in pain. You are about to curse because what in the holy macaroni is going on?.";
 		now gameLaunched is true;
 	otherwise if noun is game and gameLaunched is true:
 		say "The game is already launched.";
 		stop the action.
 
-
-[The Location: Apartment]
-The Apartment is a room. The description of the Apartment is "A shitty studio apartment, but it's a cozy kind of shitty--tiny but full of warmth, old but full of character. You like it because it's [italic type]your apartment[roman type].
-[paragraph break][if unvisited]It's a good thing you still have a place to return to after a day of dull work typing in numbers in an excel sheet. You're glad that you took accounting in college, because though it sucks, it now provides a roof over your head, food to fill your belly, and most importantly, a [italic type]beefy laptop[roman type] that allows you to play the latest game, [italic type]Assault on Saegaria[roman type].
-[otherwise]You have a gamer PC in front of you, displaying the latest version of the game, Assault on Saegaria."
 
 
 
@@ -50,6 +56,7 @@ Instead of taking the PC:
 
 [NPC]
 Helen is an undescribed woman in the Apartment.
+
 
 
 [Topics]
