@@ -203,7 +203,7 @@ After quizzing Helen about identity:
 Why-she-is-here is a subject. The thought is "You think you're going mad, and perhaps it is better to ask Helen."
 Understand "why she is here", "why is she here" as why-she-is-here.
 After quizzing Helen about why-she-is-here:
-	say "To be continued.";	
+	say "To be continued." ["'Holy shit,' you are amazed, 'holy shit. You're the final boss in Assault on Saegaria. How did you get here?!'[paragraph break]Helen wrinkles her nose hearing your use of language, 'What are you talking about? Not only your logic baffles me but that foul language of yours.'[paragraph break]'No, but you are the most famous and [italic type]infamous[roman type] character in this game!' You begin to realize Helen may not be able to understand";]	
 	
 
 
