@@ -15,7 +15,7 @@ Release 1 / Serial number 231026 / Inform 7 v10.1.2 / D
 Apartment
 A shitty studio apartment, but it's a cozy kind of shitty--tiny but full of warmth, old but full of character. You like it because it's your apartment. 
 
-It's a good thing you still have a place to return to after a day of dull work typing in numbers in an excel sheet. You're glad that you took accounting in college, because though it sucks, it now provides a roof over your head, food to fill your belly, and most importantly, a beefy laptop that allows you to play the latest game, Assault on Saegaria.
+It's a good thing you still have a place to return to after a day of dull work typing in numbers in an excel sheet. You're glad that you took accounting in college, because though it sucks, it now provides a roof over your head, food to fill your belly, and most importantly, a beefy computer that allows you to play the latest game, Assault on Saegaria.
 
 Playing that game has been your routine, and you don't plan to break it tonight. 
 
@@ -25,7 +25,8 @@ You can see a fire extinguisher here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1197"></child>
+        <children><child nodeId="node-1231"></child>
+            <child nodeId="node-1197"></child>
             <child nodeId="node-1110"></child>
             <child nodeId="node-1074"></child>
             <child nodeId="node-1073"></child>
@@ -38,6 +39,7 @@ You can see a fire extinguisher here.
             <child nodeId="node-1030"></child>
             <child nodeId="node-1025"></child>
             <child nodeId="node-1015"></child>
+            <child nodeId="node-1230"></child>
             <child nodeId="node-1009"></child>
             <child nodeId="node-1008"></child>
             <child nodeId="node-1007"></child>
@@ -249,6 +251,40 @@ You can see a fire extinguisher here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1224"></child>
+        </children>
+    </item>
+    <item nodeId="node-1224">
+        <command xml:space="preserve">play game</command>
+        <result xml:space="preserve">You launch the game.
+
+But before you get to the point of continuing your most recent campaign, something in your computer flashes, blinding you with bright golden light. Then you realize you're not alone anymore. A woman crashes upon you.
+
+And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in full medival armor when she lands on your head.
+
+You are about to scream in pain. You are about to fight or flight because this is New York City, and having a stranger appearing in your place out of a sudden is a bad sign.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1225"></child>
+        </children>
+    </item>
+    <item nodeId="node-1225">
+        <command xml:space="preserve">x maiden</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1226"></child>
+        </children>
+    </item>
+    <item nodeId="node-1226">
+        <command xml:space="preserve">ask her about knight order</command>
+        <result xml:space="preserve">(Helen about that)
+There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1007">
         <command xml:space="preserve">x game</command>
@@ -318,6 +354,13 @@ You are about to scream in pain. You are about to fight or flight because this i
     <item nodeId="node-1014">
         <command xml:space="preserve">fight helen</command>
         <result xml:space="preserve">Violence isn't the answer to this one.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1230">
+        <command xml:space="preserve">x excel sheet</command>
+        <result xml:space="preserve">You absolutely do not want to look at another Excel sheet tonight.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1189,10 +1232,13 @@ You are about to scream in pain. You are about to fight or flight because this i
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1176"></child>
+        <children><child nodeId="node-1228"></child>
+            <child nodeId="node-1176"></child>
             <child nodeId="node-1169"></child>
             <child nodeId="node-1164"></child>
             <child nodeId="node-1196"></child>
+            <child nodeId="node-1260"></child>
+            <child nodeId="node-1252"></child>
             <child nodeId="node-1193"></child>
         </children>
     </item>
@@ -1208,6 +1254,79 @@ You are about to scream in pain. You are about to fight or flight because this i
     <item nodeId="node-1194">
         <command xml:space="preserve">x sword</command>
         <result xml:space="preserve">The sword, though perfectly sheathed into the golden, well, sheath, proudly displays a family crest that you are too familiar with. The crest of House Saegaria, the very royal family in Assault on Saegaria that you are trying to defeat.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1252">
+        <command xml:space="preserve">show her fire extinguisher</command>
+        <result xml:space="preserve">(to Helen)
+(first taking the fire extinguisher)
+Helen is unimpressed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1253"></child>
+        </children>
+    </item>
+    <item nodeId="node-1253">
+        <command xml:space="preserve">show helen the fire extinguisher</command>
+        <result xml:space="preserve">Helen is unimpressed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1254"></child>
+        </children>
+    </item>
+    <item nodeId="node-1254">
+        <command xml:space="preserve">x fire extinguisher</command>
+        <result xml:space="preserve">You bought it not just so your renter's insurance could be cheaper, but this would serve as a good weapon as well if somebody decided to break in. This is New York City after all.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1255"></child>
+        </children>
+    </item>
+    <item nodeId="node-1255">
+        <command xml:space="preserve">show her fire extinguisher</command>
+        <result xml:space="preserve">(to Helen)
+Helen is unimpressed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1256"></child>
+        </children>
+    </item>
+    <item nodeId="node-1256">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  a fire extinguisher
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1257"></child>
+        </children>
+    </item>
+    <item nodeId="node-1257">
+        <command xml:space="preserve">show helen the armor</command>
+        <result xml:space="preserve">(first taking the armor)
+You are too scared of the lady to steal things from her.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1258"></child>
+        </children>
+    </item>
+    <item nodeId="node-1258">
+        <command xml:space="preserve">show helen princess</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1260">
+        <command xml:space="preserve">show helen fire extinguisher</command>
+        <result xml:space="preserve">You haven't even figured out who this lady is and you're talking about the fire extinguisher? Real cool, bro.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1485,6 +1604,24 @@ You can see a fire extinguisher here.
 What in the-- You blink, and blink again. The princess' knight, your future final boss, is a woman.
 
 But how did she get here?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1228">
+        <command xml:space="preserve">ask about knight orer</command>
+        <result xml:space="preserve">(addressing Helen)
+There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1229"></child>
+        </children>
+    </item>
+    <item nodeId="node-1229">
+        <command xml:space="preserve">ask her about knight order</command>
+        <result xml:space="preserve">(Helen about the Order of the Knights of Sun)
+"It is the most prestigious knight order in the world," she frowns. "Do you not know about its name? Curious."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1954,6 +2091,150 @@ For someone covered in so much weight, the woman is still faster than you, and s
 The armor lady gives you the look like you're stupid, "Because I am a knight, and I am not taking off the sword my lady bestowed me when I was knighted."
 
 Maybe this woman is an actress because that is so method.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1231">
+        <command xml:space="preserve">Take fire extinguisher</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1232"></child>
+        </children>
+    </item>
+    <item nodeId="node-1232">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  a fire extinguisher
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1233"></child>
+        </children>
+    </item>
+    <item nodeId="node-1233">
+        <command xml:space="preserve">Play game</command>
+        <result xml:space="preserve">You launch the game.
+
+But before you get to the point of continuing your most recent campaign, something in your computer flashes, blinding you with bright golden light. Then you realize you're not alone anymore. A woman crashes upon you.
+
+And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in full medival armor when she lands on your head.
+
+You are about to scream in pain. You are about to fight or flight because this is New York City, and having a stranger appearing in your place out of a sudden is a bad sign.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1234"></child>
+        </children>
+    </item>
+    <item nodeId="node-1234">
+        <command xml:space="preserve">run</command>
+        <result xml:space="preserve">You'll have to say which compass direction to go in.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1235"></child>
+        </children>
+    </item>
+    <item nodeId="node-1235">
+        <command xml:space="preserve">run north</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1236"></child>
+        </children>
+    </item>
+    <item nodeId="node-1236">
+        <command xml:space="preserve">fight</command>
+        <result xml:space="preserve">"What in the world is going on?! Why the fuck are you in my room?!" you curse and kick into the woman's abdomen.
+
+But that proves to be a horrible idea because of the way she is covered by heavy armor from head to toe. Not only your head hurts, but your foot hurts, too.
+
+For someone covered in so much weight, the woman is still faster than you, and she easily tackles you to the ground. You think you're getting killed, but is there something in the room that is also made of metal? Maybe you can fight her with it?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1237"></child>
+        </children>
+    </item>
+    <item nodeId="node-1237">
+        <command xml:space="preserve">use fire extinguisher</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1238"></child>
+        </children>
+    </item>
+    <item nodeId="node-1238">
+        <command xml:space="preserve">fight her with fire extinguisher</command>
+        <result xml:space="preserve">(Helen with the fire extinguisher)
+You slam the fire extinguisher into her metal chest plate, knocking her back a few steps. But just as the armor lady picks herself up, you notice the giant sword she carries, all curses are swallowed back down.
+
+"I mean no harm, and hell, look at me! How in the heaven's name could I even harm you?" you gesticulate at your whole body, which is as skinny and frail as any other accountant's on Wall Street.
+
+"All right. I must not attack an enemy who yields." the armor lady says with a frown. Her armor still immaculate without any scratches.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1239"></child>
+        </children>
+    </item>
+    <item nodeId="node-1239">
+        <command xml:space="preserve">flight</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1240"></child>
+        </children>
+    </item>
+    <item nodeId="node-1240">
+        <command xml:space="preserve">talk</command>
+        <result xml:space="preserve">(to Helen)
+Are you trying to ask someone about something? Show someone something? Or tell someone about something?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1241"></child>
+        </children>
+    </item>
+    <item nodeId="node-1241">
+        <command xml:space="preserve">ask</command>
+        <result xml:space="preserve">(about the fire extinguisher)
+(addressing Helen)
+There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1242"></child>
+        </children>
+    </item>
+    <item nodeId="node-1242">
+        <command xml:space="preserve">ask about the fire extinguisher</command>
+        <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1243"></child>
+        </children>
+    </item>
+    <item nodeId="node-1243">
+        <command xml:space="preserve">tell</command>
+        <result xml:space="preserve">(Helen about the fire extinguisher)
+There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1244"></child>
+        </children>
+    </item>
+    <item nodeId="node-1244">
+        <command xml:space="preserve">tell about fire extinguisher</command>
+        <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
