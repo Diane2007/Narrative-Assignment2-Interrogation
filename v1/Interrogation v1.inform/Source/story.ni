@@ -156,6 +156,21 @@ Report pondering:
 To say no thoughts:
 	say "Maybe examine that thing first, and you'll get an idea?"
 
+[VERB: protest]
+Protesting is an action applying to nothing.
+Understand "protest" as protesting.
+Check protesting:
+	if helenIntroduced is true:
+		say "What are you trying to protest about? The general patheticness of life?";
+	else:[this quickly takes player to helenIntroduced = true]
+		say "'I protest!' you scream. 'Who are you? What are you doing in my place?'[paragraph break]'What a good question! Even I am struggling to, I must say, understand my current predicament of being in this grim and abomination of a dungeon!' the woman crosses her arms.[paragraph break]'Dungeon--' you almost choke in fury. Just [italic type]who is she[roman type], to have the gall to declare your beloved apartment a dungeon?";
+		
+[VERB: curse]
+Cursing is an action applying to nothing.
+Understand "curse" as cursing.
+Check cursing:
+	say "The lady knight gawks at you, appalled, 'That foul language of yours should bring your house to shame. To think your hard-working parents raised a child such as you--' She stops, shaking her head in disbelief.";
+	
 
 [-------- FIGHT ROUTE --------]
 Understand the command "fighting" as something new.
@@ -183,6 +198,18 @@ Check fighting someone with something:
 			say "You fail to steal her sword.";
 		else:
 			say "You can't possibly fight with that.";
+
+Flighting is an action applying to nothing. Understand "flight", "run", "flee", "escape" as flighting.
+Check flighting:
+	if helenIntroduced is false:
+		say "The armor lady blocks the door and there is no way for you to go. Either scream or fight now.";
+		stop the action;
+	else:
+		say "There is no reason to flight now, since Helen means you no harm."
+
+[VERB: ask]
+[Player love to type in "ask" something instead of asking about, hence the addition]
+The parser error internal rule response (E) is "[italic type]Hint: Try 'ask about' something.[roman type]"
 
 [Customize the error message: violence is the solution here]
 The block attacking rule response (A) is "Try 'fight' or 'fight someone with something' instead."
@@ -232,18 +259,20 @@ After quizzing Helen about the crest:
 [so make the bug a feature then]
 [The block asking rule response (A) is "Since you know nothing about medieval stuff and have absolutely no clue what to ask about, maybe examine that thing first just to avoid sounding like an idiot? And be specific about who you are addressing to?"]
 
-[SUBJECTS]
+[SUBJECT: Identity]
 Identity is a subject. The thought is "Simply wondering about this woman's identity is no use. Maybe just ask her."
 Understand "herself", "name", "who is she", "who she is", "real identity" as identity.
 After quizzing Helen about identity:
 	say "'Who are you? Why are you in my room?' You grumble.[paragraph break]'Oh sweet goddess, where are my manners?' the woman bows again. 'Helen of Saegaria, champion and personal knight to Her Royal Highness, Princess Josephine. It is a pleasure to make you acquaintance.'[paragraph break]What in the-- You blink, and blink again. The princess['] knight, the final boss you fought and died countless times, is a woman.[paragraph break]But how did she get here? The important question: [italic type]why is she here?[roman type]";
 	now helenIntroduced is true;
 
+[SUBJECT: Knight order]
 Knight-Order is a subject.
 Understand "knight order", "the Order of the Knights of Sun", "Knights of Sun" as Knight-Order.
 After quizzing Helen about Knight-Order:
 	say "'It is the most prestigious knight order in the world,' she frowns. 'Do you not know about its name? Curious.'";
 	
+[SUBJECT: Princess]
 Princess is a subject.
 Understand "her relationship with the princess", "Josephine" as princess.
 After quizzing Helen about princess:
@@ -252,10 +281,17 @@ After quizzing Helen about princess:
 	else:
 		say "You don't even know who this lady is yet, why are you asking about somebody else already?".
 
+[SUBEJCT: maiden]
 Maiden is a subject.
 After quizzing Helen about maiden:
 	say "Her eye's widen, 'How in the goddess['] name do you even assume that I am a maiden?'";
+	
+[SUBJECT: what's up?]
+Sup is a subject.
+After quizzing Helen about sup:
+	say "'What's up?' you nod at her.[paragraph break]The lady knight looks up, 'I don't see anything up there.'";
 
+[SUBJECT: Elon Musk]
 Elon-Musk is a subject. Understand "Elon Musk" as Elon-Musk.
 After quizzing Helen about Elon-Musk:
 	if helenIntroduced is true:
@@ -269,6 +305,11 @@ After quizzing Helen about why-she-is-here:
 	say "'Holy shit,' you are amazed, 'holy shit. You're the final boss in Assault on Saegaria. How did you get here?!'[paragraph break]Helen wrinkles her nose hearing your use of language, 'What are you talking about? Not only your logic baffles me but that foul language of yours.'[paragraph break]'No, but you are the most famous and [italic type]infamous[roman type] character in this game![paragraph break]'A game?' Helen is clearly ruffled. 'Are you declaring that my honor and my service to the crown is nothing but a game to you?'[paragraph break]You begin to realize Helen will not understand or believe you without showing her any concrete proof.";
 	now section2Fin is true;
 
+[SUBJECT: man]
+Tough-guy is a subject. Understand "tough guy", "guy", "man" as tough-guy.
+Instead of quizzing Helen about tough-guy:
+	say "What makes a man? What a good question.";
+
 
 Section 3 - Why is Helen here
 
@@ -280,7 +321,7 @@ After quizzing Helen about Her-Highness:[player can only ask about the princess 
 		say "You don't even know who this lady is yet, why are you asking about somebody else already?";
 	else if helenIntroduced is true:
 		if section2Fin is false:[before section 3, player only know this much about helen and princess' relationship]
-			say "'Princess Josephine took me in despite my peasant blood. She is the heir to the throne, and one of the only open-minded member of the court who truly cares about the people, unlike her fa-' Helen pauses abruptly. 'No, it is not my place to talk about my lady nor her father.'";
+			say "'Princess Josephine took me in despite my peasant blood. She is the heir to the throne, and one of the only open-minded member of the court who truly cares about the people, unlike her fa-' Helen pauses abruptly. 'No, it is not my place to remark on my lady or her father.'";
 		else if section2Fin is true:
 			say "To be continued.";
 
