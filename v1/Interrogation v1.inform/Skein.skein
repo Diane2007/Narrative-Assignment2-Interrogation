@@ -119,7 +119,133 @@ As good-looking as ever.
     </item>
     <item nodeId="node-1198">
         <command xml:space="preserve">x helen</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1214"></child>
+        </children>
+    </item>
+    <item nodeId="node-1214">
+        <command xml:space="preserve">play game</command>
+        <result xml:space="preserve">You launch the game.
+
+But before you get to the point of continuing your most recent campaign, something in your computer flashes, blinding you with bright golden light. Then you realize you're not alone anymore. A woman crashes upon you.
+
+And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in full medival armor when she lands on your head.
+
+You are about to scream in pain. You are about to fight or flight because this is New York City, and having a stranger appearing in your place out of a sudden is a bad sign.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1215"></child>
+        </children>
+    </item>
+    <item nodeId="node-1215">
+        <command xml:space="preserve">x helen</command>
         <result xml:space="preserve">She is wearing some really fancy armor and sword.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1216"></child>
+        </children>
+    </item>
+    <item nodeId="node-1216">
+        <command xml:space="preserve">ask about armor</command>
+        <result xml:space="preserve">(addressing Helen)
+"Did you just get out of a cosplay event? That is some impressive armor. Did you get them from Etsy?" you tell her. If there is one in town right now, you definitely are going.
+
+"Pardon me, but I do not understand what a "cosplay" is, nor do I know about "Ezzie". Is that perhaps the title of a lord? These armors belong to the royal family of Saegaria and the Order of the Knights of Sun."
+
+She's either too into the whole cosplay thing, or she is totally nuts.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1217"></child>
+        </children>
+    </item>
+    <item nodeId="node-1217">
+        <command xml:space="preserve">think about armor</command>
+        <result xml:space="preserve">Back in the old days, only nobles could afford such an expensive set of armors. But nobles wouldn't let their daughters fight at all... And if somebody went all the way to purchase such a flashy set of armors just for cosplay, that is seriously impressive. Maybe you should ask Helen about the armors.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1218"></child>
+        </children>
+    </item>
+    <item nodeId="node-1218">
+        <command xml:space="preserve">talk to lady</command>
+        <result xml:space="preserve">Are you trying to ask someone about something? Show someone something? Or tell someone about something?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1219"></child>
+        </children>
+    </item>
+    <item nodeId="node-1219">
+        <command xml:space="preserve">ask about sword</command>
+        <result xml:space="preserve">"Why are you even carrying a sword?" you ask, still fearing for your head.
+
+The armor lady gives you the look like you're stupid, "Because I am a knight, and I am not taking off the sword my lady bestowed me when I was knighted."
+
+Maybe this woman is an actress because that is so method.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1220"></child>
+        </children>
+    </item>
+    <item nodeId="node-1220">
+        <command xml:space="preserve">ask about identity</command>
+        <result xml:space="preserve">"Who are you? Why are you in my room?" You grumble.
+
+"Oh sweet goddess, where are my manners?" the woman bows again. "Helen of Saegaria, champion and personal knight to Her Royal Highness, Princess Josephine. It is a pleasure to make you acquaintance."
+
+What in the-- You blink, and blink again. The princess' knight, your future final boss, is a woman.
+
+But how did she get here?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1221"></child>
+        </children>
+    </item>
+    <item nodeId="node-1221">
+        <command xml:space="preserve">fight</command>
+        <result xml:space="preserve">Helen is literally carrying a sword. And why are you trying to fight her now?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1222"></child>
+        </children>
+    </item>
+    <item nodeId="node-1222">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">Are you sure you want to restart? </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1223"></child>
+        </children>
+    </item>
+    <item nodeId="node-1223">
+        <command xml:space="preserve">yes</command>
+        <result xml:space="preserve">
+
+
+
+Helen of Saegaria
+An Interactive Fiction by Diane Wang
+Release 1 / Serial number 231026 / Inform 7 v10.1.2 / D
+
+Apartment
+A shitty studio apartment, but it's a cozy kind of shitty--tiny but full of warmth, old but full of character. You like it because it's your apartment. 
+
+It's a good thing you still have a place to return to after a day of dull work typing in numbers in an excel sheet. You're glad that you took accounting in college, because though it sucks, it now provides a roof over your head, food to fill your belly, and most importantly, a beefy laptop that allows you to play the latest game, Assault on Saegaria.
+
+Playing that game has been your routine, and you don't plan to break it tonight. 
+
+You haven't launched the game yet.
+
+You can see a fire extinguisher here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

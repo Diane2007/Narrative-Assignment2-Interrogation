@@ -38,7 +38,7 @@
     </dict>
     <key>5</key><dict>
         <key>Filename</key><string>/Users/ruochongwang/Desktop/MFA/Fall2023/Narrative Studio/Projects/Assignment 2 Interrogation/Assignment2Repository/v1/Interrogation v1.inform/Source/story.ni</string>
-        <key>Line</key><integer>211</integer>
+        <key>Line</key><integer>220</integer>
         <key>Title</key><string>Part 2 - Testing</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
@@ -1448,5 +1448,54 @@
         <key>Title</key><string>Part - Response Assistant</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>207</key><dict>
+        <key>Filename</key><string>/Users/ruochongwang/Library/Inform/Extensions/Aaron Reed/Response Assistant.i7x</string>
+        <key>Line</key><integer>7</integer>
+        <key>Title</key><string>Chapter - Actions</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>208</key><dict>
+        <key>Filename</key><string>/Users/ruochongwang/Library/Inform/Extensions/Aaron Reed/Response Assistant.i7x</string>
+        <key>Line</key><integer>9</integer>
+        <key>Title</key><string>Section - Response Tracking</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>3</integer>
+    </dict>
+    <key>209</key><dict>
+        <key>Filename</key><string>/Users/ruochongwang/Library/Inform/Extensions/Aaron Reed/Response Assistant.i7x</string>
+        <key>Line</key><integer>13</integer>
+        <key>Title</key><string>Section - Disabling Response Tracking</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>3</integer>
+    </dict>
+    <key>210</key><dict>
+        <key>Filename</key><string>/Users/ruochongwang/Library/Inform/Extensions/Aaron Reed/Response Assistant.i7x</string>
+        <key>Line</key><integer>17</integer>
+        <key>Title</key><string>Section - Requesting Response Info</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>3</integer>
+    </dict>
+    <key>211</key><dict>
+        <key>Filename</key><string>/Users/ruochongwang/Library/Inform/Extensions/Aaron Reed/Response Assistant.i7x</string>
+        <key>Line</key><integer>31</integer>
+        <key>Title</key><string>Chapter - Variables</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>212</key><dict>
+        <key>Filename</key><string>/Users/ruochongwang/Library/Inform/Extensions/Aaron Reed/Response Assistant.i7x</string>
+        <key>Line</key><integer>41</integer>
+        <key>Title</key><string>Chapter - Reporting</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>213</key><dict>
+        <key>Filename</key><string>/Users/ruochongwang/Library/Inform/Extensions/Aaron Reed/Response Assistant.i7x</string>
+        <key>Line</key><integer>56</integer>
+        <key>Title</key><string>Chapter - Inform 6 Hooks</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
     </dict>
 </dict></plist>

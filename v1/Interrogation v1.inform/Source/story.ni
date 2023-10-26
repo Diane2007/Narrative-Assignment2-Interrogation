@@ -12,6 +12,7 @@ Include Response Assistant by Aaron Reed.
 [More "Global" Variables]
 gameLaunched is a truth state that varies. gameLaunched is false.
 helenIntroduced is a truth state that varies. helenIntroduced is false.
+knowGame is a truth state that varies. knowGame is false.
 
 [LAUNDRY LIST]
 [1- Set up a place to put the gun in]
@@ -22,7 +23,7 @@ Section 1 - Set up
 
 [The Location: Apartment]
 The Apartment is a room. The description of the Apartment is "A shitty studio apartment, but it's a cozy kind of shitty--tiny but full of warmth, old but full of character. You like it because it's [italic type]your apartment[roman type].
-[paragraph break][if unvisited]It's a good thing you still have a place to return to after a day of dull work typing in numbers in an excel sheet. You're glad that you took accounting in college, because though it sucks, it now provides a roof over your head, food to fill your belly, and most importantly, a [italic type]beefy laptop[roman type] that allows you to play the latest game, [italic type]Assault on Saegaria[roman type].[paragraph break]Playing that game has been your routine, and you don't plan to break it tonight.
+[paragraph break][if unvisited]It's a good thing you still have a place to return to after a day of dull work typing in numbers in an excel sheet. You're glad that you took accounting in college, because though it sucks, it now provides a roof over your head, food to fill your belly, and most importantly, a [italic type]beefy computer[roman type] that allows you to play the latest game, [italic type]Assault on Saegaria[roman type].[paragraph break]Playing that game has been your routine, and you don't plan to break it tonight.
 [otherwise]You have a gamer PC in front of you. Playing Assault on Saegaria has been your routine, and you don't plan to break it tonight.[end if][paragraph break][if gameLaunched is true]The game is running.[otherwise]You haven't launched the game yet.[end if]"
 
 [The room we hide Helen in: Hidden Room]
@@ -74,7 +75,7 @@ Understand "the game", "game", "assault on saegaria" as the SaegariaGame.
 
 [OBJECT: PC]
 The PC is a scenery in the Apartment. The description of the PC is "Expensive machine. It's sole purpose is only for the game, Assault on Saegaria."
-Understand "computer" as the PC.
+Understand "computer", "laptop" as the PC.
 
 Instead of taking the PC:
 	say "Pardon me, but why are you trying to fit a computer that weighs at least 40 lbs into your pocket?";
@@ -138,6 +139,7 @@ Understand "fight [someone] with [something]" as fighting it with.
 Check fighting:
 	if helenIntroduced is false:
 		say "'What in the world is going on?! Why the fuck are you in my room?!' you curse and kick into the woman's abdomen.[paragraph break]But that proves to be a horrible idea because of the way she is covered by heavy armor from head to toe. Not only your head hurts, but your foot hurts, too.[paragraph break]For someone covered in so much weight, the woman is still faster than you, and she easily tackles you to the ground. You think you're getting killed, but is there something in the room that is also made of metal? Maybe you can fight her with it?";
+		now Helen is annoyed;
 	else:
 		say "Helen is literally carrying a sword. And why are you trying to fight her now?";
 	
@@ -149,7 +151,8 @@ Check fighting someone with something:
 			if the player is not carrying the fire-extinguisher:
 				say "You aren't carrying the fire extinguisher!";
 			else:
-				say "You slam the fire extinguisher into her metal chest plate, knocking her back a few steps. But just as the armor lady picks herself up, you notice the giant sword she carries, all curses are swallowed back down.[paragraph break]'I mean no harm, and hell, look at me! How in the heaven's name could I even harm you?' you gesticulate at your whole body, which is as skinny and frail as any other accountant's on Wall Street.[paragraph break]'All right. I may not attack an enemy who yields.' the armor lady says with a frown. Her armor still immaculate without any scratches.";
+				say "You slam the fire extinguisher into her metal chest plate, knocking her back a few steps. But just as the armor lady picks herself up, you notice the giant sword she carries, all curses are swallowed back down.[paragraph break]'I mean no harm, and hell, look at me! How in the heaven's name could I even harm you?' you gesticulate at your whole body, which is as skinny and frail as any other accountant's on Wall Street.[paragraph break]'All right. I must not attack an enemy who yields.' the armor lady says with a frown. Her armor still immaculate without any scratches.";
+				now Helen is calm;
 		else if the second noun is the gun:
 			say "Shooting someone without a gun permit will get you into big trouble.";
 		else if the second noun is the sword:
@@ -172,7 +175,10 @@ The thought of the sword is "Is it even legal to carry a sword around in New Yor
 
 After quizzing Helen about the sword:
 	if helenIntroduced is false:
-		say "'Why are you even carrying a sword?' you ask, still fearing for your head.[paragraph break]The armor lady gives you the look like you're stupid, 'Because I am a knight, and I am not taking off the sword my lady bestowed me when I was knighted.'[if helenIntroduced is false][line break]Maybe this woman is an actress because that is so [italic type]method[roman type].";
+		if Helen is calm:
+			say "'Why are you even carrying a sword?' you ask, still fearing for your head.[paragraph break]The armor lady gives you the look like you're stupid, 'Because I am a knight, and I am not taking off the sword my lady bestowed me when I was knighted.'[if helenIntroduced is false][line break]Maybe this woman is an actress because that is so [italic type]method[roman type].";
+		else:
+			say "Helen is too annoyed to talk to you.";
 	else:
 		say "'That is some fancy sword,' you say. 'May I try?'[paragraph break]Helen sizes you up again and shakes her head, 'I am afraid if I allowed you to try, you'd tear your arm and injure your shoulders. This is very heavy.'";
 
@@ -185,7 +191,10 @@ The thought of the armor is "Back in the old days, only nobles could afford such
 
 After quizzing Helen about the armor:
 	if helenIntroduced is false:
-		say "'Did you just get out of a cosplay event? That is some impressive armor. Did you get them from Etsy?' you tell her. If there is one in town right now, you definitely are going.[paragraph break]'Pardon me, but I do not understand what a 'cosplay' is, nor do I know about 'Ezzie'. Is that perhaps the title of a lord? These armors belong to the royal family of Saegaria and the Order of the Knights of Sun.'[paragraph break]She's either too into the whole cosplay thing, or she is totally nuts.";
+		if Helen is calm:
+			say "'Did you just get out of a cosplay event? That is some impressive armor. Did you get them from Etsy?' you tell her. If there is one in town right now, you definitely are going.[paragraph break]'Pardon me, but I do not understand what a 'cosplay' is, nor do I know about 'Ezzie'. Is that perhaps the title of a lord? These armors belong to the royal family of Saegaria and the Order of the Knights of Sun.'[paragraph break]She's either too into the whole cosplay thing, or she is totally nuts. You wonder about her identity.";
+		else:
+			say "Helen is too annoyed to talk to you.";
 	else:
 		say "'Did the princess give you those armors, too?' you ask.[paragraph break]Helen's eyes widen, 'That is Her Royal Highness for you. You shall not address my lady by her name.'";
 
@@ -195,15 +204,27 @@ After quizzing Helen about the armor:
 
 [SUBJECTS]
 Identity is a subject. The thought is "Simply wondering about this woman's identity is no use. Maybe just ask her."
-Understand "herself", "her" as identity.
+Understand "herself", "her", "name" as identity.
 After quizzing Helen about identity:
 	say "'Who are you? Why are you in my room?' You grumble.[paragraph break]'Oh sweet goddess, where are my manners?' the woman bows again. 'Helen of Saegaria, champion and personal knight to Her Royal Highness, Princess Josephine. It is a pleasure to make you acquaintance.'[paragraph break]What in the-- You blink, and blink again. The princess['] knight, your future final boss, is a woman.[paragraph break]But how did she get here?";
 	now helenIntroduced is true;
 
 Why-she-is-here is a subject. The thought is "You think you're going mad, and perhaps it is better to ask Helen."
+
 Understand "why she is here", "why is she here" as why-she-is-here.
+
 After quizzing Helen about why-she-is-here:
-	say "To be continued." ["'Holy shit,' you are amazed, 'holy shit. You're the final boss in Assault on Saegaria. How did you get here?!'[paragraph break]Helen wrinkles her nose hearing your use of language, 'What are you talking about? Not only your logic baffles me but that foul language of yours.'[paragraph break]'No, but you are the most famous and [italic type]infamous[roman type] character in this game!' You begin to realize Helen may not be able to understand";]	
+	say "'Holy shit,' you are amazed, 'holy shit. You're the final boss in Assault on Saegaria. How did you get here?!'[paragraph break]Helen wrinkles her nose hearing your use of language, 'What are you talking about? Not only your logic baffles me but that foul language of yours.'[paragraph break]'No, but you are the most famous and [italic type]infamous[roman type] character in this game![paragraph break]'A game?' Helen is clearly ruffled. 'Are you declaring that my honor and my service to the crown is nothing but a game to you?'[paragraph break]You begin to realize Helen will not understand or believe you without showing her any concrete proof.";
+
+[SUBJECTS since we cued too many ugh]
+Maiden is a subject.
+After quizzing Helen about maiden:
+	say "Her eye's widen, 'How in the goddess['] name do you even assume that I am a maiden?'";
+
+Knight-Order is a subject.
+The printed name of the Knight-Order is "the Order of the Knights of Sun".
+After quizzing Helen about Knight-Order:
+	say "'It is the most prestigious knight order in the world,' she frowns. 'Do you not know about its name? Curious.'";
 	
 
 
