@@ -86,7 +86,7 @@ Understand "fire extinguisher", "extinguisher" as fire-extinguisher.
 The printed name of fire-extinguisher is "fire extinguisher".
 
 [OBJECT: GUN]
-[TODO: set up a place to store the gun and make sure player cna find it]
+[TODO: set up a place to store the gun and make sure player can find it]
 A gun is an undescribed object in the Apartment. The description of the gun is "You're thinking about getting rid of the gun because you don't have a permit, and that is a problem in New York City."
 
 Section 2 - Who is Helen?
@@ -165,7 +165,7 @@ The parser error internal rule response (J) is "Try to be more specific. Maybe y
 [-------- bring two routes together --------]
 
 [OBJECT: sword]
-The sword is an object. Helen holds the sword.
+The sword is an object. Helen holds the sword. The sword is familiar.
 The description of the sword is "The sword, though perfectly sheathed into the golden, well, sheath, proudly displays a family crest that you are too familiar with. The crest of House Saegaria, the very royal family in Assault on Saegaria that you are trying to defeat."
 
 The thought of the sword is "Is it even legal to carry a sword around in New York?"
@@ -178,7 +178,7 @@ After quizzing Helen about the sword:
 
 
 [OBJECT: armor]
-The armor is a kind of thing. The armor is always wearable. Helen wears the armor.
+The armor is a kind of thing. The armor is always wearable. The armor is familiar. Helen wears the armor.
 The description of the armor is "Somehow, you think you've seen this armor before. [paragraph break]Shiny, silver, with the shinest possible metal--the kind of [italic type]expensive[roman type] stuff that no one should be able to afford--modern cosplayers and real medieval soldiers alike.[paragraph break]You can't help but wonder about this woman's identity. But unless her dad is Elon Musk and bought her this ridiculous set of armor, you can't think of another explanation."
 
 The thought of the armor is "Back in the old days, only nobles could afford such an expensive set of armors. But nobles wouldn't let their daughters fight at all... [if helenIntroduced is false]And if somebody went all the way to purchase such a flashy set of armors just for [italic type]cosplay[roman type], that is seriously impressive. [end if]Maybe you should ask Helen about the armors."
@@ -191,7 +191,7 @@ After quizzing Helen about the armor:
 
 [Couldn't figure out why player cannot ask about sword/armor before examining them]
 [so make the bug a feature then]
-The block asking rule response (A) is "Since you know nothing about medieval stuff and have absolutely no clue what to ask about, maybe examine that thing first just to avoid sounding like an idiot? And be specific about who you are addressing to?"
+[The block asking rule response (A) is "Since you know nothing about medieval stuff and have absolutely no clue what to ask about, maybe examine that thing first just to avoid sounding like an idiot? And be specific about who you are addressing to?"]
 
 [SUBJECTS]
 Identity is a subject. The thought is "Simply wondering about this woman's identity is no use. Maybe just ask her."

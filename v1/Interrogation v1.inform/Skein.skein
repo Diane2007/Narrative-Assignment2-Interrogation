@@ -25,7 +25,8 @@ You can see a fire extinguisher here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1110"></child>
+        <children><child nodeId="node-1197"></child>
+            <child nodeId="node-1110"></child>
             <child nodeId="node-1074"></child>
             <child nodeId="node-1073"></child>
             <child nodeId="node-1067"></child>
@@ -40,9 +41,47 @@ You can see a fire extinguisher here.
             <child nodeId="node-1009"></child>
             <child nodeId="node-1008"></child>
             <child nodeId="node-1007"></child>
+            <child nodeId="node-1198"></child>
             <child nodeId="node-1006"></child>
             <child nodeId="node-1003"></child>
+            <child nodeId="node-1199"></child>
         </children>
+    </item>
+    <item nodeId="node-1199">
+        <command xml:space="preserve">x woman</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1200"></child>
+        </children>
+    </item>
+    <item nodeId="node-1200">
+        <command xml:space="preserve">play game</command>
+        <result xml:space="preserve">You launch the game.
+
+But before you get to the point of continuing your most recent campaign, something in your computer flashes, blinding you with bright golden light. Then you realize you're not alone anymore. A woman crashes upon you.
+
+And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in full medival armor when she lands on your head.
+
+You are about to scream in pain. You are about to fight or flight because this is New York City, and having a stranger appearing in your place out of a sudden is a bad sign.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1201"></child>
+        </children>
+    </item>
+    <item nodeId="node-1201">
+        <command xml:space="preserve">ask her about sword</command>
+        <result xml:space="preserve">(Helen about the sword)
+"Why are you even carrying a sword?" you ask, still fearing for your head.
+
+The armor lady gives you the look like you're stupid, "Because I am a knight, and I am not taking off the sword my lady bestowed me when I was knighted."
+
+Maybe this woman is an actress because that is so method.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1003">
         <command xml:space="preserve">x watch</command>
@@ -74,6 +113,13 @@ You can see a fire extinguisher here.
         <result xml:space="preserve">You are wearing a watch.
 
 As good-looking as ever.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1198">
+        <command xml:space="preserve">x helen</command>
+        <result xml:space="preserve">She is wearing some really fancy armor and sword.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1770,6 +1816,18 @@ You aren't going to punch some armor with your bare hands, are you?
 But that proves to be a horrible idea because of the way she is covered by heavy armor from head to toe. Not only your head hurts, but your foot hurts, too.
 
 For someone covered in so much weight, the woman is still faster than you, and she easily tackles you to the ground. You think you're getting killed, but is there something in the room that is also made of metal? Maybe you can fight her with it?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1197">
+        <command xml:space="preserve">ask her about sword</command>
+        <result xml:space="preserve">(Helen about the sword)
+"Why are you even carrying a sword?" you ask, still fearing for your head.
+
+The armor lady gives you the look like you're stupid, "Because I am a knight, and I am not taking off the sword my lady bestowed me when I was knighted."
+
+Maybe this woman is an actress because that is so method.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
