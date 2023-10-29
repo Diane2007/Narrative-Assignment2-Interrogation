@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+
+<Skein rootNode="node-1308">
+    <generator>Inform Mac Client (Inform version 1.82/6.41/10.1.2)</generator>
+    <item nodeId="node-1308">
+        <command xml:space="preserve">Helen of Saegaria</command>
+        <result xml:space="preserve">
+
+
+
+Helen of Saegaria
+The lady in armor has her own secrets by Diane Wang
+Release 1 / Serial number 231029 / Inform 7 v10.1.2 / D
+
+Apartment
+A shitty studio apartment, but it's a cozy kind of shitty--tiny but full of warmth, old but full of character. You like it because it's your apartment. 
+
+The only thing that itches you about this place is that your cousin gave you a gun for Thanksgiving last year, which could be read as a kind gesture or the complete opposite, and that gun is sitting right in this room. You don't quite want to think about it, however, because the idea of a gun makes you nervous. 
+
+It's a good thing you still have a place to return to after a day of dull work typing in numbers in an excel sheet. You're glad that you took accounting in college, because though it sucks, it now provides a roof over your head, food to fill your belly, and most importantly, a beefy computer that allows you to play the latest game, Assault on Saegaria.
+
+Playing that game has been your routine, and you don't plan to break it tonight. 
+
+The game is off.
+
+You can see a fire extinguisher here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1320"></child>
+            <child nodeId="node-1319"></child>
+            <child nodeId="node-1332"></child>
+            <child nodeId="node-1316"></child>
+        </children>
+    </item>
+    <item nodeId="node-1316">
+        <command xml:space="preserve">x gun</command>
+        <result xml:space="preserve">You're thinking about getting rid of the gun because you don't have a permit, and that is a problem in New York City.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1318"></child>
+        </children>
+    </item>
+    <item nodeId="node-1318">
+        <command xml:space="preserve">take gun</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1332">
+        <command xml:space="preserve">test fighting</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] play game
+You launch the game.
+
+But before you get to the point of continuing your most recent campaign, something in your computer flashes, blinding you with bright golden light. Then you realize you're not alone anymore. A woman crashes upon you.
+
+And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in full medival armor when she lands on your head.
+
+You could scream for help (and hope your obnoxious neighbor hears you), or you could fight. The gun your cousin gave you is sitting right there, by the way.
+
+&gt;[2] fight
+"What in the world is going on?! Why the fuck are you in my room?!" you curse and kick into the woman's abdomen.
+
+But that proves to be a horrible idea because of the way she is covered by heavy armor from head to toe. Not only your head hurts, but your foot hurts, too.
+
+For someone covered in so much weight, the woman is still faster than you, and she easily tackles you to the ground. Is there something nearby that you can fight her with?
+
+&gt;[3] fight her with sword
+(Helen with the sword)
+You aren't going to punch some armor with your bare hands, are you? There is nothing in your inventory!
+
+&gt;[4] fight her with fire extinguisher
+(Helen with the fire extinguisher)
+You aren't going to punch some armor with your bare hands, are you? There is nothing in your inventory!
+
+&gt;[5] take fire extinguisher
+Taken.
+
+&gt;[6] fight her with gun
+(Helen with the gun)
+You are't carrying the gun!
+
+&gt;[7] fight her with fire extinguisher
+(Helen with the fire extinguisher)
+You slam the fire extinguisher into her metal chest plate, knocking her back a few steps. But just as the armor lady picks herself up, you notice the giant sword she carries, all curses are swallowed back down.
+
+"I mean no harm, and hell, look at me! How in the heaven's name could I even harm you?" you gesticulate at your whole body, which is as skinny and frail as any other accountant's on Wall Street.
+
+"All right. Say 'yield' and I shall back down. A knight must not attack an enemy who yields." the armor lady says with a frown. Her armor still immaculate without any scratches.
+
+&gt;[8] yield
+"I yield!" you pant and feel relieved when Helen instantly sheathes her sword. "And who are you, anyway?"
+
+"I guess I haven't properly introduced myself," Helen says with a bow. "Helen of Saegaria, champion and personal knight to Her Royal Highness, Princess Josephine. It is a pleasure to make you acquaintance."
+
+What in the-- You blink, and blink again. The princess' knight, the final boss you fought and died countless times, stands right in front of you.
+
+But it is only polite that you also introduce yourself.
+
+&gt;[9] introducing
+"Hi, my name is Dude," you say and offers Helen a hand to shake.
+
+"Interesting name, Helen politely nods and shakes your hand. TO BE CONTINUED. AND GIVE MULTIPLE SCENARIOS
+&gt;</result>
+        <commentary xml:space="preserve">[1] play game
+[2] fight
+[3] fight her with sword
+[4] fight her with fire extinguisher
+[5] take fire extinguisher
+[6] fight her with gun
+[7] fight her with fire extinguisher
+[8] yield
+[9] introducing
+</commentary>
+        <children></children>
+    </item>
+    <item nodeId="node-1319">
+        <command xml:space="preserve">take gun</command>
+        <result xml:space="preserve">Nervously, you take the gun.
+
+Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1320">
+        <command xml:space="preserve">play game</command>
+        <result xml:space="preserve">You launch the game.
+
+But before you get to the point of continuing your most recent campaign, something in your computer flashes, blinding you with bright golden light. Then you realize you're not alone anymore. A woman crashes upon you.
+
+And if she were slender a maiden in distress, all should have been well, but this gigantic monster of a lady is in full medival armor when she lands on your head.
+
+You could scream for help (and hope your obnoxious neighbor hears you), or you could fight. The gun your cousin gave you is sitting right there, by the way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1321"></child>
+            <child nodeId="node-1325"></child>
+        </children>
+    </item>
+    <item nodeId="node-1325">
+        <command xml:space="preserve">play game</command>
+        <result xml:space="preserve">The game is already turned on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1328"></child>
+        </children>
+    </item>
+    <item nodeId="node-1328">
+        <command xml:space="preserve">talk to woman</command>
+        <result xml:space="preserve">Are you trying to ask someone about something? Show someone something? Or tell someone about something?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1329"></child>
+        </children>
+    </item>
+    <item nodeId="node-1329">
+        <command xml:space="preserve">x woman</command>
+        <result xml:space="preserve">She is wearing some really fancy armor and sword.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1330"></child>
+        </children>
+    </item>
+    <item nodeId="node-1330">
+        <command xml:space="preserve">scream</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1331"></child>
+        </children>
+    </item>
+    <item nodeId="node-1331">
+        <command xml:space="preserve">fight</command>
+        <result xml:space="preserve">(the fire extinguisher)
+Violence isn't the answer to this one.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1321">
+        <command xml:space="preserve">ask about sword</command>
+        <result xml:space="preserve">(addressing Helen)
+There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1322"></child>
+        </children>
+    </item>
+    <item nodeId="node-1322">
+        <command xml:space="preserve">ask her about sword</command>
+        <result xml:space="preserve">(Helen about the sword)
+There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1323"></child>
+        </children>
+    </item>
+    <item nodeId="node-1323">
+        <command xml:space="preserve">play game</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+</Skein>

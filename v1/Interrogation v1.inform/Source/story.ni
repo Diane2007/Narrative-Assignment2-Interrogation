@@ -49,11 +49,10 @@ Instead of taking the armor:
 	say "You are too scared of the lady to steal things from her.";
 
 [VERB: launch]
-Launching is an action applying to one visible thing. Understand "play [something]", "start [something]" as launching.
-Understand "launch [something]" as launching.
+Launching is an action applying to one visible thing. Understand "play [something]", "start [something]", "launch [something]" as launching.
 Check launching:
 	if noun is not game:
-		say "Excuse me, but you can't possibly launch [noun].";
+		say "But you can't possibly launch [noun].";
 	otherwise if noun is a person:
 		say "We are in a civilized society (though chopping people down is commonplace in video games), so maybe try not to launch somebody like a rocket.";
 	otherwise if noun is game and gameLaunched is false:
@@ -70,10 +69,11 @@ Check launching:
 Understand "talk to [someone]" as a mistake ("Are you trying to [italic type]ask[roman type] someone about something? [italic type]Show[roman type] someone something? Or [italic type]tell[roman type] someone about something?").
 	
 
+[OBJECTS]
 [Game is a kind of thing]
 Game is a kind of thing.
 
-The SaegariaGame is an undescribed game in the Apartment. The description of the SaegariaGame is "Praised as Game of the Year. Your goal is to take the capital city of Saegaria and snatch the princess from the castle. The final battle with Princess Josephine['] personal knight is considered the toughest boss fight by almost all gamers on the internet.[paragraph break]It's AAA production, real cool stuff with a bulky white dude with brown hair as the protagonist, just the perfect image you dream for your self--a [italic type]tough[roman type] man."
+The SaegariaGame is an undescribed fixed in place game in the Apartment. The description of the SaegariaGame is "Praised as Game of the Year. Your goal is to take the capital city of Saegaria and snatch the princess from the castle. The final battle with Princess Josephine['] personal knight is considered the toughest boss fight by almost all gamers on the internet.[paragraph break]It's AAA production, real cool stuff with a bulky white dude with brown hair as the protagonist, just the perfect image you dream for your self--a [italic type]tough[roman type] man."
 
 The printed name of the SaegariaGame is "Assault on Saegaria".
 Understand "the game", "game", "assault on saegaria" as the SaegariaGame.
@@ -103,18 +103,6 @@ The Excel-sheet is an undescribed object in the Apartment. The description of th
 Understand "excel sheet", "excel", "Excel sheet" as Excel-sheet.
 The printed name of the Excel sheet is "Excel sheet".
 
-
-Before showing something to Helen:
-	if the noun is Excel-Sheet:
-		say "How pathetic are you, showing somebody your precious little accounting excel sheets? Also, aren't you under NDA?";
-	else if helenIntroduced is false:
-		if the noun is fire-extinguisher:
-			say "You haven't even figured out who this lady is and you're talking about the fire extinguisher? Real cool, bro.";
-			stop the action;
-	else if helenIntroduced is true:
-		if the noun is fire-extinguisher:
-			say "You show Helen the fire extinguisher, though you have no idea why you want to do that.[paragraph break]'So what weapon is this?' Helen examines it closely. 'Good metal work. It is going to be useful in a battle.'[paragraph break]'We, ugh, extinguish fire with this,' you say haltingly, realizing how dumb you sound.[paragraph break]'Like putting out the fire and rage of a war? I am not one familiar with literary metaphors. They are for the lords and ladies,' Helen shakes her head.[paragraph break]Maybe talking about the fire extinguisher isn't fruitful in this situation.'";
-			stop the action;
 
 Section 2 - Who is Helen?
 
@@ -324,6 +312,28 @@ After quizzing Helen about Her-Highness:[player can only ask about the princess 
 			say "'Princess Josephine took me in despite my peasant blood. She is the heir to the throne, and one of the only open-minded member of the court who truly cares about the people, unlike her fa-' Helen pauses abruptly. 'No, it is not my place to remark on my lady or her father.'";
 		else if section2Fin is true:
 			say "To be continued.";
+
+Before showing something to Helen:
+	if helenIntroduced is false:[When player still doesn't know Helen yet]
+		if the noun is Excel-Sheet:
+			say "How pathetic are you, showing somebody your precious little accounting excel sheets? Also, aren't you under NDA?";
+			stop the action;
+		else if the noun is fire-extinguisher:
+			say "You haven't even figured out who this lady is and you're talking about the fire extinguisher? Real cool, bro.";
+			stop the action;
+		else if the noun is the SaegariaGame:
+			say "You're too in shock to show her the game now.";
+	else:[When player already knows who Helen is]
+		if the noun is Excel-Sheet:
+			say "How pathetic are you, showing somebody your precious little accounting excel sheets? Also, aren't you under NDA?";
+			stop the action;
+		else if the noun is fire-extinguisher:
+			say "You show Helen the fire extinguisher, though you have no idea why you want to do that.[paragraph break]'So what weapon is this?' Helen examines it closely. 'Good metal work. It is going to be useful in a battle.'[paragraph break]'We, ugh, extinguish fire with this,' you say haltingly, realizing how dumb you sound.[paragraph break]'Like putting out the fire and rage of a war? I am not one familiar with literary metaphors. They are for the lords and ladies,' Helen shakes her head.[paragraph break]Maybe talking about the fire extinguisher isn't fruitful in this situation.'";
+			stop the action;
+		else if the noun is the SaegariaGame:
+			say "TODO: you now have showed Helen the game and move on to next block plz.";
+			stop the action.
+
 
 
 Part 2 - Testing (NOT FOR RELEASE)
