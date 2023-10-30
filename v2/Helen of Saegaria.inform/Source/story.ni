@@ -13,6 +13,8 @@ Release along with a website. Release along with an interpreter.
 [LAUNDRY LIST]
 [1 - Remove any possibilities of the think function and move whatever useful from the previous version to this version]
 [2 - pay attention to the launch verb]
+[3 - unadded interactions: Crest, Elon Musk]
+[4 - things you can show Helen]
 
 
 [-------- GLOBAL VARIABLES --------]
@@ -27,6 +29,7 @@ gameLaunched is a truth state that varies. gameLaunched is false.
 [sec2 variables]
 screamed is a truth state that varies. screamed is false.
 fought is a truth state that varies. fought is false.
+introduced is a truth state that varies. introduced is false.
 [sec4 variables]
 hasInjured is a truth state that varies. hasInjured is false.
 
@@ -156,7 +159,9 @@ Section 2 - Who is Helen?
 Screaming is an action applying to nothing. Understand "scream" as screaming.
 
 Check screaming:
-	if sec2Fin is false:
+	if sec1Fin is false:
+		say "You don't know why you want to do this, but you scream anyway. It's cathartic. It's good for your mental health as long as you get some relief from it. And you scream unti lyour next door neighbor (the ass who has loud sex and wakes you up every night) slams on your shared wall.[paragraph break]Shut the fuck up!' the neighbor bangs on the wall.";
+	else if sec2Fin is false:
 		now screamed is true;
 		say "You scream because your head hurts like hell. Because Why the heck is this person in your room?[paragraph break]'My sincerest apologies, my lady,' the woman quickly picks her up and bows her head. 'Are you injured?'";
 		if the player consents:
@@ -185,7 +190,9 @@ Fighting it with is an action applying to two visible things.
 Understand "fight [someone] with [something]" as fighting it with. 
 
 Check fighting:
-	if sec2Fin is false:
+	if sec1Fin is false:
+		say "You stand up and fight yourself mentally. What a struggle.";
+	else if sec2Fin is false:
 		if screamed is true:
 			say "There is no point of fighting her since she means you no harm.";
 		else:
@@ -224,7 +231,7 @@ Check yielding:
 	if fought is true and sec2Fin is false:
 		say "'I yield!' you pant and feel relieved when Helen instantly sheathes her sword. 'And who are you, anyway?'[paragraph break]'I guess I haven't properly introduced myself,' Helen says with a bow. 'Helen of Saegaria, champion and personal knight to Her Royal Highness, Princess Josephine. It is a pleasure to make you acquaintance.'[paragraph break]What in the-- You blink, and blink again. The princess['] knight, the final boss you fought and died countless times, stands right in front of you.[paragraph break]But it is only polite that you also introduce yourself.";
 		now sec2Fin is true;
-
+		
 [VERB: FLIGHT]
 Flighting is an action applying to nothing. Understand "flight", "run", "flee", "escape" as flighting.
 Check flighting:
@@ -257,7 +264,10 @@ After quizzing Helen about the sword:
 		else:
 			say "Why are you even carrying a sword?' you ask, still fearing for your head.[paragraph break]The armor lady gives you the look like you're stupid, 'Because I am a knight, and I am not taking off the sword my lady bestowed me when I was knighted.'[paragraph break]Maybe this woman is an actress because that is so [italic type]method[roman type]. What is her real identity, then?";
 	else:
-		say "'That is some fancy sword,' you say. 'May I try?'[paragraph break]Helen sizes you up again and shakes her head, 'I am afraid if I allowed you to try, you'd tear your arm and injure your shoulders. This is very heavy.'";
+		if introduced is true:
+			say "'That is some fancy sword,' you say. 'May I try?'[paragraph break]Helen sizes you up again and shakes her head, 'I am afraid if I allowed you to try, you'd tear your arm and injure your shoulders. This is very heavy.'";
+		else:
+			say "Helen just introduced herself and you move on asking her about stuff without at least telling her your name. Very polite, my dude.";
 		
 
 [OBJECT: armor]
@@ -272,16 +282,20 @@ After quizzing Helen about the armor:
 		else:			
 			say "'Did you just get out of a cosplay event? That is some impressive armor. Did you get them from Etsy?' you tell her. If there is one in town right now, you definitely are going.[paragraph break]'Pardon me, but I do not understand what a 'cosplay' is, nor do I know about 'Ezzie'. Is that perhaps the title of a lord? These armors belong to the royal family of Saegaria and the Order of the Knights of Sun.'[paragraph break]She's either too into the whole cosplay thing, or she is totally nuts. You wonder about her identity.";
 	else:
-		say "'Did the princess give you those armors, too?' you ask.[paragraph break]Helen's eyes widen, clearly offended, 'That is Her Royal Highness for you. You shall not address my lady by her name.'"
+		if introduced is true:
+			say "'Did the princess give you those armors, too?' you ask.[paragraph break]Helen's eyes widen, clearly offended, 'That is Her Royal Highness for you. You shall not address my lady by her name.'";
+		else:
+			say "Helen just introduced herself and you move on asking her about stuff without at least telling her your name. Very polite, my dude."
 
 [VERB: ask]
 [Player love to type in "ask" something instead of asking about, hence the addition]
-The parser error internal rule response (E) is "[italic type]Hint: Try 'ask about' something.[roman type]"
+[BUT this also appears in other error responses]
+The parser error internal rule response (E) is "Who are you directing the action to? Hint: Try this structure '[bracket]the verb[close bracket] [bracket]someone[close bracket] about [bracket]something[close bracket]. Or '[bracket]the verb[close bracket] [bracket]someone[close bracket] with [bracket]something[close bracket].'"
 
 [Customize the error message: violence is the solution here]
 The block attacking rule response (A) is "Try 'fight' or 'fight someone with something' instead."
 [Customize the error message: player uses the pronoun "her" but inform gets confused]
-The parser error internal rule response (J) is "Try to be more specific. Maybe you're trying to fight the armor lady?"
+[The parser error internal rule response (J) is "Try to be more specific. Maybe you're trying to fight the armor lady?"]
 
 Section 3 - Why is Helen here?
 
@@ -290,7 +304,8 @@ Introducing is an action applying to nothing. Understand "introducing self", "in
 
 Check introducing:
 	if sec2Fin is true:
-		say "'Hi, my name is Dude,' you say and offers Helen a hand to shake.[paragraph break]'Interesting name, Helen politely nods and shakes your hand. TO BE CONTINUED. AND GIVE MULTIPLE SCENARIOS";
+		say "'Hi, my name is Dude,' you say and offers Helen a hand to shake.[paragraph break]'Interesting name, Helen shakes your hand and says nothing more. However, you know she is only being polite. TO BE CONTINUED. AND GIVE MULTIPLE SCENARIOS";
+		now introduced is true;
 	else if sec1Fin is true and sec2Fin is false:
 		say "You're too confused and scared to say anything to her.";
 	else if sec1Fin is false:
