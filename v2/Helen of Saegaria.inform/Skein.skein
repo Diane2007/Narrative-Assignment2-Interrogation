@@ -10,7 +10,7 @@
 
 Helen of Saegaria
 The lady in armor has her own secrets by Diane Wang
-Release 1 / Serial number 231104 / Inform 7 v10.1.2 / D
+Release 1 / Serial number 231105 / Inform 7 v10.1.2 / D
 
 Apartment
 A shitty studio apartment, but it's a cozy kind of shitty--tiny but full of warmth, old but full of character. You like it because it's your apartment. 
@@ -27,16 +27,16 @@ You can see a fire extinguisher and a first aid kit here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1123"></child>
-            <child nodeId="node-1115"></child>
-            <child nodeId="node-1104"></child>
-            <child nodeId="node-1102"></child>
-            <child nodeId="node-1097"></child>
-            <child nodeId="node-1093"></child>
-            <child nodeId="node-1085"></child>
-            <child nodeId="node-1032"></child>
-            <child nodeId="node-1024"></child>
-            <child nodeId="node-1023"></child>
+        <children><child nodeId="node-1137"></child>
+            <child nodeId="node-1129"></child>
+            <child nodeId="node-1118"></child>
+            <child nodeId="node-1116"></child>
+            <child nodeId="node-1111"></child>
+            <child nodeId="node-1107"></child>
+            <child nodeId="node-1099"></child>
+            <child nodeId="node-1036"></child>
+            <child nodeId="node-1028"></child>
+            <child nodeId="node-1027"></child>
             <child nodeId="node-1006"></child>
             <child nodeId="node-1005"></child>
             <child nodeId="node-1003"></child>
@@ -143,7 +143,7 @@ Is there a way to tell her about the game, so she understands what you're talkin
 [8] yield
 [9] introducing
 </commentary>
-        <children><child nodeId="node-1482"></child>
+        <children><child nodeId="node-1023"></child>
             <child nodeId="node-1020"></child>
             <child nodeId="node-1007"></child>
         </children>
@@ -197,13 +197,49 @@ But Helen is clearly at disadvantage right now. You recognize the player's armor
 
 And the next second, Helen reappears in your apartment, bloodied and barely alive.
 
-Is something that you can help her with the bleeding?
+Is something that you can help her with to stop the bleeding?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1014"></child>
+            <child nodeId="node-1221"></child>
             <child nodeId="node-1009"></child>
+            <child nodeId="node-1239"></child>
         </children>
+    </item>
+    <item nodeId="node-1239">
+        <command xml:space="preserve">show helen fire extinguisher</command>
+        <result xml:space="preserve">Helen is bleeding so much! Stop wasting time and heal her!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1240"></child>
+        </children>
+    </item>
+    <item nodeId="node-1240">
+        <command xml:space="preserve">show helen first aid</command>
+        <result xml:space="preserve">Helen is bleeding so much! Stop wasting time and heal her!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1241"></child>
+        </children>
+    </item>
+    <item nodeId="node-1241">
+        <command xml:space="preserve">ask helen about game</command>
+        <result xml:space="preserve">Helen is bleeding so much! Stop wasting time and heal her!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1242"></child>
+        </children>
+    </item>
+    <item nodeId="node-1242">
+        <command xml:space="preserve">ask helen about saegaria</command>
+        <result xml:space="preserve">Helen is bleeding so much! Stop wasting time and heal her!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1009">
         <command xml:space="preserve">help her</command>
@@ -247,6 +283,49 @@ TO BE CONTINUED.
     <item nodeId="node-1013">
         <command xml:space="preserve">help her</command>
         <result xml:space="preserve">What do you want to help Helen with?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1221">
+        <command xml:space="preserve">ask helen about fire extinguisher</command>
+        <result xml:space="preserve">Helen is bleeding so much! Stop wasting time and heal her!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1222"></child>
+        </children>
+    </item>
+    <item nodeId="node-1222">
+        <command xml:space="preserve">ask helen about game</command>
+        <result xml:space="preserve">Helen is bleeding so much! Stop wasting time and heal her!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1223"></child>
+        </children>
+    </item>
+    <item nodeId="node-1223">
+        <command xml:space="preserve">show helen game</command>
+        <result xml:space="preserve">(first taking the Assault on Saegaria)
+That's fixed in place.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1224"></child>
+        </children>
+    </item>
+    <item nodeId="node-1224">
+        <command xml:space="preserve">show helen fire extinguisher</command>
+        <result xml:space="preserve">"What is this object? A mallet, perhaps?" Helen asks.
+
+"It supposedly puts out a fire."
+
+"What does 'supposedly' mean?" Helen frowns.
+
+"I never read the manual, so I don't know how to use it anyway. Let's just hope my apartment doesn't get burned down when I cook."
+
+Helen gives you a look that says "Please get your life together."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -378,7 +457,7 @@ That's fixed in place.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1482">
+    <item nodeId="node-1023">
         <command xml:space="preserve">introduce self</command>
         <result xml:space="preserve">"Hi, my name is Dude," you say and offers Helen a hand to shake.
 
@@ -396,10 +475,10 @@ Is there a way to tell her about the game, so she understands what you're talkin
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1483"></child>
+        <children><child nodeId="node-1024"></child>
         </children>
     </item>
-    <item nodeId="node-1483">
+    <item nodeId="node-1024">
         <command xml:space="preserve">test showing</command>
         <result xml:space="preserve">(Testing.)
 
@@ -433,10 +512,10 @@ Is she back in the game?
         <commentary xml:space="preserve">[1] tell her about game
 [2] show her the game
 </commentary>
-        <children><child nodeId="node-1486"></child>
+        <children><child nodeId="node-1025"></child>
         </children>
     </item>
-    <item nodeId="node-1486">
+    <item nodeId="node-1025">
         <command xml:space="preserve">play game</command>
         <result xml:space="preserve">You launch the game just in time when Helen jumps in and blocks that player's giant axe with her shield. Seeing her in action, now that you've known her personally, makes you feel different now.
 
@@ -452,10 +531,10 @@ Is something that you can help her with the bleeding?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1487"></child>
+        <children><child nodeId="node-1026"></child>
         </children>
     </item>
-    <item nodeId="node-1487">
+    <item nodeId="node-1026">
         <command xml:space="preserve">show her first aid</command>
         <result xml:space="preserve">(to Helen)
 something.
@@ -466,7 +545,7 @@ Helen is bleeding so much! Stop wasting time and heal her!
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1023">
+    <item nodeId="node-1027">
         <command xml:space="preserve">take gun</command>
         <result xml:space="preserve">Nervously, you take the gun.
 
@@ -475,7 +554,7 @@ Taken.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1024">
+    <item nodeId="node-1028">
         <command xml:space="preserve">scream</command>
         <result xml:space="preserve">You don't know why you want to do this, but you scream anyway. It's cathartic. It's good for your mental health as long as you get some relief from it. And you scream unti lyour next door neighbor (the ass who has loud sex and wakes you up every night) slams on your shared wall.
 
@@ -483,10 +562,10 @@ Shut the fuck up!" the neighbor bangs on the wall.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1025"></child>
+        <children><child nodeId="node-1029"></child>
         </children>
     </item>
-    <item nodeId="node-1025">
+    <item nodeId="node-1029">
         <command xml:space="preserve">play game</command>
         <result xml:space="preserve">You launch the game.
 
@@ -498,19 +577,19 @@ You could scream for help (and hope your obnoxious neighbor hears you), or you c
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1026"></child>
+        <children><child nodeId="node-1030"></child>
         </children>
     </item>
-    <item nodeId="node-1026">
+    <item nodeId="node-1030">
         <command xml:space="preserve">x gun</command>
         <result xml:space="preserve">You're thinking about getting rid of the gun because you don't have a permit, and that is a problem in New York City.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1027"></child>
+        <children><child nodeId="node-1031"></child>
         </children>
     </item>
-    <item nodeId="node-1027">
+    <item nodeId="node-1031">
         <command xml:space="preserve">take gun</command>
         <result xml:space="preserve">Nervously, you reach out ot the gun.
 
@@ -518,19 +597,19 @@ Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1028"></child>
+        <children><child nodeId="node-1032"></child>
         </children>
     </item>
-    <item nodeId="node-1028">
+    <item nodeId="node-1032">
         <command xml:space="preserve">take extinguisher</command>
         <result xml:space="preserve">Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1029"></child>
+        <children><child nodeId="node-1033"></child>
         </children>
     </item>
-    <item nodeId="node-1029">
+    <item nodeId="node-1033">
         <command xml:space="preserve">fight</command>
         <result xml:space="preserve">"What in the world is going on?! Why the fuck are you in my room?!" you curse and kick into the woman's abdomen.
 
@@ -540,10 +619,10 @@ For someone covered in so much weight, the woman is still faster than you, and s
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1030"></child>
+        <children><child nodeId="node-1034"></child>
         </children>
     </item>
-    <item nodeId="node-1030">
+    <item nodeId="node-1034">
         <command xml:space="preserve">fight helen with gun</command>
         <result xml:space="preserve">You find yourself unable to pull the trigger as your fingers shakily hold the gun. Though murdering people in a video game is commonplace, but doing it in real life is still too viscerally disturbing.
 
@@ -551,17 +630,17 @@ Is there something else in the room that you might use that is made of metal?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1031"></child>
+        <children><child nodeId="node-1035"></child>
         </children>
     </item>
-    <item nodeId="node-1031">
+    <item nodeId="node-1035">
         <command xml:space="preserve">fight with  extinguisher</command>
         <result xml:space="preserve">Hint: Try "ask about" something.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1032">
+    <item nodeId="node-1036">
         <command xml:space="preserve">play game</command>
         <result xml:space="preserve">You launch the game.
 
@@ -573,16 +652,16 @@ You could scream for help (and hope your obnoxious neighbor hears you), or you c
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1082"></child>
-            <child nodeId="node-1080"></child>
-            <child nodeId="node-1077"></child>
-            <child nodeId="node-1042"></child>
+        <children><child nodeId="node-1096"></child>
+            <child nodeId="node-1094"></child>
+            <child nodeId="node-1091"></child>
+            <child nodeId="node-1046"></child>
+            <child nodeId="node-1041"></child>
+            <child nodeId="node-1038"></child>
             <child nodeId="node-1037"></child>
-            <child nodeId="node-1034"></child>
-            <child nodeId="node-1033"></child>
         </children>
     </item>
-    <item nodeId="node-1033">
+    <item nodeId="node-1037">
         <command xml:space="preserve">tell her about the game</command>
         <result xml:space="preserve">(Helen about the Assault on Saegaria)
 Helen gives you a blank stare. "I have not a clue what you are talking about.
@@ -590,24 +669,24 @@ Helen gives you a blank stare. "I have not a clue what you are talking about.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1034">
+    <item nodeId="node-1038">
         <command xml:space="preserve">scream</command>
         <result xml:space="preserve">You scream because your head hurts like hell. Because Why the heck is this person in your room?
 
 "My sincerest apologies, my lady," the woman quickly picks her up and bows her head. "Are you injured?"
 </result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1035"></child>
+        <children><child nodeId="node-1039"></child>
         </children>
     </item>
-    <item nodeId="node-1035">
+    <item nodeId="node-1039">
         <command xml:space="preserve">hi</command>
         <result xml:space="preserve">Please answer yes or no.&gt; </result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1036"></child>
+        <children><child nodeId="node-1040"></child>
         </children>
     </item>
-    <item nodeId="node-1036">
+    <item nodeId="node-1040">
         <command xml:space="preserve">no</command>
         <result xml:space="preserve">"Of course I'm fine! I'm a real man!" you groan despite how much your head groans.
 
@@ -624,41 +703,41 @@ But it is only polite that you also introduce yourself.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1037">
+    <item nodeId="node-1041">
         <command xml:space="preserve">play game</command>
         <result xml:space="preserve">The game is already turned on.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1038"></child>
+        <children><child nodeId="node-1042"></child>
         </children>
     </item>
-    <item nodeId="node-1038">
+    <item nodeId="node-1042">
         <command xml:space="preserve">talk to woman</command>
         <result xml:space="preserve">Are you trying to ask someone about something? Show someone something? Or tell someone about something?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1039"></child>
+        <children><child nodeId="node-1043"></child>
         </children>
     </item>
-    <item nodeId="node-1039">
+    <item nodeId="node-1043">
         <command xml:space="preserve">x woman</command>
         <result xml:space="preserve">She is wearing some really fancy armor and sword.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1040"></child>
+        <children><child nodeId="node-1044"></child>
         </children>
     </item>
-    <item nodeId="node-1040">
+    <item nodeId="node-1044">
         <command xml:space="preserve">scream</command>
         <result xml:space="preserve">&gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1041"></child>
+        <children><child nodeId="node-1045"></child>
         </children>
     </item>
-    <item nodeId="node-1041">
+    <item nodeId="node-1045">
         <command xml:space="preserve">fight</command>
         <result xml:space="preserve">(the fire extinguisher)
 Violence isn't the answer to this one.
@@ -666,7 +745,7 @@ Violence isn't the answer to this one.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1042">
+    <item nodeId="node-1046">
         <command xml:space="preserve">fight</command>
         <result xml:space="preserve">"What in the world is going on?! Why the fuck are you in my room?!" you curse and kick into the woman's abdomen.
 
@@ -676,16 +755,17 @@ For someone covered in so much weight, the woman is still faster than you, and s
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1064"></child>
-            <child nodeId="node-1464"></child>
-            <child nodeId="node-1468"></child>
-            <child nodeId="node-1057"></child>
-            <child nodeId="node-1043"></child>
-            <child nodeId="node-1471"></child>
-            <child nodeId="node-1490"></child>
+        <children><child nodeId="node-1078"></child>
+            <child nodeId="node-1076"></child>
+            <child nodeId="node-1190"></child>
+            <child nodeId="node-1075"></child>
+            <child nodeId="node-1068"></child>
+            <child nodeId="node-1054"></child>
+            <child nodeId="node-1053"></child>
+            <child nodeId="node-1047"></child>
         </children>
     </item>
-    <item nodeId="node-1490">
+    <item nodeId="node-1047">
         <command xml:space="preserve">show her fire extinguisher</command>
         <result xml:space="preserve">(to Helen)
 "What is this object? A mallet, perhaps?" Helen asks.
@@ -700,10 +780,10 @@ Helen gives you a look that says "Please get your life together."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1491"></child>
+        <children><child nodeId="node-1048"></child>
         </children>
     </item>
-    <item nodeId="node-1491">
+    <item nodeId="node-1048">
         <command xml:space="preserve">test fighting</command>
         <result xml:space="preserve">(Testing.)
 
@@ -775,10 +855,10 @@ Is there a way to tell her about the game, so she understands what you're talkin
 [8] yield
 [9] introducing
 </commentary>
-        <children><child nodeId="node-1501"></child>
+        <children><child nodeId="node-1049"></child>
         </children>
     </item>
-    <item nodeId="node-1501">
+    <item nodeId="node-1049">
         <command xml:space="preserve">test showing</command>
         <result xml:space="preserve">(Testing.)
 
@@ -812,10 +892,10 @@ Is she back in the game?
         <commentary xml:space="preserve">[1] tell her about game
 [2] show her the game
 </commentary>
-        <children><child nodeId="node-1504"></child>
+        <children><child nodeId="node-1050"></child>
         </children>
     </item>
-    <item nodeId="node-1504">
+    <item nodeId="node-1050">
         <command xml:space="preserve">play game</command>
         <result xml:space="preserve">You launch the game just in time when Helen jumps in and blocks that player's giant axe with her shield. Seeing her in action, now that you've known her personally, makes you feel different now.
 
@@ -831,10 +911,10 @@ Is something that you can help her with the bleeding?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1505"></child>
+        <children><child nodeId="node-1051"></child>
         </children>
     </item>
-    <item nodeId="node-1505">
+    <item nodeId="node-1051">
         <command xml:space="preserve">show her first aid</command>
         <result xml:space="preserve">(to Helen)
 something.
@@ -844,10 +924,10 @@ Helen is bleeding so much! Stop wasting time and heal her!
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1506"></child>
+        <children><child nodeId="node-1052"></child>
         </children>
     </item>
-    <item nodeId="node-1506">
+    <item nodeId="node-1052">
         <command xml:space="preserve">show her pc</command>
         <result xml:space="preserve">(to Helen)
 "Not interested," Helen tell you.
@@ -855,7 +935,7 @@ Helen is bleeding so much! Stop wasting time and heal her!
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1471">
+    <item nodeId="node-1053">
         <command xml:space="preserve">show helen fire extinguisher</command>
         <result xml:space="preserve">"What is this object? A mallet, perhaps?" Helen asks.
 
@@ -870,35 +950,35 @@ Helen gives you a look that says "Please get your life together."
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1043">
+    <item nodeId="node-1054">
         <command xml:space="preserve">play game</command>
         <result xml:space="preserve">The game is already turned on.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1044"></child>
+        <children><child nodeId="node-1055"></child>
         </children>
     </item>
-    <item nodeId="node-1044">
+    <item nodeId="node-1055">
         <command xml:space="preserve">talk to helen</command>
         <result xml:space="preserve">Are you trying to ask someone about something? Show someone something? Or tell someone about something?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1045"></child>
+        <children><child nodeId="node-1056"></child>
         </children>
     </item>
-    <item nodeId="node-1045">
+    <item nodeId="node-1056">
         <command xml:space="preserve">ask about sword</command>
         <result xml:space="preserve">(addressing Helen)
 Yo you're in the middle of the fight and want to start a conversation?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1046"></child>
+        <children><child nodeId="node-1057"></child>
         </children>
     </item>
-    <item nodeId="node-1046">
+    <item nodeId="node-1057">
         <command xml:space="preserve">fight</command>
         <result xml:space="preserve">"What in the world is going on?! Why the fuck are you in my room?!" you curse and kick into the woman's abdomen.
 
@@ -908,19 +988,19 @@ For someone covered in so much weight, the woman is still faster than you, and s
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1047"></child>
+        <children><child nodeId="node-1058"></child>
         </children>
     </item>
-    <item nodeId="node-1047">
+    <item nodeId="node-1058">
         <command xml:space="preserve">fight helen with sword</command>
         <result xml:space="preserve">You aren't going to punch some armor with your bare hands, are you? There is nothing in your inventory!
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1048"></child>
+        <children><child nodeId="node-1059"></child>
         </children>
     </item>
-    <item nodeId="node-1048">
+    <item nodeId="node-1059">
         <command xml:space="preserve">take gun</command>
         <result xml:space="preserve">Nervously, you reach out ot the gun.
 
@@ -928,10 +1008,10 @@ Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1049"></child>
+        <children><child nodeId="node-1060"></child>
         </children>
     </item>
-    <item nodeId="node-1049">
+    <item nodeId="node-1060">
         <command xml:space="preserve">fight helen with gun</command>
         <result xml:space="preserve">You find yourself unable to pull the trigger as your fingers shakily hold the gun. Though murdering people in a video game is commonplace, but doing it in real life is still too viscerally disturbing.
 
@@ -939,10 +1019,10 @@ Is there something else in the room that you might use that is made of metal?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1050"></child>
+        <children><child nodeId="node-1061"></child>
         </children>
     </item>
-    <item nodeId="node-1050">
+    <item nodeId="node-1061">
         <command xml:space="preserve">l</command>
         <result xml:space="preserve">Apartment
 A shitty studio apartment, but it's a cozy kind of shitty--tiny but full of warmth, old but full of character. You like it because it's your apartment. 
@@ -955,28 +1035,28 @@ You can see a fire extinguisher here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1051"></child>
+        <children><child nodeId="node-1062"></child>
         </children>
     </item>
-    <item nodeId="node-1051">
+    <item nodeId="node-1062">
         <command xml:space="preserve">x fire extinguisher</command>
         <result xml:space="preserve">You bought it not just so your renter's insurance could be cheaper, but this would serve as a good weapon as well if somebody decided to break in. This is New York City after all.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1052"></child>
+        <children><child nodeId="node-1063"></child>
         </children>
     </item>
-    <item nodeId="node-1052">
+    <item nodeId="node-1063">
         <command xml:space="preserve">take fire extinguisher</command>
         <result xml:space="preserve">Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1053"></child>
+        <children><child nodeId="node-1064"></child>
         </children>
     </item>
-    <item nodeId="node-1053">
+    <item nodeId="node-1064">
         <command xml:space="preserve">fight helen with fire extinguisher</command>
         <result xml:space="preserve">You slam the fire extinguisher into her metal chest plate, knocking her back a few steps. But just as the armor lady picks herself up, you notice the giant sword she carries, all curses are swallowed back down.
 
@@ -986,19 +1066,19 @@ You can see a fire extinguisher here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1054"></child>
+        <children><child nodeId="node-1065"></child>
         </children>
     </item>
-    <item nodeId="node-1054">
+    <item nodeId="node-1065">
         <command xml:space="preserve">ask about sword</command>
         <result xml:space="preserve">Yo you're in the middle of the fight and want to start a conversation?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1055"></child>
+        <children><child nodeId="node-1066"></child>
         </children>
     </item>
-    <item nodeId="node-1055">
+    <item nodeId="node-1066">
         <command xml:space="preserve">yield</command>
         <result xml:space="preserve">"I yield!" you pant and feel relieved when Helen instantly sheathes her sword. "And who are you, anyway?"
 
@@ -1010,10 +1090,10 @@ But it is only polite that you also introduce yourself.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1056"></child>
+        <children><child nodeId="node-1067"></child>
         </children>
     </item>
-    <item nodeId="node-1056">
+    <item nodeId="node-1067">
         <command xml:space="preserve">ask about sword</command>
         <result xml:space="preserve">"That is some fancy sword," you say. "May I try?"
 
@@ -1022,26 +1102,26 @@ Helen sizes you up again and shakes her head, "I am afraid if I allowed you to t
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1057">
+    <item nodeId="node-1068">
         <command xml:space="preserve">ask her about sword</command>
         <result xml:space="preserve">(Helen about the sword)
 Yo you're in the middle of the fight and want to start a conversation?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1058"></child>
+        <children><child nodeId="node-1069"></child>
         </children>
     </item>
-    <item nodeId="node-1058">
+    <item nodeId="node-1069">
         <command xml:space="preserve">take extinguisher</command>
         <result xml:space="preserve">Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1059"></child>
+        <children><child nodeId="node-1070"></child>
         </children>
     </item>
-    <item nodeId="node-1059">
+    <item nodeId="node-1070">
         <command xml:space="preserve">fight her with extinguisher</command>
         <result xml:space="preserve">(Helen with the fire extinguisher)
 You slam the fire extinguisher into her metal chest plate, knocking her back a few steps. But just as the armor lady picks herself up, you notice the giant sword she carries, all curses are swallowed back down.
@@ -1052,29 +1132,29 @@ You slam the fire extinguisher into her metal chest plate, knocking her back a f
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1060"></child>
+        <children><child nodeId="node-1071"></child>
         </children>
     </item>
-    <item nodeId="node-1060">
+    <item nodeId="node-1071">
         <command xml:space="preserve">sup</command>
         <result xml:space="preserve">That's not a verb I recognise.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1061"></child>
+        <children><child nodeId="node-1072"></child>
         </children>
     </item>
-    <item nodeId="node-1061">
+    <item nodeId="node-1072">
         <command xml:space="preserve">ask her about sword</command>
         <result xml:space="preserve">(Helen about the sword)
 Yo you're in the middle of the fight and want to start a conversation?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1062"></child>
+        <children><child nodeId="node-1073"></child>
         </children>
     </item>
-    <item nodeId="node-1062">
+    <item nodeId="node-1073">
         <command xml:space="preserve">yield</command>
         <result xml:space="preserve">"I yield!" you pant and feel relieved when Helen instantly sheathes her sword. "And who are you, anyway?"
 
@@ -1086,10 +1166,10 @@ But it is only polite that you also introduce yourself.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1063"></child>
+        <children><child nodeId="node-1074"></child>
         </children>
     </item>
-    <item nodeId="node-1063">
+    <item nodeId="node-1074">
         <command xml:space="preserve">ask her about sword</command>
         <result xml:space="preserve">(Helen about the sword)
 "That is some fancy sword," you say. "May I try?"
@@ -1099,7 +1179,7 @@ Helen sizes you up again and shakes her head, "I am afraid if I allowed you to t
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1468">
+    <item nodeId="node-1075">
         <command xml:space="preserve">ask her about fire extinguisher</command>
         <result xml:space="preserve">(Helen about the fire extinguisher)
 "I have not an idea what you are inquiring about," Helen says.
@@ -1107,17 +1187,183 @@ Helen sizes you up again and shakes her head, "I am afraid if I allowed you to t
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1464">
+    <item nodeId="node-1190">
+        <command xml:space="preserve">ask her about excel sheet</command>
+        <result xml:space="preserve">(Helen about the Excel-sheet)
+How pathetic are you, showing somebody your precious little accounting excel sheets? Also, aren't you under NDA?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1191"></child>
+        </children>
+    </item>
+    <item nodeId="node-1191">
+        <command xml:space="preserve">test fighting</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] play game
+The game is already turned on.
+
+&gt;[2] fight
+"What in the world is going on?! Why the fuck are you in my room?!" you curse and kick into the woman's abdomen.
+
+But that proves to be a horrible idea because of the way she is covered by heavy armor from head to toe. Not only your head hurts, but your foot hurts, too.
+
+For someone covered in so much weight, the woman is still faster than you, and she easily tackles you to the ground. Is there something nearby that you can fight her with?
+
+&gt;[3] fight her with sword
+(Helen with the sword)
+You aren't going to punch some armor with your bare hands, are you? There is nothing in your inventory!
+
+&gt;[4] fight her with fire extinguisher
+(Helen with the fire extinguisher)
+You aren't going to punch some armor with your bare hands, are you? There is nothing in your inventory!
+
+&gt;[5] take fire extinguisher
+Taken.
+
+&gt;[6] fight her with gun
+(Helen with the gun)
+You are't carrying the gun!
+
+&gt;[7] fight her with fire extinguisher
+(Helen with the fire extinguisher)
+You slam the fire extinguisher into her metal chest plate, knocking her back a few steps. But just as the armor lady picks herself up, you notice the giant sword she carries, all curses are swallowed back down.
+
+"I mean no harm, and hell, look at me! How in the heaven's name could I even harm you?" you gesticulate at your whole body, which is as skinny and frail as any other accountant's on Wall Street.
+
+"All right. Say 'yield' and I shall back down. A knight must not attack an enemy who yields." the armor lady says with a frown. Her armor still immaculate without any scratches.
+
+&gt;[8] yield
+"I yield!" you pant and feel relieved when Helen instantly sheathes her sword. "And who are you, anyway?"
+
+"I guess I haven't properly introduced myself," Helen says with a bow. "Helen of Saegaria, champion and personal knight to Her Royal Highness, Princess Josephine. It is a pleasure to make you acquaintance."
+
+What in the-- You blink, and blink again. The princess' knight, the final boss you fought and died countless times, stands right in front of you.
+
+But it is only polite that you also introduce yourself.
+
+&gt;[9] introducing
+"Hi, my name is Dude," you say and offers Helen a hand to shake.
+
+"Interesting name, Helen shakes your hand and says nothing more. However, you know she is only being polite.
+
+"Erm, so, why are you here?" you ask. "I mean, you're the final boss in Assault on Saegaria. How did you get here?"
+
+Helen's brows furrow, "What are you even talking about? Did I hit your head too hard?"
+
+"No, but you are the most famous and infamous character in this game!
+
+"A game?" Helen is clearly ruffled. "Are you declaring that my honor and my service to the crown is nothing but a game to you?"
+
+Is there a way to tell her about the game, so she understands what you're talking about? Or you can just show her the game?
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] play game
+[2] fight
+[3] fight her with sword
+[4] fight her with fire extinguisher
+[5] take fire extinguisher
+[6] fight her with gun
+[7] fight her with fire extinguisher
+[8] yield
+[9] introducing
+</commentary>
+        <children><child nodeId="node-1201"></child>
+        </children>
+    </item>
+    <item nodeId="node-1201">
+        <command xml:space="preserve">play game</command>
+        <result xml:space="preserve">The game is already turned on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1202"></child>
+        </children>
+    </item>
+    <item nodeId="node-1202">
+        <command xml:space="preserve">test showing</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] tell her about game
+(Helen about the Assault on Saegaria)
+Helen stares at you, "What you just told me might be the most ludicrous thing I have ever been told."
+
+Maybe the only way to convince Helen is to show her the game.
+
+&gt;[2] show her the game
+(to Helen)
+"Just look!" you turn the computer monitor to Helen's direction.
+
+"What form of sorcery is this?" Helen jumps back, flashed and confused and alarmed by the animation.
+
+"No! Look at that avatar! That is you!" you points and turns your face to the screen and-- No, the tile Helen is supposed to be standing on is empty, and you suddenly recall that is because she is right here with you.
+
+But Helen stops, her eyes fixed on the NPC standing on the castle balcony. Princess Josephine looks out of the window, distressed and lonely.
+
+"Josie must be wondering where I am..." You seem to hear her whisper.
+
+"Josie?" you frown. That name doesn't ring a bell at all. Is it a new NPC in the next update that Helen is aware of (because hell, she is literally from that world)?
+
+"No, I didn't say anything," Helen clears her throat, looking stern once again."
+
+But the next second, another player appears behind Princess Josephine, and at the same moment, Helen disappears into the ether.
+
+Is she back in the game?
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] tell her about game
+[2] show her the game
+</commentary>
+        <children><child nodeId="node-1205"></child>
+        </children>
+    </item>
+    <item nodeId="node-1205">
+        <command xml:space="preserve">play game</command>
+        <result xml:space="preserve">You launch the game just in time when Helen jumps in and blocks that player's giant axe with her shield. Seeing her in action, now that you've known her personally, makes you feel different now.
+
+You would've cheered whoever challenging the princess' personal knight in the past, considering you never managed to defeat Helen.
+
+But Helen is clearly at disadvantage right now. You recognize the player's armors and equipment--the full set requires at least $3000 or some extremely good luck. And with those armors, Helen stands no chance. And eventually, Helen collapses into her own pool of blood.
+
+"Josie," she whispers in desperation when the player snatches the princess.
+
+And the next second, Helen reappears in your apartment, bloodied and barely alive.
+
+Is something that you can help her with the bleeding?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1206"></child>
+        </children>
+    </item>
+    <item nodeId="node-1206">
+        <command xml:space="preserve">show fire extinguisher</command>
+        <result xml:space="preserve">(to Helen)
+"What is this object? A mallet, perhaps?" Helen asks.
+
+"It supposedly puts out a fire."
+
+"What does 'supposedly' mean?" Helen frowns.
+
+"I never read the manual, so I don't know how to use it anyway. Let's just hope my apartment doesn't get burned down when I cook."
+
+Helen gives you a look that says "Please get your life together."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1076">
         <command xml:space="preserve">ask her about elon musk</command>
         <result xml:space="preserve">(Helen about Elon-Musk)
 Yo you're in the middle of the fight and want to ask her about Elon Musk?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1465"></child>
+        <children><child nodeId="node-1077"></child>
         </children>
     </item>
-    <item nodeId="node-1465">
+    <item nodeId="node-1077">
         <command xml:space="preserve">ask her about armor</command>
         <result xml:space="preserve">(Helen about the armor)
 Yo you're in the middle of the fight and want to start a conversation?
@@ -1125,54 +1371,54 @@ Yo you're in the middle of the fight and want to start a conversation?
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1064">
+    <item nodeId="node-1078">
         <command xml:space="preserve">ask about armor</command>
         <result xml:space="preserve">(addressing Helen)
 Yo you're in the middle of the fight and want to start a conversation?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1065"></child>
+        <children><child nodeId="node-1079"></child>
         </children>
     </item>
-    <item nodeId="node-1065">
+    <item nodeId="node-1079">
         <command xml:space="preserve">ask about game</command>
         <result xml:space="preserve">There is no reply.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1066"></child>
+        <children><child nodeId="node-1080"></child>
         </children>
     </item>
-    <item nodeId="node-1066">
+    <item nodeId="node-1080">
         <command xml:space="preserve">fight with extinguisher</command>
         <result xml:space="preserve">Who are you directing the action to? Hint: Try this structure "[the verb] [someone] about [something]. Or "[the verb] [someone] with [something]."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1067"></child>
+        <children><child nodeId="node-1081"></child>
         </children>
     </item>
-    <item nodeId="node-1067">
+    <item nodeId="node-1081">
         <command xml:space="preserve">fight her with extinguisher</command>
         <result xml:space="preserve">(Helen with the fire extinguisher)
 You aren't going to punch some armor with your bare hands, are you? There is nothing in your inventory!
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1068"></child>
+        <children><child nodeId="node-1082"></child>
         </children>
     </item>
-    <item nodeId="node-1068">
+    <item nodeId="node-1082">
         <command xml:space="preserve">take fire extinguisher</command>
         <result xml:space="preserve">Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1069"></child>
+        <children><child nodeId="node-1083"></child>
         </children>
     </item>
-    <item nodeId="node-1069">
+    <item nodeId="node-1083">
         <command xml:space="preserve">fight her with extinguisher</command>
         <result xml:space="preserve">(Helen with the fire extinguisher)
 You slam the fire extinguisher into her metal chest plate, knocking her back a few steps. But just as the armor lady picks herself up, you notice the giant sword she carries, all curses are swallowed back down.
@@ -1183,19 +1429,19 @@ You slam the fire extinguisher into her metal chest plate, knocking her back a f
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1070"></child>
+        <children><child nodeId="node-1084"></child>
         </children>
     </item>
-    <item nodeId="node-1070">
+    <item nodeId="node-1084">
         <command xml:space="preserve">ask about sword</command>
         <result xml:space="preserve">Yo you're in the middle of the fight and want to start a conversation?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1071"></child>
+        <children><child nodeId="node-1085"></child>
         </children>
     </item>
-    <item nodeId="node-1071">
+    <item nodeId="node-1085">
         <command xml:space="preserve">yield</command>
         <result xml:space="preserve">"I yield!" you pant and feel relieved when Helen instantly sheathes her sword. "And who are you, anyway?"
 
@@ -1207,29 +1453,29 @@ But it is only polite that you also introduce yourself.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1072"></child>
+        <children><child nodeId="node-1086"></child>
         </children>
     </item>
-    <item nodeId="node-1072">
+    <item nodeId="node-1086">
         <command xml:space="preserve">ask about armor</command>
         <result xml:space="preserve">Helen just introduced herself and you move on asking her about stuff without at least telling her your name. Very polite, my dude.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1073"></child>
+        <children><child nodeId="node-1087"></child>
         </children>
     </item>
-    <item nodeId="node-1073">
+    <item nodeId="node-1087">
         <command xml:space="preserve">introduce</command>
         <result xml:space="preserve">"Hi, my name is Dude," you say and offers Helen a hand to shake.
 
 "Interesting name, Helen politely nods and shakes your hand. TO BE CONTINUED. AND GIVE MULTIPLE SCENARIOS
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1074"></child>
+        <children><child nodeId="node-1088"></child>
         </children>
     </item>
-    <item nodeId="node-1074">
+    <item nodeId="node-1088">
         <command xml:space="preserve">ask about armor</command>
         <result xml:space="preserve">"Did the princess give you those armors, too?" you ask.
 
@@ -1237,10 +1483,10 @@ Helen's eyes widen, clearly offended, "That is Her Royal Highness for you. You s
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1075"></child>
+        <children><child nodeId="node-1089"></child>
         </children>
     </item>
-    <item nodeId="node-1075">
+    <item nodeId="node-1089">
         <command xml:space="preserve">ask about sword</command>
         <result xml:space="preserve">"That is some fancy sword," you say. "May I try?"
 
@@ -1248,10 +1494,10 @@ Helen sizes you up again and shakes her head, "I am afraid if I allowed you to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1076"></child>
+        <children><child nodeId="node-1090"></child>
         </children>
     </item>
-    <item nodeId="node-1076">
+    <item nodeId="node-1090">
         <command xml:space="preserve">fight her</command>
         <result xml:space="preserve">(Helen)
 Try "fight" or "fight someone with something" instead.
@@ -1259,32 +1505,32 @@ Try "fight" or "fight someone with something" instead.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1077">
+    <item nodeId="node-1091">
         <command xml:space="preserve">ask about sword</command>
         <result xml:space="preserve">(addressing Helen)
 There is no reply.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1078"></child>
+        <children><child nodeId="node-1092"></child>
         </children>
     </item>
-    <item nodeId="node-1078">
+    <item nodeId="node-1092">
         <command xml:space="preserve">ask her about sword</command>
         <result xml:space="preserve">(Helen about the sword)
 There is no reply.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1079"></child>
+        <children><child nodeId="node-1093"></child>
         </children>
     </item>
-    <item nodeId="node-1079">
+    <item nodeId="node-1093">
         <command xml:space="preserve">play game</command>
         <result xml:space="preserve">&gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1080">
+    <item nodeId="node-1094">
         <command xml:space="preserve">ask about herself</command>
         <result xml:space="preserve">(addressing Helen)
 "Who are you? Why are you in my room?" You grumble.
@@ -1297,27 +1543,27 @@ But it is only polite that you also introduce yourself.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1081"></child>
+        <children><child nodeId="node-1095"></child>
         </children>
     </item>
-    <item nodeId="node-1081">
+    <item nodeId="node-1095">
         <command xml:space="preserve">ask about herself</command>
         <result xml:space="preserve">Helen just introduced herself and you move on asking her about stuff without at least telling her your name. Very polite, my dude.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1082">
+    <item nodeId="node-1096">
         <command xml:space="preserve">ask about her</command>
         <result xml:space="preserve">(addressing Helen)
 There is no reply.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1083"></child>
+        <children><child nodeId="node-1097"></child>
         </children>
     </item>
-    <item nodeId="node-1083">
+    <item nodeId="node-1097">
         <command xml:space="preserve">ask about identity</command>
         <result xml:space="preserve">"Who are you? Why are you in my room?" You grumble.
 
@@ -1329,17 +1575,17 @@ But it is only polite that you also introduce yourself.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1084"></child>
+        <children><child nodeId="node-1098"></child>
         </children>
     </item>
-    <item nodeId="node-1084">
+    <item nodeId="node-1098">
         <command xml:space="preserve">ask about identity</command>
         <result xml:space="preserve">"Me?" Helen didn't expect you to ask about her life. "Well, I tend to Her Highness, making sure she is safe in any situation. She hasn't been too happy since betrothed, so... I strive to make her happy. Sometimes it's flowers, sometimes..." She stops. "Forgive me. I digress."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1085">
+    <item nodeId="node-1099">
         <command xml:space="preserve">l</command>
         <result xml:space="preserve">Apartment
 A shitty studio apartment, but it's a cozy kind of shitty--tiny but full of warmth, old but full of character. You like it because it's your apartment. 
@@ -1352,10 +1598,10 @@ You can see a fire extinguisher here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1086"></child>
+        <children><child nodeId="node-1100"></child>
         </children>
     </item>
-    <item nodeId="node-1086">
+    <item nodeId="node-1100">
         <command xml:space="preserve">test identity</command>
         <result xml:space="preserve">(Testing.)
 
@@ -1382,10 +1628,10 @@ But it is only polite that you also introduce yourself.
         <commentary xml:space="preserve">[1] play game
 [2] ask about her identity
 </commentary>
-        <children><child nodeId="node-1087"></child>
+        <children><child nodeId="node-1101"></child>
         </children>
     </item>
-    <item nodeId="node-1087">
+    <item nodeId="node-1101">
         <command xml:space="preserve">l</command>
         <result xml:space="preserve">Apartment
 A shitty studio apartment, but it's a cozy kind of shitty--tiny but full of warmth, old but full of character. You like it because it's your apartment. 
@@ -1398,19 +1644,19 @@ You can see Helen and a fire extinguisher here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1088"></child>
+        <children><child nodeId="node-1102"></child>
         </children>
     </item>
-    <item nodeId="node-1088">
+    <item nodeId="node-1102">
         <command xml:space="preserve">introduce self</command>
         <result xml:space="preserve">I only understood you as far as wanting to introduce.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1089"></child>
+        <children><child nodeId="node-1103"></child>
         </children>
     </item>
-    <item nodeId="node-1089">
+    <item nodeId="node-1103">
         <command xml:space="preserve">introduce</command>
         <result xml:space="preserve">"Hi, my name is Dude," you say and offers Helen a hand to shake.
 
@@ -1428,10 +1674,10 @@ Is there a way to tell her about the game, so she understands what you're talkin
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1090"></child>
+        <children><child nodeId="node-1104"></child>
         </children>
     </item>
-    <item nodeId="node-1090">
+    <item nodeId="node-1104">
         <command xml:space="preserve">test showing</command>
         <result xml:space="preserve">(Testing.)
 
@@ -1448,10 +1694,10 @@ Who are you directing the action to? Hint: Try this structure "[the verb] [someo
         <commentary xml:space="preserve">[1] tell her about game
 [2] show her about game
 </commentary>
-        <children><child nodeId="node-1091"></child>
+        <children><child nodeId="node-1105"></child>
         </children>
     </item>
-    <item nodeId="node-1091">
+    <item nodeId="node-1105">
         <command xml:space="preserve">show Helen the game</command>
         <result xml:space="preserve">"Just look!" you turn the computer monitor to Helen's direction.
 
@@ -1471,34 +1717,34 @@ But the next second, another player appears behind Princess Josephine, and at th
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1092"></child>
+        <children><child nodeId="node-1106"></child>
         </children>
     </item>
-    <item nodeId="node-1092">
+    <item nodeId="node-1106">
         <command xml:space="preserve">play game</command>
         <result xml:space="preserve">The game is already turned on.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1093">
+    <item nodeId="node-1107">
         <command xml:space="preserve">introduce</command>
         <result xml:space="preserve">You introduce yourself to the air. Very cool, bro.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1095"></child>
-            <child nodeId="node-1094"></child>
+        <children><child nodeId="node-1109"></child>
+            <child nodeId="node-1108"></child>
         </children>
     </item>
-    <item nodeId="node-1094">
+    <item nodeId="node-1108">
         <command xml:space="preserve">say hi</command>
         <result xml:space="preserve">There's no one here but you.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1095">
+    <item nodeId="node-1109">
         <command xml:space="preserve">play game</command>
         <result xml:space="preserve">You launch the game.
 
@@ -1510,35 +1756,35 @@ You could scream for help (and hope your obnoxious neighbor hears you), or you c
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1096"></child>
+        <children><child nodeId="node-1110"></child>
         </children>
     </item>
-    <item nodeId="node-1096">
+    <item nodeId="node-1110">
         <command xml:space="preserve">introduce</command>
         <result xml:space="preserve">You're too confused and scared to say anything to her.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1097">
+    <item nodeId="node-1111">
         <command xml:space="preserve">help helen with</command>
         <result xml:space="preserve">That's not a verb I recognise.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1098"></child>
+        <children><child nodeId="node-1112"></child>
         </children>
     </item>
-    <item nodeId="node-1098">
+    <item nodeId="node-1112">
         <command xml:space="preserve">help helen</command>
         <result xml:space="preserve">That's not a verb I recognise.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1099"></child>
+        <children><child nodeId="node-1113"></child>
         </children>
     </item>
-    <item nodeId="node-1099">
+    <item nodeId="node-1113">
         <command xml:space="preserve">play game</command>
         <result xml:space="preserve">You launch the game.
 
@@ -1550,69 +1796,69 @@ You could scream for help (and hope your obnoxious neighbor hears you), or you c
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1100"></child>
+        <children><child nodeId="node-1114"></child>
         </children>
     </item>
-    <item nodeId="node-1100">
+    <item nodeId="node-1114">
         <command xml:space="preserve">take extinguisher</command>
         <result xml:space="preserve">Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1101"></child>
+        <children><child nodeId="node-1115"></child>
         </children>
     </item>
-    <item nodeId="node-1101">
+    <item nodeId="node-1115">
         <command xml:space="preserve">help helen with extinguisher</command>
         <result xml:space="preserve">That's not a verb I recognise.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1102">
+    <item nodeId="node-1116">
         <command xml:space="preserve">help helen</command>
         <result xml:space="preserve">That's not a verb I recognise.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1103"></child>
+        <children><child nodeId="node-1117"></child>
         </children>
     </item>
-    <item nodeId="node-1103">
+    <item nodeId="node-1117">
         <command xml:space="preserve">help fire extinguisher</command>
         <result xml:space="preserve">That's not a verb I recognise.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1104">
+    <item nodeId="node-1118">
         <command xml:space="preserve">help fire extinguisher</command>
         <result xml:space="preserve">You can only do that to something animate.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1105"></child>
+        <children><child nodeId="node-1119"></child>
         </children>
     </item>
-    <item nodeId="node-1105">
+    <item nodeId="node-1119">
         <command xml:space="preserve">help yourself</command>
         <result xml:space="preserve">Who are you directing the action to? Hint: Try this structure "[the verb] [someone] about [something]. Or "[the verb] [someone] with [something]."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1106"></child>
+        <children><child nodeId="node-1120"></child>
         </children>
     </item>
-    <item nodeId="node-1106">
+    <item nodeId="node-1120">
         <command xml:space="preserve">help yourself with fire extinguisher</command>
         <result xml:space="preserve">Who are you directing the action to? Hint: Try this structure "[the verb] [someone] about [something]. Or "[the verb] [someone] with [something]."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1107"></child>
+        <children><child nodeId="node-1121"></child>
         </children>
     </item>
-    <item nodeId="node-1107">
+    <item nodeId="node-1121">
         <command xml:space="preserve">play game</command>
         <result xml:space="preserve">You launch the game.
 
@@ -1624,19 +1870,19 @@ You could scream for help (and hope your obnoxious neighbor hears you), or you c
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1108"></child>
+        <children><child nodeId="node-1122"></child>
         </children>
     </item>
-    <item nodeId="node-1108">
+    <item nodeId="node-1122">
         <command xml:space="preserve">help helen with fire extinguisher</command>
         <result xml:space="preserve">She doesn't need help right now.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1109"></child>
+        <children><child nodeId="node-1123"></child>
         </children>
     </item>
-    <item nodeId="node-1109">
+    <item nodeId="node-1123">
         <command xml:space="preserve">test screaming</command>
         <result xml:space="preserve">&gt;--&gt; The following tests are available:
 'test identity'
@@ -1645,10 +1891,10 @@ You could scream for help (and hope your obnoxious neighbor hears you), or you c
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1110"></child>
+        <children><child nodeId="node-1124"></child>
         </children>
     </item>
-    <item nodeId="node-1110">
+    <item nodeId="node-1124">
         <command xml:space="preserve">test identity</command>
         <result xml:space="preserve">(Testing.)
 
@@ -1685,10 +1931,10 @@ Is there a way to tell her about the game, so she understands what you're talkin
 [2] ask about her identity
 [3] introduce
 </commentary>
-        <children><child nodeId="node-1111"></child>
+        <children><child nodeId="node-1125"></child>
         </children>
     </item>
-    <item nodeId="node-1111">
+    <item nodeId="node-1125">
         <command xml:space="preserve">test showing</command>
         <result xml:space="preserve">(Testing.)
 
@@ -1722,10 +1968,10 @@ Is she back in the game?
         <commentary xml:space="preserve">[1] tell her about game
 [2] show her the game
 </commentary>
-        <children><child nodeId="node-1112"></child>
+        <children><child nodeId="node-1126"></child>
         </children>
     </item>
-    <item nodeId="node-1112">
+    <item nodeId="node-1126">
         <command xml:space="preserve">play game</command>
         <result xml:space="preserve">You launch the game just in time when Helen jumps in and blocks that player's giant axe with her shield. Seeing her in action, now that you've known her personally, makes you feel different now.
 
@@ -1741,19 +1987,19 @@ Is something that you can help her with the bleeding?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1113"></child>
+        <children><child nodeId="node-1127"></child>
         </children>
     </item>
-    <item nodeId="node-1113">
+    <item nodeId="node-1127">
         <command xml:space="preserve">take first aid</command>
         <result xml:space="preserve">Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1114"></child>
+        <children><child nodeId="node-1128"></child>
         </children>
     </item>
-    <item nodeId="node-1114">
+    <item nodeId="node-1128">
         <command xml:space="preserve">help her with first aid</command>
         <result xml:space="preserve">(Helen with the first aid kit)
 TO BE CONTINUED.
@@ -1761,17 +2007,17 @@ TO BE CONTINUED.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1115">
+    <item nodeId="node-1129">
         <command xml:space="preserve">fight</command>
         <result xml:space="preserve">You stand up and fight yourself mentally. What a struggle.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1122"></child>
-            <child nodeId="node-1116"></child>
+        <children><child nodeId="node-1136"></child>
+            <child nodeId="node-1130"></child>
         </children>
     </item>
-    <item nodeId="node-1116">
+    <item nodeId="node-1130">
         <command xml:space="preserve">scream</command>
         <result xml:space="preserve">You don't know why you want to do this, but you scream anyway. It's cathartic. It's good for your mental health as long as you get some relief from it. And you scream unti lyour next door neighbor (the ass who has loud sex and wakes you up every night) slams on your shared wall.
 
@@ -1779,10 +2025,10 @@ Shut the fuck up!" the neighbor bangs on the wall.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1117"></child>
+        <children><child nodeId="node-1131"></child>
         </children>
     </item>
-    <item nodeId="node-1117">
+    <item nodeId="node-1131">
         <command xml:space="preserve">play game</command>
         <result xml:space="preserve">You launch the game.
 
@@ -1794,10 +2040,10 @@ You could scream for help (and hope your obnoxious neighbor hears you), or you c
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1118"></child>
+        <children><child nodeId="node-1132"></child>
         </children>
     </item>
-    <item nodeId="node-1118">
+    <item nodeId="node-1132">
         <command xml:space="preserve">fight</command>
         <result xml:space="preserve">"What in the world is going on?! Why the fuck are you in my room?!" you curse and kick into the woman's abdomen.
 
@@ -1807,10 +2053,10 @@ For someone covered in so much weight, the woman is still faster than you, and s
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1119"></child>
+        <children><child nodeId="node-1133"></child>
         </children>
     </item>
-    <item nodeId="node-1119">
+    <item nodeId="node-1133">
         <command xml:space="preserve">take gun</command>
         <result xml:space="preserve">Nervously, you reach out ot the gun.
 
@@ -1818,19 +2064,19 @@ Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1120"></child>
+        <children><child nodeId="node-1134"></child>
         </children>
     </item>
-    <item nodeId="node-1120">
+    <item nodeId="node-1134">
         <command xml:space="preserve">fight with gun</command>
         <result xml:space="preserve">Hint: Try "ask [someone]about" something.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1121"></child>
+        <children><child nodeId="node-1135"></child>
         </children>
     </item>
-    <item nodeId="node-1121">
+    <item nodeId="node-1135">
         <command xml:space="preserve">fight her with gun</command>
         <result xml:space="preserve">(Helen with the gun)
 You find yourself unable to pull the trigger as your fingers shakily hold the gun. Though murdering people in a video game is commonplace, but doing it in real life is still too viscerally disturbing.
@@ -1840,7 +2086,7 @@ Is there something else in the room that you might use that is made of metal?
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1122">
+    <item nodeId="node-1136">
         <command xml:space="preserve">play game</command>
         <result xml:space="preserve">You launch the game.
 
@@ -1853,16 +2099,16 @@ You could scream for help (and hope your obnoxious neighbor hears you), or you c
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1123">
+    <item nodeId="node-1137">
         <command xml:space="preserve">ask question</command>
         <result xml:space="preserve">Who are you directing the action to? Hint: Try this structure "[the verb] [someone] about [something]. Or "[the verb] [someone] with [something]."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1124"></child>
+        <children><child nodeId="node-1138"></child>
         </children>
     </item>
-    <item nodeId="node-1124">
+    <item nodeId="node-1138">
         <command xml:space="preserve">play game</command>
         <result xml:space="preserve">You launch the game.
 
@@ -1874,11 +2120,11 @@ You could scream for help (and hope your obnoxious neighbor hears you), or you c
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1130"></child>
-            <child nodeId="node-1125"></child>
+        <children><child nodeId="node-1144"></child>
+            <child nodeId="node-1139"></child>
         </children>
     </item>
-    <item nodeId="node-1125">
+    <item nodeId="node-1139">
         <command xml:space="preserve">take gun</command>
         <result xml:space="preserve">Nervously, you reach out ot the gun.
 
@@ -1886,10 +2132,10 @@ Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1126"></child>
+        <children><child nodeId="node-1140"></child>
         </children>
     </item>
-    <item nodeId="node-1126">
+    <item nodeId="node-1140">
         <command xml:space="preserve">fight her with gun</command>
         <result xml:space="preserve">(Helen with the gun)
 You find yourself unable to pull the trigger as your fingers shakily hold the gun. Though murdering people in a video game is commonplace, but doing it in real life is still too viscerally disturbing.
@@ -1898,28 +2144,28 @@ Is there something else in the room that you might use that is made of metal?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1127"></child>
+        <children><child nodeId="node-1141"></child>
         </children>
     </item>
-    <item nodeId="node-1127">
+    <item nodeId="node-1141">
         <command xml:space="preserve">take extinguisher</command>
         <result xml:space="preserve">Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1128"></child>
+        <children><child nodeId="node-1142"></child>
         </children>
     </item>
-    <item nodeId="node-1128">
+    <item nodeId="node-1142">
         <command xml:space="preserve">fight with extinguisher</command>
         <result xml:space="preserve">Who are you directing the action to? Hint: Try this structure "[the verb] [someone]about [something].
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1129"></child>
+        <children><child nodeId="node-1143"></child>
         </children>
     </item>
-    <item nodeId="node-1129">
+    <item nodeId="node-1143">
         <command xml:space="preserve">fight her with extinguisher</command>
         <result xml:space="preserve">(Helen with the fire extinguisher)
 You slam the fire extinguisher into her metal chest plate, knocking her back a few steps. But just as the armor lady picks herself up, you notice the giant sword she carries, all curses are swallowed back down.
@@ -1931,7 +2177,7 @@ You slam the fire extinguisher into her metal chest plate, knocking her back a f
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1130">
+    <item nodeId="node-1144">
         <command xml:space="preserve">ask about sword</command>
         <result xml:space="preserve">(addressing Helen)
 Why are you even carrying a sword?" you ask, still fearing for your head.
@@ -1942,10 +2188,10 @@ Maybe this woman is an actress because that is so method. What is her real ident
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1131"></child>
+        <children><child nodeId="node-1145"></child>
         </children>
     </item>
-    <item nodeId="node-1131">
+    <item nodeId="node-1145">
         <command xml:space="preserve">ask about identity</command>
         <result xml:space="preserve">"Who are you? Why are you in my room?" You grumble.
 
@@ -1957,19 +2203,19 @@ But it is only polite that you also introduce yourself.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1132"></child>
+        <children><child nodeId="node-1146"></child>
         </children>
     </item>
-    <item nodeId="node-1132">
+    <item nodeId="node-1146">
         <command xml:space="preserve">ask about armor</command>
         <result xml:space="preserve">Helen just introduced herself and you move on asking her about stuff without at least telling her your name. Very polite, my dude.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1133"></child>
+        <children><child nodeId="node-1147"></child>
         </children>
     </item>
-    <item nodeId="node-1133">
+    <item nodeId="node-1147">
         <command xml:space="preserve">introduce</command>
         <result xml:space="preserve">"Hi, my name is Dude," you say and offers Helen a hand to shake.
 

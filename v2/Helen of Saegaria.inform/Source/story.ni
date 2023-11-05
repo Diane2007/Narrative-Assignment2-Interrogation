@@ -62,7 +62,7 @@ Check launching:
 				move Helen to the Apartment;
 				now sec1Fin is true;
 			else if sec3Fin is true and sec4Fin is false:
-				say "You launch the game just in time when Helen jumps in and blocks that player's giant axe with her shield. Seeing her in action, now that you've known her personally, makes you feel different now.[paragraph break]You would've cheered whoever challenging the princess['] personal knight in the past, considering you never managed to defeat Helen.[paragraph break]But Helen is clearly at disadvantage right now. You recognize the player's armors and equipment--the full set requires at least $3000 or some extremely good luck. And with those armors, Helen stands no chance. And eventually, Helen collapses into her own pool of blood.[paragraph break]'Josie,' she whispers in desperation when the player snatches the princess.[paragraph break]And the next second, Helen reappears in your apartment, bloodied and barely alive.[paragraph break]Is something that you can help her with the bleeding?";
+				say "You launch the game just in time when Helen jumps in and blocks that player's giant axe with her shield. Seeing her in action, now that you've known her personally, makes you feel different now.[paragraph break]You would've cheered whoever challenging the princess['] personal knight in the past, considering you never managed to defeat Helen.[paragraph break]But Helen is clearly at disadvantage right now. You recognize the player's armors and equipment--the full set requires at least $3000 or some extremely good luck. And with those armors, Helen stands no chance. And eventually, Helen collapses into her own pool of blood.[paragraph break]'Josie,' she whispers in desperation when the player snatches the princess.[paragraph break]And the next second, Helen reappears in your apartment, bloodied and barely alive.[paragraph break]Is something that you can help her with to stop the bleeding?";
 				now gameLaunched is true;
 				move Helen to the Apartment;
 				now injured is true;
@@ -407,19 +407,12 @@ Check quizzing Helen about:
 	else:										
 		continue the action.
 
-Check showing something to Helen:
-	if sec2Fin is false:
-		if fought is true:
-			say "Maybe show her this thing at another time when you are not fighting for your life!";
-			stop the action;
-		else:
-			continue the action;
+Before showing something to Helen:
+	if injured is true:
+		say "Helen is bleeding so much! Stop wasting time and heal her!";
+		stop the action;
 	else:
-		if injured is true:
-			say "Helen is bleeding so much! Stop wasting time and heal her!";
-			stop the action;
-		else:
-			continue the action.
+		continue the action.
 
 
 [ACTION: help Helen]
@@ -494,9 +487,8 @@ After quizzing Helen about the PC:
 	else:
 		say "Helen gives the machine a look, 'I have not a clue what sorcery you are attempting to perform in this... dungeon.'[paragraph break]'This is not a dungeon!' you protest.[paragraph break]'It looks barely habitable,' Helen says.'"
 
-Before showing the PC to Helen:
+Instead of showing the PC to Helen:
 	say "'Not interested,' Helen tell you.";
-	stop the action;
 
 
 [fire extinguisher]
@@ -507,7 +499,7 @@ After quizzing Helen about the fire-extinguisher:
 	else:
 		say "'I have not an idea what you are inquiring about,' Helen says.";
 		
-Before showing the fire-extinguisher to Helen:
+Instead of showing the fire-extinguisher to Helen:
 	say "'What is this object? A mallet, perhaps?' Helen asks.[paragraph break]'It supposedly puts out a fire.'[paragraph break]'What does [']supposedly['] mean?' Helen frowns.[paragraph break]'I never read the manual, so I don't know how to use it anyway. Let's just hope my apartment doesn't get burned down when I cook.'[paragraph break]Helen gives you a look that says 'Please get your life together.'";
 	stop the action;
 
@@ -519,7 +511,7 @@ After quizzing Helen about the first-aid:
 	else:
 		say "Helen shakes her head, 'We do have our medicine box back in where I am from. Bandages, potions, herbs...'";
 
-Before showing the first-aid to Helen:
+Instead of showing the first-aid to Helen:
 	if sec4Fin is false:	
 		say "something."
 		
