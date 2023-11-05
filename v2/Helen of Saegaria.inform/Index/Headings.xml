@@ -17,49 +17,49 @@
     </dict>
     <key>2</key><dict>
         <key>Filename</key><string>/Users/ruochongwang/Desktop/MFA/Fall2023/Narrative Studio/Projects/Assignment 2 Interrogation/Assignment2Repository/v2/Helen of Saegaria.inform/Source/story.ni</string>
-        <key>Line</key><integer>82</integer>
+        <key>Line</key><integer>77</integer>
         <key>Title</key><string>Part 1 - FOR RELEASE</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>3</key><dict>
         <key>Filename</key><string>/Users/ruochongwang/Desktop/MFA/Fall2023/Narrative Studio/Projects/Assignment 2 Interrogation/Assignment2Repository/v2/Helen of Saegaria.inform/Source/story.ni</string>
-        <key>Line</key><integer>84</integer>
+        <key>Line</key><integer>79</integer>
         <key>Title</key><string>Section 1 - Set Up</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>4</key><dict>
         <key>Filename</key><string>/Users/ruochongwang/Desktop/MFA/Fall2023/Narrative Studio/Projects/Assignment 2 Interrogation/Assignment2Repository/v2/Helen of Saegaria.inform/Source/story.ni</string>
-        <key>Line</key><integer>143</integer>
+        <key>Line</key><integer>138</integer>
         <key>Title</key><string>Section 2 - Who is Helen ?</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>5</key><dict>
         <key>Filename</key><string>/Users/ruochongwang/Desktop/MFA/Fall2023/Narrative Studio/Projects/Assignment 2 Interrogation/Assignment2Repository/v2/Helen of Saegaria.inform/Source/story.ni</string>
-        <key>Line</key><integer>353</integer>
+        <key>Line</key><integer>322</integer>
         <key>Title</key><string>Section 3 - Why is Helen here ?</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>6</key><dict>
         <key>Filename</key><string>/Users/ruochongwang/Desktop/MFA/Fall2023/Narrative Studio/Projects/Assignment 2 Interrogation/Assignment2Repository/v2/Helen of Saegaria.inform/Source/story.ni</string>
-        <key>Line</key><integer>400</integer>
+        <key>Line</key><integer>374</integer>
         <key>Title</key><string>Section 4 - The Princess</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>7</key><dict>
         <key>Filename</key><string>/Users/ruochongwang/Desktop/MFA/Fall2023/Narrative Studio/Projects/Assignment 2 Interrogation/Assignment2Repository/v2/Helen of Saegaria.inform/Source/story.ni</string>
-        <key>Line</key><integer>478</integer>
+        <key>Line</key><integer>474</integer>
         <key>Title</key><string>Section 5 - Defend Saegaria</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>8</key><dict>
         <key>Filename</key><string>/Users/ruochongwang/Desktop/MFA/Fall2023/Narrative Studio/Projects/Assignment 2 Interrogation/Assignment2Repository/v2/Helen of Saegaria.inform/Source/story.ni</string>
-        <key>Line</key><integer>532</integer>
+        <key>Line</key><integer>558</integer>
         <key>Title</key><string>Part 2 - Testing</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
@@ -1469,54 +1469,5 @@
         <key>Title</key><string>Part - Response Assistant</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
-    </dict>
-    <key>210</key><dict>
-        <key>Filename</key><string>/Users/ruochongwang/Library/Inform/Extensions/Aaron Reed/Response Assistant.i7x</string>
-        <key>Line</key><integer>7</integer>
-        <key>Title</key><string>Chapter - Actions</string>
-        <key>Level</key><integer>4</integer>
-        <key>Indentation</key><integer>2</integer>
-    </dict>
-    <key>211</key><dict>
-        <key>Filename</key><string>/Users/ruochongwang/Library/Inform/Extensions/Aaron Reed/Response Assistant.i7x</string>
-        <key>Line</key><integer>9</integer>
-        <key>Title</key><string>Section - Response Tracking</string>
-        <key>Level</key><integer>5</integer>
-        <key>Indentation</key><integer>3</integer>
-    </dict>
-    <key>212</key><dict>
-        <key>Filename</key><string>/Users/ruochongwang/Library/Inform/Extensions/Aaron Reed/Response Assistant.i7x</string>
-        <key>Line</key><integer>13</integer>
-        <key>Title</key><string>Section - Disabling Response Tracking</string>
-        <key>Level</key><integer>5</integer>
-        <key>Indentation</key><integer>3</integer>
-    </dict>
-    <key>213</key><dict>
-        <key>Filename</key><string>/Users/ruochongwang/Library/Inform/Extensions/Aaron Reed/Response Assistant.i7x</string>
-        <key>Line</key><integer>17</integer>
-        <key>Title</key><string>Section - Requesting Response Info</string>
-        <key>Level</key><integer>5</integer>
-        <key>Indentation</key><integer>3</integer>
-    </dict>
-    <key>214</key><dict>
-        <key>Filename</key><string>/Users/ruochongwang/Library/Inform/Extensions/Aaron Reed/Response Assistant.i7x</string>
-        <key>Line</key><integer>31</integer>
-        <key>Title</key><string>Chapter - Variables</string>
-        <key>Level</key><integer>4</integer>
-        <key>Indentation</key><integer>2</integer>
-    </dict>
-    <key>215</key><dict>
-        <key>Filename</key><string>/Users/ruochongwang/Library/Inform/Extensions/Aaron Reed/Response Assistant.i7x</string>
-        <key>Line</key><integer>41</integer>
-        <key>Title</key><string>Chapter - Reporting</string>
-        <key>Level</key><integer>4</integer>
-        <key>Indentation</key><integer>2</integer>
-    </dict>
-    <key>216</key><dict>
-        <key>Filename</key><string>/Users/ruochongwang/Library/Inform/Extensions/Aaron Reed/Response Assistant.i7x</string>
-        <key>Line</key><integer>56</integer>
-        <key>Title</key><string>Chapter - Inform 6 Hooks</string>
-        <key>Level</key><integer>4</integer>
-        <key>Indentation</key><integer>2</integer>
     </dict>
 </dict></plist>

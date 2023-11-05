@@ -1,18 +1,12 @@
 "Helen of Saegaria" by Diane Wang
 
-The story headline is "The lady in armor has her own secrets". The story description is "Her home is invaded, and the invader is hiding in plain sight.
-
-Got stuck? Try 'hint' and see if that helps." The story creation year is 2023.
+The story headline is "The lady in armor has her own secrets". The story creation year is 2023. The release number is 1.
 
 Include Conversation Framework by Eric Eve.
 Include Epistemology by Eric Eve.
 Include Response Assistant by Aaron Reed.
 
 Release along with a website. Release along with an interpreter.
-
-[LAUNDRY LIST]
-[2 - pay attention to the launch verb]
-[4 - things you can show Helen]
 
 
 [-------- GLOBAL VARIABLES --------]
@@ -67,7 +61,8 @@ Check launching:
 				move Helen to the Apartment;
 				now injured is true;
 			else if sec5Fin is true:
-				say "move to the end game block";
+				say "Helen faces another enemy, and with the gun, she obliterates the enemy with ease. You don't know what this means to the game world. Maybe Helen and her Josie would be safe and sound. Maybe the war will finally end.[paragraph break]But minutes later, the developers take the game down and annouce a hot fix to the 'latest issues' in the game.[paragraph break]You wonder if they will be able to take away Helen's gun anyway, because that thing never existed in their code but came from the real world. You will see, and maybe Helen could come back to your apartment, if she ever found herself and Josie in trouble again, and you two could figure out something else.";
+				End the story;
 			else:
 				say "Why are you seeing this? Diane made a boo-boo.";
 		else if gameLaunched is true:
@@ -169,8 +164,6 @@ After quizzing Helen about identity:
 		if fought is false:
 			say "'Who are you? Why are you in my room?' You grumble.[paragraph break]'Oh sweet goddess, where are my manners?' the woman bows again. 'Helen of Saegaria, champion and personal knight to Her Royal Highness, Princess Josephine. It is a pleasure to make you acquaintance.'[paragraph break]What in the-- You blink, and blink again. The princess['] knight, the final boss you fought and died countless times, stands right in front of you.[paragraph break]But it is only polite that you also introduce yourself.";
 			now sec2Fin is true;
-		else if fought is true:
-			say "Yo you're in the middle of the fight and want to start a conversation?";
 	else if sec2Fin is true:
 		if introduced is true:
 			say "'Me?' Helen didn't expect you to ask about her life. 'Well, I tend to Her Highness, making sure she is safe in any situation. She hasn't been too happy since betrothed, so... I strive to make her happy. Sometimes it's flowers, sometimes...' She stops. 'Forgive me. I digress.'";
@@ -257,10 +250,7 @@ The description of the sword is "The sheathed sword proudly displays a family cr
 
 After quizzing Helen about the sword:
 	if sec2Fin is false:
-		if fought is true:[if player fights Helen, they shouldn't be able to strke a conversation with them mid fight]
-			say "Yo you're in the middle of the fight and want to start a conversation?";
-		else:
-			say "Why are you even carrying a sword?' you ask, still fearing for your head.[paragraph break]The armor lady gives you the look like you're stupid, 'Because I am a knight, and I am not taking off the sword my lady bestowed me when I was knighted.'[paragraph break]Maybe this woman is an actress because that is so [italic type]method[roman type].";
+		say "Why are you even carrying a sword?' you ask, still fearing for your head.[paragraph break]The armor lady gives you the look like you're stupid, 'Because I am a knight, and I am not taking off the sword my lady bestowed me when I was knighted.'[paragraph break]Maybe this woman is an actress because that is so [italic type]method[roman type].";
 	else:
 		if introduced is true:
 			say "'That is some fancy sword,' you say. 'May I try?'[paragraph break]Helen sizes you up again and shakes her head, 'I am afraid if I allowed you to try, you'd tear your arm and injure your shoulders. This is very heavy.'";
@@ -275,10 +265,7 @@ The description of the armor is "Somehow, you think you've seen this armor befor
 
 After quizzing Helen about the armor:
 	if sec2Fin is false:
-		if fought is true:[if player fights Helen, they shouldn't be able to strke a conversation with them mid fight]
-			say "Yo you're in the middle of the fight and want to start a conversation?";
-		else:[before Helen and Player properly introduce themselves, Player should assume Helen just came from a Cosplay event]			
-			say "'Did you just get out of a cosplay event? That is some impressive armor. Did you get them from Etsy?' you tell her. If there is one in town right now, you definitely are going.[paragraph break]'Pardon me, but I do not understand what a 'cosplay' is, nor do I know about 'Ezzie'. Is that perhaps the title of a lord? These armors belong to the royal family of Saegaria and the Order of the Knights of Sun.'[if sec2Fin is false][paragraph break]She's either too into the whole cosplay thing, or she is totally nuts. You wonder about her identity.";
+		say "'Did you just get out of a cosplay event? That is some impressive armor. Did you get them from Etsy?' you tell her. If there is one in town right now, you definitely are going.[paragraph break]'Pardon me, but I do not understand what a 'cosplay' is, nor do I know about 'Ezzie'. Is that perhaps the title of a lord? These armors belong to the royal family of Saegaria and the Order of the Knights of Sun.'[if sec2Fin is false][paragraph break]She's either too into the whole cosplay thing, or she is totally nuts. You wonder about her identity.";
 	else:
 		if introduced is true:
 			say "'Did the princess give you those armors, too?' you ask.[paragraph break]Helen's eyes widen, clearly offended, 'That is Her Royal Highness for you. You shall not address my lady by her name.'";
@@ -295,10 +282,7 @@ The description of the crest is "That crest is displayed everywhere when you pla
 
 After quizzing Helen about the crest:
 	if sec2Fin is false:
-		if fought is true:
-			say "Yo you're in the middle of the fight and want to start a conversation?";
-		else:
-			say "'I serve the royal family of Saegaria, and only the most trusted allies of the royal family shall bear their crest,' the armor lady says proudly.";
+		say "'I serve the royal family of Saegaria, and only the most trusted allies of the royal family shall bear their crest,' the armor lady says proudly.";
 	else:
 		if introduced is true:
 			say "'I serve the royal family of Saegaria, and only the most trusted allies of the royal family shall bear their crest,' the armor lady says proudly.";
@@ -308,33 +292,18 @@ After quizzing Helen about the crest:
 [SUBJECT: what's up?]
 Sup is a subject.
 After quizzing Helen about sup:
-	if sec2Fin is false:
-		if fought is true:
-			say "'WHAT'S UP?!' you shout at her loudly.[paragraph break]'I will not get distracted by an enemy who attempts to distract and daunt me to look up during a duel!' Helen shouts back with equal volume.";
-		else:
-			say "'What's up?' you nod at her.[paragraph break]The lady knight looks up, 'I don't see anything up there.'";
-	else:
-		say "'What's up?' you nod at her.[paragraph break]The lady knight looks up, 'I don't see anything up there.'";
+	say "'What's up?' you nod at her.[paragraph break]The lady knight looks up, 'I don't see anything up there.'";
 
 [SUBJECT: Elon Musk]
 Elon-Musk is a subject. Understand "Elon Musk" as Elon-Musk.
 After quizzing Helen about Elon-Musk:
-	if sec2Fin is false:
-		if fought is true:
-			say "Yo you're in the middle of the fight and want to ask her about Elon Musk?";
-		else:
-			say "Helen quirks a brow, 'What is that? Is it a disease?'";
-	else:
-		say "Yo you're in the middle of the fight and want to ask her about Elon Musk?";
+	say "Helen quirks a brow, 'What is that? Is it a disease?'";
 
 [SUBJECT: SAEGARIA]
 Saegaria is a subject.
 After quizzing Helen about Saegaria:
 	if sec2Fin is false:
-		if fought is true:
-			say "Yo you're in the middle of the fight and want to start a conversation?";
-		else:
-			say "'It's my home,' she nods. 'She has her good and her bad, but Her Royal Highness is doing her best to correct what her... ancestors have destroyed.'";
+		say "'It's my home,' she nods. 'She has her good and her bad, but Her Royal Highness is doing her best to correct what her... ancestors have destroyed.'";
 	else if sec3Fin is false:
 		say "'Saegaria is the most beautiful place in the world, and certainly [italic type]not[roman type] a game,' Helen huffs and stresses the word.";
 	else if sec5Fin is false:
@@ -390,35 +359,62 @@ After quizzing Helen about the SaegariaGame:
 Before showing the SaegariaGame to Helen:
 	if sec2Fin is false:
 		say "Why are you trying to show her the game now, out of a sudden?";
+		stop the action;
 	else if sec3Fin is false:
 		say "'Just look!' you turn the computer monitor to Helen's direction.[paragraph break]'What form of sorcery is this?' Helen jumps back, flashed and confused and alarmed by the animation.[paragraph break]'No! Look at that avatar! That is you!' you points and turns your face to the screen and-- No, the tile Helen is supposed to be standing on is empty, and you suddenly recall that is because she is right here with you.[paragraph break]But Helen stops, her eyes fixed on the NPC standing on the castle balcony. [italic type]Princess Josephine [roman type]looks out of the window, distressed and lonely.[paragraph break]'Josie must be wondering where I am...' You seem to hear her whisper.[paragraph break]'Josie?' you frown. That name doesn't ring a bell at all. Is it a new NPC in the next update that Helen is aware of (because hell, she is literally [italic type]from that world[roman type])?[paragraph break]'No, I didn't say anything,' Helen clears her throat, looking stern once again.'[paragraph break]But the next second, another player appears behind Princess Josephine, and at the same moment, Helen disappears into the ether.[paragraph break]Is she back in the game?";
 		Move Helen to the Hidden Room;
 		now sec3Fin is true;
 		now gameLaunched is false;
 		stop the action;
+	else:
+		say "Helen doesn't really want to be reminded of the game again.";
+		stop the action;
+		
 
 Section 4 - The Princess
 
 [player can't talk to Helen when she is bleeding badly]
-Check quizzing Helen about:
+[and player can't ask her questions when they are fighting]
+Before quizzing Helen about:
 	if injured is true:
 		say "Helen is bleeding so much! Stop wasting time and heal her!";
 		stop the action;
-	else:										
-		continue the action.
+	else:	
+		if sec2Fin is false:
+			if fought is true:
+				say "Yo you're in the middle of the fight and want to start a conversation?";
+				stop the action;
+		else:[After Helen introduces herself and before player introduces themselves, player can't ask Helen about anything because that is rude]
+			 if introduced is false:
+				say "Helen just introduced herself and you move on asking her about stuff without at least telling her your name. Very polite, my dude.";
+				stop the action;
+			else:
+				continue the action;
+		
 
 Before showing something to Helen:
 	if injured is true:
 		say "Helen is bleeding so much! Stop wasting time and heal her!";
 		stop the action;
 	else:
-		continue the action.
+		if sec2Fin is false:
+			if fought is true:
+				say "Maybe show her this thing at another time when you are not fighting for your life!";
+				stop the action;
+			else:
+				continue the action;
+		else:
+			if introduced is false:
+				say "Helen just introduced herself and you move on asking her about stuff without at least telling her your name. Very polite, my dude.";
+				stop the action;
+			else:
+				continue the action.
 
 
 [ACTION: help Helen]
 Helping it with is an action applying to two visible things.
 Understand "helping [someone] with [something]" as helping it with.
-Understand "help [someone] with [something]" as helping it with.
+Understand "help [someone] with [something]", "heal [someone] with [something]" as helping it with.
 
 Check helping someone with something:
 	if the noun is not Helen:
@@ -429,7 +425,7 @@ Check helping someone with something:
 		else:
 			if the second noun is first-aid:
 				if player carries the first-aid:
-					say "Miraculously, Helen's wounds start fading once the dressing touches her skin. Maybe it's a game NPC superpower or something.[paragraph break]'You gotta learn to pick your fight wisely,' you tell her. 'One look at that guy, you should've known you stood no chance. Pay-to-win has been a big issue with this game.'[paragraph break]'But I can't let anyone hurt my princess. At first I just thought it was her betrothed causing trouble at the border that caused the invasion, but now...' Helen sighs. 'I can't understand why you people found killing us fun, taking Josie like a-.'[paragraph break]Helen stops, realizing she has slipped.";
+					say "Miraculously, Helen's wounds start fading once the dressing touches her skin. Maybe it's a game NPC superpower or something.[paragraph break]'You gotta learn to pick your fight wisely,' you tell her. 'One look at that guy, you should've known you stood no chance. Pay-to-win has been a big issue with this game.'[paragraph break]'But I can't let anyone hurt my Josie, especially when--'[paragraph break]Helen stops, realizing she has slipped, saying the princess['] name even.[paragraph break]Maybe asking her about Josie would help you understand the situation and aid Helen better.";
 					now injured is false;
 				else:
 					say "You aren't carrying the first aid kit!";
@@ -447,7 +443,7 @@ Royal-Highness is a subject. Understand "Her Highness", "Her Royal Highness", "H
 After quizzing Helen about Royal-Highness:
 	if sec2Fin is false:
 		say "'Princess Josephine took me in despite my peasant blood. She is the heir to the throne, and one of the only open-minded member of the court who truly cares about the people, unlike her fa-' the lady knight pauses abruptly. 'No, it is not my place to remark on my lady or her father.'";
-	else if sec3Fin is false:
+	if sec3Fin is false:
 		say "'Our people have been waiting for Her Royal Highness['] coming of age. Saegaria is... struggling under the King's rule,' Helen looks away. 'I am telling you this because none of our lives should be treated as a game or a joke.";
 	else if sec4Fin is false:
 		say "'She is my princess, but she is my Josie, too,' Helen lowers her gaze.[paragraph break]'May I ask about Josie?' you ask, carefully.[paragraph break]Helen sighs, 'You saved me, so... you may.'";
@@ -481,57 +477,90 @@ Section 5 - Defend Saegaria
 
 [PC]
 After quizzing Helen about the PC:
-	if sec2Fin is false:
-		if fought is true:
-			say "Yo you're in the middle of the fight and want to start a conversation?";
-	else:
-		say "Helen gives the machine a look, 'I have not a clue what sorcery you are attempting to perform in this... dungeon.'[paragraph break]'This is not a dungeon!' you protest.[paragraph break]'It looks barely habitable,' Helen says.'"
+	say "Helen gives the machine a look, 'I have not a clue what sorcery you are attempting to perform in this... dungeon.'[paragraph break]'This is not a dungeon!' you protest.[paragraph break]'It looks barely habitable,' Helen says.'"
 
-Instead of showing the PC to Helen:
+Check showing the PC to Helen:
 	say "'Not interested,' Helen tell you.";
+	stop the action;
 
 
 [fire extinguisher]
 After quizzing Helen about the fire-extinguisher:
-	if sec2Fin is false:
-		if fought is true:
-			say "Yo you're in the middle of the fight and want to start a conversation?";
-	else:
-		say "'I have not an idea what you are inquiring about,' Helen says.";
+	say "'I have not an idea what you are inquiring about,' Helen says.";
 		
-Instead of showing the fire-extinguisher to Helen:
+Check showing the fire-extinguisher to Helen:
 	say "'What is this object? A mallet, perhaps?' Helen asks.[paragraph break]'It supposedly puts out a fire.'[paragraph break]'What does [']supposedly['] mean?' Helen frowns.[paragraph break]'I never read the manual, so I don't know how to use it anyway. Let's just hope my apartment doesn't get burned down when I cook.'[paragraph break]Helen gives you a look that says 'Please get your life together.'";
 	stop the action;
+	
+[player can't give the fire extinguisher to Helen before section 5]
+Instead of giving the fire-extinguisher to Helen:
+	if sec4Fin is false:
+		say "Helen doesn't need a fire extinguisher now.";
+	else:
+		say "'Much appreciated,' Helen somehow manages to put the fire extinguisher into her pocket--game NPC superpower maybe. 'This will help us reconstruct the capital once the battle is over, considering how much burning damages there have been.'";
+		move the fire-extinguisher to Helen;
 
 [first aid]
 After quizzing Helen about the first-aid:
-	if sec2Fin is false:
-		if fought is true:
-			say "Yo you're in the middle of the fight and want to start a conversation?";
-	else:
-		say "Helen shakes her head, 'We do have our medicine box back in where I am from. Bandages, potions, herbs...'";
+	say "Helen shakes her head, 'We do have our medicine box back in where I am from. Bandages, potions, herbs...'";
 
-Instead of showing the first-aid to Helen:
-	if sec4Fin is false:	
-		say "something."
-		
+Check showing the first-aid to Helen:
+	if sec4Fin is false:
+		if injured is true:
+			stop the action;
+		else:
+			say "'Impressive,' Helen nods. 'It seems you people can create something useful after all.'";
+			stop the action;
+	else:
+		say "'This healing box will put every healer in my world to shame. I would believe it would be immensely helpful to our comrades,' Helen nods.[paragraph break]Maybe you could give this first aid kit to Helen, considering you can just get another one from CVS any other day.";
+		stop the action;
+
+Instead of giving the first-aid to Helen:
+	if sec4Fin is false:
+		say "Helen doesn't need a first aid kid right now.";
+	else:
+		say "'Thank you,' Helen takes the first aid kid. 'My fellow knights and soldiers would benefit greatly from this gift.'";
+		move the first-aid to Helen.
 
 
 [excel sheet]
 After quizzing Helen about the Excel-sheet:
 	say "How pathetic are you, showing somebody your precious little accounting excel sheets? Also, aren't you under NDA?"
 	
-After showing the Excel-sheet to Helen:
+Check showing the Excel-sheet to Helen:
 	say "How pathetic are you, showing somebody your precious little accounting excel sheets? Also, aren't you under NDA?";
 	stop the action.
 
 
 [gun]
+After quizzing Helen about the gun:
+	say "Helen's eyes widen, 'Are you saying that any laymen without any formal training could bring on massive destruction to hundreds with this blasphemous object?'[paragraph break]'Well, that's about right,' you shrugs.[paragraph break]'And your cousin acquired this thing for you?'[paragraph break]'Well he just gave it to me without asking if I ever wanted a gun.'[paragraph break]'I would advice you to dispose of this weapon lest it caused you regrets,' Helen frowns. ‘And your cousin needs help, if he ever received any.'[if sec4Fin is true][paragraph break]But it may really, [italic type]really[roman type] give her an edge in the game, and she wouldn't be killing real people anyway."
+
+Check showing the gun to Helen:
+	if sec3Fin is false:
+		say "'This object infuses the air with danger,' Helen tells you.";
+		stop the action;
+	else:
+		say "'You say this is a weapon, but I have never seen any... 'players' from your world brandishing such a weapon in Saegaria,' Helen says.[paragraph break]'I think the community is more into melee than anything else. You know, melee is for tough guys,' you continue. 'Do you want this, though? You could really protect Her Highness well with a gun. Nobody's armor could stop a bullet, I guess.'[paragraph break]Helen gives it another cautious look, looks away, and sighs, 'Fine. I think you do have a point.'[paragraph break]Now give the gun to Helen, and you'll be rid of this bloody weapon at last.";
+		stop the action;
+
+Instead of giving the gun to Helen:
+	if sec4Fin is false:
+		say "Helen doesn't want the gun right now.";
+	else:
+		say "'I would be careful with it,' Helen tells you, taking in the gun with great care.[paragraph break]When the weapon touches her fingers, Helen disappears into the ether once more, and you know she is back in the game. How is she doing back in Saegaria, though? You could only find out if you play the game.";
+		move the gun to Helen;
+		move Helen to the Hidden Room;
+		now gameLaunched is false;
+		now sec5Fin is true;
 
 
 Part 2 - Testing
 
 Test identity with "play game / ask about her identity / introduce".
 Test fighting with "play game / fight / fight her with sword / fight her with fire extinguisher / take fire extinguisher / fight her with gun / fight her with fire extinguisher / yield /introducing".
+Test screaming with "play game / scream / yes / introduce self".
 
 Test showing with "tell her about game / show her the game".
+
+Test healing with "play game / take first aid / help helen with first aid / ask her about princess / ask her about her highness / ask her about josie".

@@ -25,7 +25,7 @@ placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2023"
 placeholder [TITLE] = "Helen of Saegaria"
 placeholder [AUTHOR] = "Diane Wang"
-placeholder [BLURB] = "Her home is invaded, and the invader is hiding in plain sight.<br/>Got stuck? Try 'hint' and see if that helps."
+placeholder [BLURB] = "A work of interactive fiction."
 
 ! Other material to release
 
@@ -49,8 +49,8 @@ template path "/Users/ruochongwang/Library/Inform/Templates"
 template path "/Applications/Inform.app/Contents/Resources/Internal/Templates"
 css
 website "Standard"
-status instruction ||&nbsp;<a href="source:story.ni#line11"><img border=0 src=inform:/doc_images/Reveal.png></a>||
-status instruction ||&nbsp;<a href="source:story.ni#line11"><img border=0 src=inform:/doc_images/Reveal.png></a>||
+status instruction ||&nbsp;<a href="source:story.ni#line9"><img border=0 src=inform:/doc_images/Reveal.png></a>||
+status instruction ||&nbsp;<a href="source:story.ni#line9"><img border=0 src=inform:/doc_images/Reveal.png></a>||
 status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc401.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc399.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc410.html><img border=0 src=inform:/doc_images/help.png></a>||
